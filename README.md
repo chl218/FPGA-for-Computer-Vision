@@ -1,1 +1,1 @@
-# FPGA_for_Computer_Vision
+# FPGA for Computer Vision
