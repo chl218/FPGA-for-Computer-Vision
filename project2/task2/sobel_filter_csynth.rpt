@@ -1,0 +1,1196 @@
+
+
+================================================================
+== Vivado HLS Report for 'sobel_filter'
+================================================================
+* Date:           Wed Apr 26 00:45:53 2017
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        sobel_part2
+* Solution:       solution3
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      3.46|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+-----+-----+----------+
+    |   Latency   |  Interval | Pipeline |
+    |  min |  max | min | max |   Type   |
+    +------+------+-----+-----+----------+
+    |  1933|  1933|  649|  649| dataflow |
+    +------+------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+        |                                         |                            |  Latency  |  Interval | Pipeline|
+        |                 Instance                |           Module           | min | max | min | max |   Type  |
+        +-----------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+        |stg_271_sobel_filter_Block_proc_fu_1748  |sobel_filter_Block_proc     |    0|    0|    0|    0|   none  |
+        |grp_sobel_filter_reshapeMatrix_fu_1469   |sobel_filter_reshapeMatrix  |  643|  643|  643|  643|   none  |
+        |grp_sobel_filter_computeConv_fu_1208     |sobel_filter_computeConv    |  648|  648|  648|  648|   none  |
+        |grp_sobel_filter_bufferOutput_fu_1741    |sobel_filter_bufferOutput   |  641|  641|  641|  641|   none  |
+        +-----------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      1|
+|FIFO             |        0|      -|      35|    121|
+|Instance         |        -|      -|    3748|   1247|
+|Memory           |        0|      -|   13312|   2560|
+|Multiplexer      |        -|      -|       -|    512|
+|Register         |        -|      -|     262|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|   17357|   4441|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|      16|      8|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------+----------------------------+---------+-------+------+------+
+    |            Instance           |           Module           | BRAM_18K| DSP48E|  FF  |  LUT |
+    +-------------------------------+----------------------------+---------+-------+------+------+
+    |sobel_filter_Block_proc_U0     |sobel_filter_Block_proc     |        0|      0|     2|     1|
+    |sobel_filter_bufferOutput_U0   |sobel_filter_bufferOutput   |        0|      0|    18|    27|
+    |sobel_filter_computeConv_U0    |sobel_filter_computeConv    |        0|      0|  3623|  1113|
+    |sobel_filter_reshapeMatrix_U0  |sobel_filter_reshapeMatrix  |        0|      0|   105|   106|
+    +-------------------------------+----------------------------+---------+-------+------+------+
+    |Total                          |                            |        0|      0|  3748|  1247|
+    +-------------------------------+----------------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +--------------+------------------------+---------+-----+----+------+-----+------+-------------+
+    |    Memory    |         Module         | BRAM_18K|  FF | LUT| Words| Bits| Banks| W*Bits*Banks|
+    +--------------+------------------------+---------+-----+----+------+-----+------+-------------+
+    |mat_0_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_0_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_1_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_2_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_3_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_4_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_5_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_6_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_7_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_8_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_0_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_1_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_2_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_3_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_5_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_6_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_7_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_9_8_V_U   |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_10_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_11_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_12_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_13_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_14_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_15_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_16_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_17_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_18_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_19_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_20_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_21_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_22_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_23_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_24_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_25_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_26_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_27_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_28_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_29_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_30_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_0_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_1_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_2_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_3_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_5_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_6_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_7_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    |mat_31_8_V_U  |sobel_filter_mat_0_0_V  |        0|   52|  10|    20|   13|     2|          520|
+    +--------------+------------------------+---------+-----+----+------+-----+------+-------------+
+    |Total         |                        |        0|13312|2560|  5120| 3328|   512|       133120|
+    +--------------+------------------------+---------+-----+----+------+-----+------+-------------+
+
+    * FIFO: 
+    +------------------------+---------+---+----+------+-----+---------+
+    |          Name          | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +------------------------+---------+---+----+------+-----+---------+
+    |buf_V_V_U               |        0|  5|  25|     1|   13|       13|
+    |window_0_1_V_channel_U  |        0|  5|  16|     1|    1|        1|
+    |window_0_2_V_channel_U  |        0|  5|  16|     1|    1|        1|
+    |window_1_1_V_channel_U  |        0|  5|  16|     1|    1|        1|
+    |window_1_2_V_channel_U  |        0|  5|  16|     1|    1|        1|
+    |window_2_1_V_channel_U  |        0|  5|  16|     1|    1|        1|
+    |window_2_2_V_channel_U  |        0|  5|  16|     1|    1|        1|
+    +------------------------+---------+---+----+------+-----+---------+
+    |Total                   |        0| 35| 121|     7|   19|       19|
+    +------------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |             Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |sobel_filter_computeConv_U0_ap_start  |    and   |      0|  0|   1|           1|           1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                 |          |      0|  0|   1|           1|           1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                Name                               | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_0_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_10_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_11_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_12_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_13_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_14_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_15_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_16_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_17_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_18_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_19_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_1_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_20_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_21_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_22_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_23_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_24_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_25_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_26_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_27_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_28_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_29_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_2_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_30_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_0_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_1_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_2_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_3_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_5_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_6_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_7_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_31_8_V              |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_3_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_4_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_5_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_6_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_7_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_8_8_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_0_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_1_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_2_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_3_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_5_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_6_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_7_V               |   1|          2|    1|          2|
+    |ap_chn_write_sobel_filter_reshapeMatrix_U0_mat_9_8_V               |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_0_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_10_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_11_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_12_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_13_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_14_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_15_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_16_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_17_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_18_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_19_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_1_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_20_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_21_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_22_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_23_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_24_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_25_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_26_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_27_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_28_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_29_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_2_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_30_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_0_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_1_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_2_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_3_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_5_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_6_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_7_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_31_8_V_pipo_status  |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_3_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_4_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_5_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_6_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_7_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_8_8_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_0_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_1_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_2_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_3_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_5_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_6_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_7_V_pipo_status   |   1|          2|    1|          2|
+    |ap_sig_ready_sobel_filter_reshapeMatrix_U0_mat_9_8_V_pipo_status   |   1|          2|    1|          2|
+    +-------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                              | 512|       1024|  512|       1024|
+    +-------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+    |                                Name                               | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS                                                              |  1|   0|    1|          0|
+    |ap_reg_procdone_sobel_filter_Block_proc_U0                         |  1|   0|    1|          0|
+    |ap_reg_procdone_sobel_filter_bufferOutput_U0                       |  1|   0|    1|          0|
+    |ap_reg_procdone_sobel_filter_computeConv_U0                        |  1|   0|    1|          0|
+    |ap_reg_procdone_sobel_filter_reshapeMatrix_U0                      |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_0_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_10_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_11_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_12_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_13_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_14_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_15_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_16_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_17_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_18_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_19_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_1_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_20_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_21_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_22_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_23_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_24_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_25_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_26_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_27_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_28_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_29_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_2_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_30_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_0_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_1_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_2_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_3_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_5_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_6_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_7_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_31_8_V_pipo_status  |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_3_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_4_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_5_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_6_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_7_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_8_8_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_0_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_1_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_2_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_3_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_5_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_6_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_7_V_pipo_status   |  1|   0|    1|          0|
+    |ap_reg_ready_sobel_filter_reshapeMatrix_U0_mat_9_8_V_pipo_status   |  1|   0|    1|          0|
+    |sobel_filter_bufferOutput_U0_ap_start                              |  1|   0|    1|          0|
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                              |262|   0|  262|          0|
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|ap_clk              |  in |    1| ap_ctrl_hs | sobel_filter | return value |
+|ap_rst              |  in |    1| ap_ctrl_hs | sobel_filter | return value |
+|ap_start            |  in |    1| ap_ctrl_hs | sobel_filter | return value |
+|ap_done             | out |    1| ap_ctrl_hs | sobel_filter | return value |
+|ap_idle             | out |    1| ap_ctrl_hs | sobel_filter | return value |
+|ap_ready            | out |    1| ap_ctrl_hs | sobel_filter | return value |
+|row0_V_V_dout       |  in |   13|   ap_fifo  |   row0_V_V   |    pointer   |
+|row0_V_V_empty_n    |  in |    1|   ap_fifo  |   row0_V_V   |    pointer   |
+|row0_V_V_read       | out |    1|   ap_fifo  |   row0_V_V   |    pointer   |
+|row1_V_V_dout       |  in |   13|   ap_fifo  |   row1_V_V   |    pointer   |
+|row1_V_V_empty_n    |  in |    1|   ap_fifo  |   row1_V_V   |    pointer   |
+|row1_V_V_read       | out |    1|   ap_fifo  |   row1_V_V   |    pointer   |
+|row2_V_V_dout       |  in |   13|   ap_fifo  |   row2_V_V   |    pointer   |
+|row2_V_V_empty_n    |  in |    1|   ap_fifo  |   row2_V_V   |    pointer   |
+|row2_V_V_read       | out |    1|   ap_fifo  |   row2_V_V   |    pointer   |
+|convOut_V_V_din     | out |   13|   ap_fifo  |  convOut_V_V |    pointer   |
+|convOut_V_V_full_n  |  in |    1|   ap_fifo  |  convOut_V_V |    pointer   |
+|convOut_V_V_write   | out |    1|   ap_fifo  |  convOut_V_V |    pointer   |
++--------------------+-----+-----+------------+--------------+--------------+
+
