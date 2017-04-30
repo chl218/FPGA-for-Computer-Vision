@@ -1,0 +1,31 @@
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2015.4/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'Jack' on host 'jack' (Windows NT_amd64 version 6.2) on Sat Apr 29 16:16:49 -0700 2017
+            in directory 'C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln'
+@I [HLS-10] Opening project 'C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module'.
+@I [HLS-10] Opening solution 'C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 5ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_fire2.cpp
+   Compiling fire_module.cpp_pre.cpp.tb.cpp
+   Compiling fire_module_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@E [SIM-329] Aborting co-simulation: C simulation failed, no 'main' function.
+@E [SIM-317] C++ compile error.
+@E [SIM-321] EXE file generate failed.
+@E [SIM-321] EXE file generate failed.
+@E [SIM-331] Aborting co-simulation: C simulation failed, compilation errors.
+@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***
+command 'ap_source' returned error code
+    while executing
+"source C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module/solution1/cosim.tcl"
+    invoked from within
+"hls::main C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

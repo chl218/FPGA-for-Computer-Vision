@@ -1,0 +1,444 @@
+
+
+================================================================
+== Vivado HLS Report for 'fire2_copy'
+================================================================
+* Date:           Sat Apr 29 16:12:30 2017
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        fire_module
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      2.14|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  3027|  3027|  3027|  3027|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+------+------+----------+-----------+-----------+------+----------+
+        |                     |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+------+------+----------+-----------+-----------+------+----------+
+        |- Copy_Row_Copy_Col  |  3025|  3025|         2|          1|          1|  3025|    yes   |
+        +---------------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+3 --> 
+	2  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: empty [1/1] 0.00ns
+:0  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_15_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str271, [1 x i8]* @p_str272, [1 x i8]* @p_str273, [1 x i8]* @p_str274)
+
+ST_1: empty_679 [1/1] 0.00ns
+:1  %empty_679 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_14_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str267, [1 x i8]* @p_str268, [1 x i8]* @p_str269)
+
+ST_1: empty_680 [1/1] 0.00ns
+:2  %empty_680 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_13_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str261, [1 x i8]* @p_str262, [1 x i8]* @p_str263, [1 x i8]* @p_str264)
+
+ST_1: empty_681 [1/1] 0.00ns
+:3  %empty_681 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_12_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str256, [1 x i8]* @p_str257, [1 x i8]* @p_str258, [1 x i8]* @p_str259)
+
+ST_1: empty_682 [1/1] 0.00ns
+:4  %empty_682 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_11_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str251, [1 x i8]* @p_str252, [1 x i8]* @p_str253, [1 x i8]* @p_str254)
+
+ST_1: empty_683 [1/1] 0.00ns
+:5  %empty_683 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_10_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str246, [1 x i8]* @p_str247, [1 x i8]* @p_str248, [1 x i8]* @p_str249)
+
+ST_1: empty_684 [1/1] 0.00ns
+:6  %empty_684 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str241, [1 x i8]* @p_str242, [1 x i8]* @p_str243, [1 x i8]* @p_str244)
+
+ST_1: empty_685 [1/1] 0.00ns
+:7  %empty_685 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str236, [1 x i8]* @p_str237, [1 x i8]* @p_str238, [1 x i8]* @p_str239)
+
+ST_1: empty_686 [1/1] 0.00ns
+:8  %empty_686 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str231, [1 x i8]* @p_str232, [1 x i8]* @p_str233, [1 x i8]* @p_str234)
+
+ST_1: empty_687 [1/1] 0.00ns
+:9  %empty_687 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str226, [1 x i8]* @p_str227, [1 x i8]* @p_str228, [1 x i8]* @p_str229)
+
+ST_1: empty_688 [1/1] 0.00ns
+:10  %empty_688 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str221, [1 x i8]* @p_str222, [1 x i8]* @p_str223, [1 x i8]* @p_str224)
+
+ST_1: empty_689 [1/1] 0.00ns
+:11  %empty_689 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str216, [1 x i8]* @p_str217, [1 x i8]* @p_str218, [1 x i8]* @p_str219)
+
+ST_1: empty_690 [1/1] 0.00ns
+:12  %empty_690 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str212, [1 x i8]* @p_str213, [1 x i8]* @p_str214)
+
+ST_1: empty_691 [1/1] 0.00ns
+:13  %empty_691 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str206, [1 x i8]* @p_str207, [1 x i8]* @p_str208, [1 x i8]* @p_str209)
+
+ST_1: empty_692 [1/1] 0.00ns
+:14  %empty_692 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str201, [1 x i8]* @p_str202, [1 x i8]* @p_str203, [1 x i8]* @p_str204)
+
+ST_1: empty_693 [1/1] 0.00ns
+:15  %empty_693 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat2_o_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str196, [1 x i8]* @p_str197, [1 x i8]* @p_str198, [1 x i8]* @p_str199)
+
+ST_1: empty_694 [1/1] 0.00ns
+:16  %empty_694 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_15_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str191, [1 x i8]* @p_str192, [1 x i8]* @p_str193, [1 x i8]* @p_str194)
+
+ST_1: empty_695 [1/1] 0.00ns
+:17  %empty_695 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_14_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str186, [1 x i8]* @p_str187, [1 x i8]* @p_str188, [1 x i8]* @p_str189)
+
+ST_1: empty_696 [1/1] 0.00ns
+:18  %empty_696 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_13_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str181, [1 x i8]* @p_str182, [1 x i8]* @p_str183, [1 x i8]* @p_str184)
+
+ST_1: empty_697 [1/1] 0.00ns
+:19  %empty_697 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_12_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str176, [1 x i8]* @p_str177, [1 x i8]* @p_str178, [1 x i8]* @p_str179)
+
+ST_1: empty_698 [1/1] 0.00ns
+:20  %empty_698 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_11_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str171, [1 x i8]* @p_str172, [1 x i8]* @p_str173, [1 x i8]* @p_str174)
+
+ST_1: empty_699 [1/1] 0.00ns
+:21  %empty_699 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_10_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str166, [1 x i8]* @p_str167, [1 x i8]* @p_str168, [1 x i8]* @p_str169)
+
+ST_1: empty_700 [1/1] 0.00ns
+:22  %empty_700 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str161, [1 x i8]* @p_str162, [1 x i8]* @p_str163, [1 x i8]* @p_str164)
+
+ST_1: empty_701 [1/1] 0.00ns
+:23  %empty_701 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str156, [1 x i8]* @p_str157, [1 x i8]* @p_str158, [1 x i8]* @p_str159)
+
+ST_1: empty_702 [1/1] 0.00ns
+:24  %empty_702 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str151, [1 x i8]* @p_str152, [1 x i8]* @p_str153, [1 x i8]* @p_str154)
+
+ST_1: empty_703 [1/1] 0.00ns
+:25  %empty_703 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str146, [1 x i8]* @p_str147, [1 x i8]* @p_str148, [1 x i8]* @p_str149)
+
+ST_1: empty_704 [1/1] 0.00ns
+:26  %empty_704 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str141, [1 x i8]* @p_str142, [1 x i8]* @p_str143, [1 x i8]* @p_str144)
+
+ST_1: empty_705 [1/1] 0.00ns
+:27  %empty_705 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str136, [1 x i8]* @p_str137, [1 x i8]* @p_str138, [1 x i8]* @p_str139)
+
+ST_1: empty_706 [1/1] 0.00ns
+:28  %empty_706 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str131, [1 x i8]* @p_str132, [1 x i8]* @p_str133, [1 x i8]* @p_str134)
+
+ST_1: empty_707 [1/1] 0.00ns
+:29  %empty_707 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str126, [1 x i8]* @p_str127, [1 x i8]* @p_str128, [1 x i8]* @p_str129)
+
+ST_1: empty_708 [1/1] 0.00ns
+:30  %empty_708 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str121, [1 x i8]* @p_str122, [1 x i8]* @p_str123, [1 x i8]* @p_str124)
+
+ST_1: empty_709 [1/1] 0.00ns
+:31  %empty_709 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat1_o_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str116, [1 x i8]* @p_str117, [1 x i8]* @p_str118, [1 x i8]* @p_str119)
+
+ST_1: empty_710 [1/1] 0.00ns
+:32  %empty_710 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_15_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str111, [1 x i8]* @p_str112, [1 x i8]* @p_str113, [1 x i8]* @p_str114)
+
+ST_1: empty_711 [1/1] 0.00ns
+:33  %empty_711 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_14_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str106, [1 x i8]* @p_str107, [1 x i8]* @p_str108, [1 x i8]* @p_str109)
+
+ST_1: empty_712 [1/1] 0.00ns
+:34  %empty_712 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_13_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str101, [1 x i8]* @p_str102, [1 x i8]* @p_str103, [1 x i8]* @p_str104)
+
+ST_1: empty_713 [1/1] 0.00ns
+:35  %empty_713 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_12_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str96, [1 x i8]* @p_str97, [1 x i8]* @p_str98, [1 x i8]* @p_str99)
+
+ST_1: empty_714 [1/1] 0.00ns
+:36  %empty_714 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_11_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str91, [1 x i8]* @p_str92, [1 x i8]* @p_str93, [1 x i8]* @p_str94)
+
+ST_1: empty_715 [1/1] 0.00ns
+:37  %empty_715 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_10_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str86, [1 x i8]* @p_str87, [1 x i8]* @p_str88, [1 x i8]* @p_str89)
+
+ST_1: empty_716 [1/1] 0.00ns
+:38  %empty_716 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str81, [1 x i8]* @p_str82, [1 x i8]* @p_str83, [1 x i8]* @p_str84)
+
+ST_1: empty_717 [1/1] 0.00ns
+:39  %empty_717 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str76, [1 x i8]* @p_str77, [1 x i8]* @p_str78, [1 x i8]* @p_str79)
+
+ST_1: empty_718 [1/1] 0.00ns
+:40  %empty_718 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str71, [1 x i8]* @p_str72, [1 x i8]* @p_str73, [1 x i8]* @p_str74)
+
+ST_1: empty_719 [1/1] 0.00ns
+:41  %empty_719 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str66, [1 x i8]* @p_str67, [1 x i8]* @p_str68, [1 x i8]* @p_str69)
+
+ST_1: empty_720 [1/1] 0.00ns
+:42  %empty_720 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str61, [1 x i8]* @p_str62, [1 x i8]* @p_str63, [1 x i8]* @p_str64)
+
+ST_1: empty_721 [1/1] 0.00ns
+:43  %empty_721 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str56, [1 x i8]* @p_str57, [1 x i8]* @p_str58, [1 x i8]* @p_str59)
+
+ST_1: empty_722 [1/1] 0.00ns
+:44  %empty_722 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str51, [1 x i8]* @p_str52, [1 x i8]* @p_str53, [1 x i8]* @p_str54)
+
+ST_1: empty_723 [1/1] 0.00ns
+:45  %empty_723 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str46, [1 x i8]* @p_str47, [1 x i8]* @p_str48, [1 x i8]* @p_str49)
+
+ST_1: empty_724 [1/1] 0.00ns
+:46  %empty_724 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41, [1 x i8]* @p_str42, [1 x i8]* @p_str43, [1 x i8]* @p_str44)
+
+ST_1: empty_725 [1/1] 0.00ns
+:47  %empty_725 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %mat_i_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str36, [1 x i8]* @p_str37, [1 x i8]* @p_str38, [1 x i8]* @p_str39)
+
+ST_1: stg_53 [1/1] 1.57ns
+:48  br label %1
+
+
+ <State 2>: 2.14ns
+ST_2: indvar_flatten [1/1] 0.00ns
+:0  %indvar_flatten = phi i12 [ 0, %0 ], [ %indvar_flatten_next, %.reset ]
+
+ST_2: exitcond_flatten [1/1] 2.14ns
+:1  %exitcond_flatten = icmp eq i12 %indvar_flatten, -1071
+
+ST_2: indvar_flatten_next [1/1] 1.84ns
+:2  %indvar_flatten_next = add i12 %indvar_flatten, 1
+
+ST_2: stg_57 [1/1] 0.00ns
+:3  br i1 %exitcond_flatten, label %2, label %.reset
+
+
+ <State 3>: 2.00ns
+ST_3: stg_58 [1/1] 0.00ns
+.reset:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @Copy_Row_Copy_Col_str)
+
+ST_3: empty_726 [1/1] 0.00ns
+.reset:1  %empty_726 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3025, i64 3025, i64 3025)
+
+ST_3: stg_60 [1/1] 0.00ns
+.reset:2  call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str6) nounwind
+
+ST_3: tmp_s [1/1] 0.00ns
+.reset:3  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str6)
+
+ST_3: stg_62 [1/1] 0.00ns
+.reset:4  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind
+
+ST_3: tmp [1/1] 1.00ns
+.reset:5  %tmp = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_0_V)
+
+ST_3: stg_64 [1/1] 1.00ns
+.reset:6  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_0_V, i16 %tmp)
+
+ST_3: stg_65 [1/1] 1.00ns
+.reset:7  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_0_V, i16 %tmp)
+
+ST_3: tmp_233 [1/1] 1.00ns
+.reset:8  %tmp_233 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_1_V)
+
+ST_3: stg_67 [1/1] 1.00ns
+.reset:9  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_1_V, i16 %tmp_233)
+
+ST_3: stg_68 [1/1] 1.00ns
+.reset:10  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_1_V, i16 %tmp_233)
+
+ST_3: tmp_234 [1/1] 1.00ns
+.reset:11  %tmp_234 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_2_V)
+
+ST_3: stg_70 [1/1] 1.00ns
+.reset:12  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_2_V, i16 %tmp_234)
+
+ST_3: stg_71 [1/1] 1.00ns
+.reset:13  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_2_V, i16 %tmp_234)
+
+ST_3: tmp_235 [1/1] 1.00ns
+.reset:14  %tmp_235 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_3_V)
+
+ST_3: stg_73 [1/1] 1.00ns
+.reset:15  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_3_V, i16 %tmp_235)
+
+ST_3: stg_74 [1/1] 1.00ns
+.reset:16  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_3_V, i16 %tmp_235)
+
+ST_3: tmp_236 [1/1] 1.00ns
+.reset:17  %tmp_236 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_4_V)
+
+ST_3: stg_76 [1/1] 1.00ns
+.reset:18  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_4_V, i16 %tmp_236)
+
+ST_3: stg_77 [1/1] 1.00ns
+.reset:19  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_4_V, i16 %tmp_236)
+
+ST_3: tmp_237 [1/1] 1.00ns
+.reset:20  %tmp_237 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_5_V)
+
+ST_3: stg_79 [1/1] 1.00ns
+.reset:21  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_5_V, i16 %tmp_237)
+
+ST_3: stg_80 [1/1] 1.00ns
+.reset:22  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_5_V, i16 %tmp_237)
+
+ST_3: tmp_238 [1/1] 1.00ns
+.reset:23  %tmp_238 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_6_V)
+
+ST_3: stg_82 [1/1] 1.00ns
+.reset:24  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_6_V, i16 %tmp_238)
+
+ST_3: stg_83 [1/1] 1.00ns
+.reset:25  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_6_V, i16 %tmp_238)
+
+ST_3: tmp_239 [1/1] 1.00ns
+.reset:26  %tmp_239 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_7_V)
+
+ST_3: stg_85 [1/1] 1.00ns
+.reset:27  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_7_V, i16 %tmp_239)
+
+ST_3: stg_86 [1/1] 1.00ns
+.reset:28  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_7_V, i16 %tmp_239)
+
+ST_3: tmp_240 [1/1] 1.00ns
+.reset:29  %tmp_240 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_8_V)
+
+ST_3: stg_88 [1/1] 1.00ns
+.reset:30  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_8_V, i16 %tmp_240)
+
+ST_3: stg_89 [1/1] 1.00ns
+.reset:31  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_8_V, i16 %tmp_240)
+
+ST_3: tmp_241 [1/1] 1.00ns
+.reset:32  %tmp_241 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_9_V)
+
+ST_3: stg_91 [1/1] 1.00ns
+.reset:33  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_9_V, i16 %tmp_241)
+
+ST_3: stg_92 [1/1] 1.00ns
+.reset:34  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_9_V, i16 %tmp_241)
+
+ST_3: tmp_242 [1/1] 1.00ns
+.reset:35  %tmp_242 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_10_V)
+
+ST_3: stg_94 [1/1] 1.00ns
+.reset:36  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_10_V, i16 %tmp_242)
+
+ST_3: stg_95 [1/1] 1.00ns
+.reset:37  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_10_V, i16 %tmp_242)
+
+ST_3: tmp_243 [1/1] 1.00ns
+.reset:38  %tmp_243 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_11_V)
+
+ST_3: stg_97 [1/1] 1.00ns
+.reset:39  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_11_V, i16 %tmp_243)
+
+ST_3: stg_98 [1/1] 1.00ns
+.reset:40  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_11_V, i16 %tmp_243)
+
+ST_3: tmp_244 [1/1] 1.00ns
+.reset:41  %tmp_244 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_12_V)
+
+ST_3: stg_100 [1/1] 1.00ns
+.reset:42  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_12_V, i16 %tmp_244)
+
+ST_3: stg_101 [1/1] 1.00ns
+.reset:43  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_12_V, i16 %tmp_244)
+
+ST_3: tmp_245 [1/1] 1.00ns
+.reset:44  %tmp_245 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_13_V)
+
+ST_3: stg_103 [1/1] 1.00ns
+.reset:45  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_13_V, i16 %tmp_245)
+
+ST_3: stg_104 [1/1] 1.00ns
+.reset:46  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_13_V, i16 %tmp_245)
+
+ST_3: tmp_246 [1/1] 1.00ns
+.reset:47  %tmp_246 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_14_V)
+
+ST_3: stg_106 [1/1] 1.00ns
+.reset:48  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_14_V, i16 %tmp_246)
+
+ST_3: stg_107 [1/1] 1.00ns
+.reset:49  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_14_V, i16 %tmp_246)
+
+ST_3: tmp_247 [1/1] 1.00ns
+.reset:50  %tmp_247 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %mat_i_15_V)
+
+ST_3: stg_109 [1/1] 1.00ns
+.reset:51  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat1_o_15_V, i16 %tmp_247)
+
+ST_3: stg_110 [1/1] 1.00ns
+.reset:52  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %mat2_o_15_V, i16 %tmp_247)
+
+ST_3: empty_727 [1/1] 0.00ns
+.reset:53  %empty_727 = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str6, i32 %tmp_s)
+
+ST_3: stg_112 [1/1] 0.00ns
+.reset:54  br label %1
+
+
+ <State 4>: 0.00ns
+ST_4: stg_113 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

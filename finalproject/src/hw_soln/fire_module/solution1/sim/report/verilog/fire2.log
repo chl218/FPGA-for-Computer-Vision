@@ -1,0 +1,13 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_fire2.cpp
+   Compiling fire_module.cpp_pre.cpp.tb.cpp
+   Compiling fire_module_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@E [SIM-329] Aborting co-simulation: C simulation failed, no 'main' function.
+@E [SIM-317] C++ compile error.
+@E [SIM-321] EXE file generate failed.
+@E [SIM-321] EXE file generate failed.
+@E [SIM-331] Aborting co-simulation: C simulation failed, compilation errors.
+@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***

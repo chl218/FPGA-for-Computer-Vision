@@ -1,0 +1,865 @@
+
+
+================================================================
+== Vivado HLS Report for 'fire2_combine'
+================================================================
+* Date:           Sat Apr 29 16:14:47 2017
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        fire_module
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      3.51|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  6065|  6065|  6065|  6065|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  3025|  3025|         2|          1|          1|  3025|    yes   |
+        |- Loop 2  |     9|     9|         1|          1|          1|     9|    yes   |
+        |- Loop 3  |  3025|  3025|         2|          1|          1|  3025|    yes   |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     43|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     30|
+|Register         |        -|      -|     682|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     682|     73|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+-------+---+----+------------+------------+
+    |i_2_fu_5281_p2                   |     +    |      0|  0|   4|           4|           1|
+    |indvar_flatten_next7_fu_5293_p2  |     +    |      0|  0|  12|          12|           1|
+    |indvar_flatten_next_fu_5269_p2   |     +    |      0|  0|  12|          12|           1|
+    |exitcond2_fu_5275_p2             |   icmp   |      0|  0|   2|           4|           4|
+    |exitcond_flatten8_fu_5287_p2     |   icmp   |      0|  0|   5|          12|          12|
+    |exitcond_flatten_fu_5263_p2      |   icmp   |      0|  0|   5|          12|          12|
+    |ap_sig_bdd_1214                  |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_1706                  |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_1849                  |    or    |      0|  0|   1|           1|           1|
+    +---------------------------------+----------+-------+---+----+------------+------------+
+    |Total                            |          |      0|  0|  43|          59|          34|
+    +---------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                 |   2|          8|    1|          8|
+    |i_reg_5241                |   4|          2|    4|          8|
+    |indvar_flatten6_reg_5252  |  12|          2|   12|         24|
+    |indvar_flatten_reg_5230   |  12|          2|   12|         24|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  30|         14|   29|         64|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+----+----+-----+-----------+
+    |                   Name                   | FF | LUT| Bits| Const Bits|
+    +------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                 |   7|   0|    7|          0|
+    |ap_done_reg                               |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0                     |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1                     |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp2_it0                     |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp2_it1                     |   1|   0|    1|          0|
+    |exitcond_flatten8_reg_5956                |   1|   0|    1|          0|
+    |exitcond_flatten_reg_5299                 |   1|   0|    1|          0|
+    |i_reg_5241                                |   4|   0|    4|          0|
+    |indvar_flatten6_reg_5252                  |  12|   0|   12|          0|
+    |indvar_flatten_reg_5230                   |  12|   0|   12|          0|
+    |matrix_e3x3_stream_o_V_addr_100_reg_5816  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_101_reg_5821  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_102_reg_5826  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_103_reg_5831  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_104_reg_5836  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_105_reg_5841  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_106_reg_5846  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_107_reg_5851  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_108_reg_5856  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_109_reg_5861  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_110_reg_5866  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_111_reg_5871  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_112_reg_5876  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_113_reg_5881  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_114_reg_5886  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_115_reg_5891  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_116_reg_5896  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_117_reg_5901  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_118_reg_5906  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_119_reg_5911  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_120_reg_5916  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_121_reg_5921  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_122_reg_5926  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_123_reg_5931  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_124_reg_5936  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_125_reg_5941  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_126_reg_5946  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_127_reg_5951  |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_64_reg_5636   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_65_reg_5641   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_66_reg_5646   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_67_reg_5651   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_68_reg_5656   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_69_reg_5661   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_70_reg_5666   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_71_reg_5671   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_72_reg_5676   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_73_reg_5681   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_74_reg_5686   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_75_reg_5691   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_76_reg_5696   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_77_reg_5701   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_78_reg_5706   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_79_reg_5711   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_80_reg_5716   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_81_reg_5721   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_82_reg_5726   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_83_reg_5731   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_84_reg_5736   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_85_reg_5741   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_86_reg_5746   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_87_reg_5751   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_88_reg_5756   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_89_reg_5761   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_90_reg_5766   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_91_reg_5771   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_92_reg_5776   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_93_reg_5781   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_94_reg_5786   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_95_reg_5791   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_96_reg_5796   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_97_reg_5801   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_98_reg_5806   |   0|   0|    6|          6|
+    |matrix_e3x3_stream_o_V_addr_99_reg_5811   |   0|   0|    6|          6|
+    |tmp_312_reg_5965                          |  10|   0|   16|          6|
+    |tmp_313_reg_5970                          |  10|   0|   16|          6|
+    |tmp_314_reg_5975                          |  10|   0|   16|          6|
+    |tmp_315_reg_5980                          |  10|   0|   16|          6|
+    |tmp_316_reg_5985                          |  10|   0|   16|          6|
+    |tmp_317_reg_5990                          |  10|   0|   16|          6|
+    |tmp_318_reg_5995                          |  10|   0|   16|          6|
+    |tmp_319_reg_6000                          |  10|   0|   16|          6|
+    |tmp_320_reg_6005                          |  10|   0|   16|          6|
+    |tmp_321_reg_6010                          |  10|   0|   16|          6|
+    |tmp_322_reg_6015                          |  10|   0|   16|          6|
+    |tmp_323_reg_6020                          |  10|   0|   16|          6|
+    |tmp_324_reg_6025                          |  10|   0|   16|          6|
+    |tmp_325_reg_6030                          |  10|   0|   16|          6|
+    |tmp_326_reg_6035                          |  10|   0|   16|          6|
+    |tmp_327_reg_6040                          |  10|   0|   16|          6|
+    |tmp_328_reg_6045                          |  10|   0|   16|          6|
+    |tmp_329_reg_6050                          |  10|   0|   16|          6|
+    |tmp_330_reg_6055                          |  10|   0|   16|          6|
+    |tmp_331_reg_6060                          |  10|   0|   16|          6|
+    |tmp_332_reg_6065                          |  10|   0|   16|          6|
+    |tmp_333_reg_6070                          |  10|   0|   16|          6|
+    |tmp_334_reg_6075                          |  10|   0|   16|          6|
+    |tmp_335_reg_6080                          |  10|   0|   16|          6|
+    |tmp_336_reg_6085                          |  10|   0|   16|          6|
+    |tmp_337_reg_6090                          |  10|   0|   16|          6|
+    |tmp_338_reg_6095                          |  10|   0|   16|          6|
+    |tmp_339_reg_6100                          |  10|   0|   16|          6|
+    |tmp_340_reg_6105                          |  10|   0|   16|          6|
+    |tmp_341_reg_6110                          |  10|   0|   16|          6|
+    |tmp_342_reg_6115                          |  10|   0|   16|          6|
+    |tmp_343_reg_6120                          |  10|   0|   16|          6|
+    |tmp_344_reg_6125                          |  10|   0|   16|          6|
+    |tmp_345_reg_6130                          |  10|   0|   16|          6|
+    |tmp_346_reg_6135                          |  10|   0|   16|          6|
+    |tmp_347_reg_6140                          |  10|   0|   16|          6|
+    |tmp_348_reg_6145                          |  10|   0|   16|          6|
+    |tmp_349_reg_6150                          |  10|   0|   16|          6|
+    |tmp_350_reg_6155                          |  10|   0|   16|          6|
+    |tmp_351_reg_6160                          |  10|   0|   16|          6|
+    |tmp_352_reg_6165                          |  10|   0|   16|          6|
+    |tmp_353_reg_6170                          |  10|   0|   16|          6|
+    |tmp_354_reg_6175                          |  10|   0|   16|          6|
+    |tmp_355_reg_6180                          |  10|   0|   16|          6|
+    |tmp_356_reg_6185                          |  10|   0|   16|          6|
+    |tmp_357_reg_6190                          |  10|   0|   16|          6|
+    |tmp_358_reg_6195                          |  10|   0|   16|          6|
+    |tmp_359_reg_6200                          |  10|   0|   16|          6|
+    |tmp_360_reg_6205                          |  10|   0|   16|          6|
+    |tmp_361_reg_6210                          |  10|   0|   16|          6|
+    |tmp_362_reg_6215                          |  10|   0|   16|          6|
+    |tmp_363_reg_6220                          |  10|   0|   16|          6|
+    |tmp_364_reg_6225                          |  10|   0|   16|          6|
+    |tmp_365_reg_6230                          |  10|   0|   16|          6|
+    |tmp_366_reg_6235                          |  10|   0|   16|          6|
+    |tmp_367_reg_6240                          |  10|   0|   16|          6|
+    |tmp_368_reg_6245                          |  10|   0|   16|          6|
+    |tmp_369_reg_6250                          |  10|   0|   16|          6|
+    |tmp_370_reg_6255                          |  10|   0|   16|          6|
+    |tmp_371_reg_6260                          |  10|   0|   16|          6|
+    |tmp_372_reg_6265                          |  10|   0|   16|          6|
+    |tmp_373_reg_6270                          |  10|   0|   16|          6|
+    |tmp_374_reg_6275                          |  10|   0|   16|          6|
+    |tmp_375_reg_6280                          |  10|   0|   16|          6|
+    +------------------------------------------+----+----+-----+-----------+
+    |Total                                     | 682|   0| 1450|        768|
+    +------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+---------------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++-----------------------------------+-----+-----+------------+---------------------------+--------------+
+|ap_clk                             |  in |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|ap_rst                             |  in |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|ap_start                           |  in |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|ap_done                            | out |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|ap_continue                        |  in |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|ap_idle                            | out |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|ap_ready                           | out |    1| ap_ctrl_hs |       fire2_combine       | return value |
+|matrix_e1x1_stream_o_0_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_0_V |    pointer   |
+|matrix_e1x1_stream_o_0_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_0_V |    pointer   |
+|matrix_e1x1_stream_o_0_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_0_V |    pointer   |
+|matrix_e1x1_stream_o_1_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_1_V |    pointer   |
+|matrix_e1x1_stream_o_1_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_1_V |    pointer   |
+|matrix_e1x1_stream_o_1_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_1_V |    pointer   |
+|matrix_e1x1_stream_o_2_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_2_V |    pointer   |
+|matrix_e1x1_stream_o_2_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_2_V |    pointer   |
+|matrix_e1x1_stream_o_2_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_2_V |    pointer   |
+|matrix_e1x1_stream_o_3_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_3_V |    pointer   |
+|matrix_e1x1_stream_o_3_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_3_V |    pointer   |
+|matrix_e1x1_stream_o_3_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_3_V |    pointer   |
+|matrix_e1x1_stream_o_4_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_4_V |    pointer   |
+|matrix_e1x1_stream_o_4_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_4_V |    pointer   |
+|matrix_e1x1_stream_o_4_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_4_V |    pointer   |
+|matrix_e1x1_stream_o_5_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_5_V |    pointer   |
+|matrix_e1x1_stream_o_5_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_5_V |    pointer   |
+|matrix_e1x1_stream_o_5_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_5_V |    pointer   |
+|matrix_e1x1_stream_o_6_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_6_V |    pointer   |
+|matrix_e1x1_stream_o_6_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_6_V |    pointer   |
+|matrix_e1x1_stream_o_6_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_6_V |    pointer   |
+|matrix_e1x1_stream_o_7_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_7_V |    pointer   |
+|matrix_e1x1_stream_o_7_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_7_V |    pointer   |
+|matrix_e1x1_stream_o_7_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_7_V |    pointer   |
+|matrix_e1x1_stream_o_8_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_8_V |    pointer   |
+|matrix_e1x1_stream_o_8_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_8_V |    pointer   |
+|matrix_e1x1_stream_o_8_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_8_V |    pointer   |
+|matrix_e1x1_stream_o_9_V_dout      |  in |   16|   ap_fifo  |  matrix_e1x1_stream_o_9_V |    pointer   |
+|matrix_e1x1_stream_o_9_V_empty_n   |  in |    1|   ap_fifo  |  matrix_e1x1_stream_o_9_V |    pointer   |
+|matrix_e1x1_stream_o_9_V_read      | out |    1|   ap_fifo  |  matrix_e1x1_stream_o_9_V |    pointer   |
+|matrix_e1x1_stream_o_10_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_10_V |    pointer   |
+|matrix_e1x1_stream_o_10_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_10_V |    pointer   |
+|matrix_e1x1_stream_o_10_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_10_V |    pointer   |
+|matrix_e1x1_stream_o_11_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_11_V |    pointer   |
+|matrix_e1x1_stream_o_11_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_11_V |    pointer   |
+|matrix_e1x1_stream_o_11_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_11_V |    pointer   |
+|matrix_e1x1_stream_o_12_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_12_V |    pointer   |
+|matrix_e1x1_stream_o_12_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_12_V |    pointer   |
+|matrix_e1x1_stream_o_12_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_12_V |    pointer   |
+|matrix_e1x1_stream_o_13_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_13_V |    pointer   |
+|matrix_e1x1_stream_o_13_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_13_V |    pointer   |
+|matrix_e1x1_stream_o_13_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_13_V |    pointer   |
+|matrix_e1x1_stream_o_14_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_14_V |    pointer   |
+|matrix_e1x1_stream_o_14_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_14_V |    pointer   |
+|matrix_e1x1_stream_o_14_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_14_V |    pointer   |
+|matrix_e1x1_stream_o_15_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_15_V |    pointer   |
+|matrix_e1x1_stream_o_15_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_15_V |    pointer   |
+|matrix_e1x1_stream_o_15_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_15_V |    pointer   |
+|matrix_e1x1_stream_o_16_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_16_V |    pointer   |
+|matrix_e1x1_stream_o_16_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_16_V |    pointer   |
+|matrix_e1x1_stream_o_16_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_16_V |    pointer   |
+|matrix_e1x1_stream_o_17_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_17_V |    pointer   |
+|matrix_e1x1_stream_o_17_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_17_V |    pointer   |
+|matrix_e1x1_stream_o_17_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_17_V |    pointer   |
+|matrix_e1x1_stream_o_18_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_18_V |    pointer   |
+|matrix_e1x1_stream_o_18_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_18_V |    pointer   |
+|matrix_e1x1_stream_o_18_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_18_V |    pointer   |
+|matrix_e1x1_stream_o_19_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_19_V |    pointer   |
+|matrix_e1x1_stream_o_19_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_19_V |    pointer   |
+|matrix_e1x1_stream_o_19_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_19_V |    pointer   |
+|matrix_e1x1_stream_o_20_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_20_V |    pointer   |
+|matrix_e1x1_stream_o_20_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_20_V |    pointer   |
+|matrix_e1x1_stream_o_20_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_20_V |    pointer   |
+|matrix_e1x1_stream_o_21_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_21_V |    pointer   |
+|matrix_e1x1_stream_o_21_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_21_V |    pointer   |
+|matrix_e1x1_stream_o_21_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_21_V |    pointer   |
+|matrix_e1x1_stream_o_22_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_22_V |    pointer   |
+|matrix_e1x1_stream_o_22_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_22_V |    pointer   |
+|matrix_e1x1_stream_o_22_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_22_V |    pointer   |
+|matrix_e1x1_stream_o_23_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_23_V |    pointer   |
+|matrix_e1x1_stream_o_23_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_23_V |    pointer   |
+|matrix_e1x1_stream_o_23_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_23_V |    pointer   |
+|matrix_e1x1_stream_o_24_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_24_V |    pointer   |
+|matrix_e1x1_stream_o_24_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_24_V |    pointer   |
+|matrix_e1x1_stream_o_24_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_24_V |    pointer   |
+|matrix_e1x1_stream_o_25_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_25_V |    pointer   |
+|matrix_e1x1_stream_o_25_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_25_V |    pointer   |
+|matrix_e1x1_stream_o_25_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_25_V |    pointer   |
+|matrix_e1x1_stream_o_26_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_26_V |    pointer   |
+|matrix_e1x1_stream_o_26_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_26_V |    pointer   |
+|matrix_e1x1_stream_o_26_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_26_V |    pointer   |
+|matrix_e1x1_stream_o_27_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_27_V |    pointer   |
+|matrix_e1x1_stream_o_27_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_27_V |    pointer   |
+|matrix_e1x1_stream_o_27_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_27_V |    pointer   |
+|matrix_e1x1_stream_o_28_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_28_V |    pointer   |
+|matrix_e1x1_stream_o_28_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_28_V |    pointer   |
+|matrix_e1x1_stream_o_28_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_28_V |    pointer   |
+|matrix_e1x1_stream_o_29_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_29_V |    pointer   |
+|matrix_e1x1_stream_o_29_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_29_V |    pointer   |
+|matrix_e1x1_stream_o_29_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_29_V |    pointer   |
+|matrix_e1x1_stream_o_30_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_30_V |    pointer   |
+|matrix_e1x1_stream_o_30_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_30_V |    pointer   |
+|matrix_e1x1_stream_o_30_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_30_V |    pointer   |
+|matrix_e1x1_stream_o_31_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_31_V |    pointer   |
+|matrix_e1x1_stream_o_31_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_31_V |    pointer   |
+|matrix_e1x1_stream_o_31_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_31_V |    pointer   |
+|matrix_e1x1_stream_o_32_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_32_V |    pointer   |
+|matrix_e1x1_stream_o_32_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_32_V |    pointer   |
+|matrix_e1x1_stream_o_32_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_32_V |    pointer   |
+|matrix_e1x1_stream_o_33_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_33_V |    pointer   |
+|matrix_e1x1_stream_o_33_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_33_V |    pointer   |
+|matrix_e1x1_stream_o_33_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_33_V |    pointer   |
+|matrix_e1x1_stream_o_34_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_34_V |    pointer   |
+|matrix_e1x1_stream_o_34_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_34_V |    pointer   |
+|matrix_e1x1_stream_o_34_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_34_V |    pointer   |
+|matrix_e1x1_stream_o_35_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_35_V |    pointer   |
+|matrix_e1x1_stream_o_35_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_35_V |    pointer   |
+|matrix_e1x1_stream_o_35_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_35_V |    pointer   |
+|matrix_e1x1_stream_o_36_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_36_V |    pointer   |
+|matrix_e1x1_stream_o_36_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_36_V |    pointer   |
+|matrix_e1x1_stream_o_36_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_36_V |    pointer   |
+|matrix_e1x1_stream_o_37_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_37_V |    pointer   |
+|matrix_e1x1_stream_o_37_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_37_V |    pointer   |
+|matrix_e1x1_stream_o_37_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_37_V |    pointer   |
+|matrix_e1x1_stream_o_38_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_38_V |    pointer   |
+|matrix_e1x1_stream_o_38_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_38_V |    pointer   |
+|matrix_e1x1_stream_o_38_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_38_V |    pointer   |
+|matrix_e1x1_stream_o_39_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_39_V |    pointer   |
+|matrix_e1x1_stream_o_39_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_39_V |    pointer   |
+|matrix_e1x1_stream_o_39_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_39_V |    pointer   |
+|matrix_e1x1_stream_o_40_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_40_V |    pointer   |
+|matrix_e1x1_stream_o_40_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_40_V |    pointer   |
+|matrix_e1x1_stream_o_40_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_40_V |    pointer   |
+|matrix_e1x1_stream_o_41_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_41_V |    pointer   |
+|matrix_e1x1_stream_o_41_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_41_V |    pointer   |
+|matrix_e1x1_stream_o_41_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_41_V |    pointer   |
+|matrix_e1x1_stream_o_42_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_42_V |    pointer   |
+|matrix_e1x1_stream_o_42_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_42_V |    pointer   |
+|matrix_e1x1_stream_o_42_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_42_V |    pointer   |
+|matrix_e1x1_stream_o_43_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_43_V |    pointer   |
+|matrix_e1x1_stream_o_43_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_43_V |    pointer   |
+|matrix_e1x1_stream_o_43_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_43_V |    pointer   |
+|matrix_e1x1_stream_o_44_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_44_V |    pointer   |
+|matrix_e1x1_stream_o_44_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_44_V |    pointer   |
+|matrix_e1x1_stream_o_44_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_44_V |    pointer   |
+|matrix_e1x1_stream_o_45_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_45_V |    pointer   |
+|matrix_e1x1_stream_o_45_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_45_V |    pointer   |
+|matrix_e1x1_stream_o_45_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_45_V |    pointer   |
+|matrix_e1x1_stream_o_46_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_46_V |    pointer   |
+|matrix_e1x1_stream_o_46_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_46_V |    pointer   |
+|matrix_e1x1_stream_o_46_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_46_V |    pointer   |
+|matrix_e1x1_stream_o_47_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_47_V |    pointer   |
+|matrix_e1x1_stream_o_47_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_47_V |    pointer   |
+|matrix_e1x1_stream_o_47_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_47_V |    pointer   |
+|matrix_e1x1_stream_o_48_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_48_V |    pointer   |
+|matrix_e1x1_stream_o_48_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_48_V |    pointer   |
+|matrix_e1x1_stream_o_48_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_48_V |    pointer   |
+|matrix_e1x1_stream_o_49_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_49_V |    pointer   |
+|matrix_e1x1_stream_o_49_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_49_V |    pointer   |
+|matrix_e1x1_stream_o_49_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_49_V |    pointer   |
+|matrix_e1x1_stream_o_50_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_50_V |    pointer   |
+|matrix_e1x1_stream_o_50_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_50_V |    pointer   |
+|matrix_e1x1_stream_o_50_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_50_V |    pointer   |
+|matrix_e1x1_stream_o_51_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_51_V |    pointer   |
+|matrix_e1x1_stream_o_51_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_51_V |    pointer   |
+|matrix_e1x1_stream_o_51_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_51_V |    pointer   |
+|matrix_e1x1_stream_o_52_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_52_V |    pointer   |
+|matrix_e1x1_stream_o_52_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_52_V |    pointer   |
+|matrix_e1x1_stream_o_52_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_52_V |    pointer   |
+|matrix_e1x1_stream_o_53_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_53_V |    pointer   |
+|matrix_e1x1_stream_o_53_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_53_V |    pointer   |
+|matrix_e1x1_stream_o_53_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_53_V |    pointer   |
+|matrix_e1x1_stream_o_54_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_54_V |    pointer   |
+|matrix_e1x1_stream_o_54_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_54_V |    pointer   |
+|matrix_e1x1_stream_o_54_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_54_V |    pointer   |
+|matrix_e1x1_stream_o_55_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_55_V |    pointer   |
+|matrix_e1x1_stream_o_55_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_55_V |    pointer   |
+|matrix_e1x1_stream_o_55_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_55_V |    pointer   |
+|matrix_e1x1_stream_o_56_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_56_V |    pointer   |
+|matrix_e1x1_stream_o_56_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_56_V |    pointer   |
+|matrix_e1x1_stream_o_56_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_56_V |    pointer   |
+|matrix_e1x1_stream_o_57_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_57_V |    pointer   |
+|matrix_e1x1_stream_o_57_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_57_V |    pointer   |
+|matrix_e1x1_stream_o_57_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_57_V |    pointer   |
+|matrix_e1x1_stream_o_58_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_58_V |    pointer   |
+|matrix_e1x1_stream_o_58_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_58_V |    pointer   |
+|matrix_e1x1_stream_o_58_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_58_V |    pointer   |
+|matrix_e1x1_stream_o_59_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_59_V |    pointer   |
+|matrix_e1x1_stream_o_59_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_59_V |    pointer   |
+|matrix_e1x1_stream_o_59_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_59_V |    pointer   |
+|matrix_e1x1_stream_o_60_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_60_V |    pointer   |
+|matrix_e1x1_stream_o_60_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_60_V |    pointer   |
+|matrix_e1x1_stream_o_60_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_60_V |    pointer   |
+|matrix_e1x1_stream_o_61_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_61_V |    pointer   |
+|matrix_e1x1_stream_o_61_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_61_V |    pointer   |
+|matrix_e1x1_stream_o_61_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_61_V |    pointer   |
+|matrix_e1x1_stream_o_62_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_62_V |    pointer   |
+|matrix_e1x1_stream_o_62_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_62_V |    pointer   |
+|matrix_e1x1_stream_o_62_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_62_V |    pointer   |
+|matrix_e1x1_stream_o_63_V_dout     |  in |   16|   ap_fifo  | matrix_e1x1_stream_o_63_V |    pointer   |
+|matrix_e1x1_stream_o_63_V_empty_n  |  in |    1|   ap_fifo  | matrix_e1x1_stream_o_63_V |    pointer   |
+|matrix_e1x1_stream_o_63_V_read     | out |    1|   ap_fifo  | matrix_e1x1_stream_o_63_V |    pointer   |
+|matrix_e3x3_stream_o_V_address0    | out |    6|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_ce0         | out |    1|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_we0         | out |    1|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_d0          | out |   16|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_q0          |  in |   16|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_address1    | out |    6|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_ce1         | out |    1|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_we1         | out |    1|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_d1          | out |   16|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_e3x3_stream_o_V_q1          |  in |   16|  ap_memory |   matrix_e3x3_stream_o_V  |     array    |
+|matrix_o_0_V_din                   | out |   16|   ap_fifo  |        matrix_o_0_V       |    pointer   |
+|matrix_o_0_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_0_V       |    pointer   |
+|matrix_o_0_V_write                 | out |    1|   ap_fifo  |        matrix_o_0_V       |    pointer   |
+|matrix_o_1_V_din                   | out |   16|   ap_fifo  |        matrix_o_1_V       |    pointer   |
+|matrix_o_1_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_1_V       |    pointer   |
+|matrix_o_1_V_write                 | out |    1|   ap_fifo  |        matrix_o_1_V       |    pointer   |
+|matrix_o_2_V_din                   | out |   16|   ap_fifo  |        matrix_o_2_V       |    pointer   |
+|matrix_o_2_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_2_V       |    pointer   |
+|matrix_o_2_V_write                 | out |    1|   ap_fifo  |        matrix_o_2_V       |    pointer   |
+|matrix_o_3_V_din                   | out |   16|   ap_fifo  |        matrix_o_3_V       |    pointer   |
+|matrix_o_3_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_3_V       |    pointer   |
+|matrix_o_3_V_write                 | out |    1|   ap_fifo  |        matrix_o_3_V       |    pointer   |
+|matrix_o_4_V_din                   | out |   16|   ap_fifo  |        matrix_o_4_V       |    pointer   |
+|matrix_o_4_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_4_V       |    pointer   |
+|matrix_o_4_V_write                 | out |    1|   ap_fifo  |        matrix_o_4_V       |    pointer   |
+|matrix_o_5_V_din                   | out |   16|   ap_fifo  |        matrix_o_5_V       |    pointer   |
+|matrix_o_5_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_5_V       |    pointer   |
+|matrix_o_5_V_write                 | out |    1|   ap_fifo  |        matrix_o_5_V       |    pointer   |
+|matrix_o_6_V_din                   | out |   16|   ap_fifo  |        matrix_o_6_V       |    pointer   |
+|matrix_o_6_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_6_V       |    pointer   |
+|matrix_o_6_V_write                 | out |    1|   ap_fifo  |        matrix_o_6_V       |    pointer   |
+|matrix_o_7_V_din                   | out |   16|   ap_fifo  |        matrix_o_7_V       |    pointer   |
+|matrix_o_7_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_7_V       |    pointer   |
+|matrix_o_7_V_write                 | out |    1|   ap_fifo  |        matrix_o_7_V       |    pointer   |
+|matrix_o_8_V_din                   | out |   16|   ap_fifo  |        matrix_o_8_V       |    pointer   |
+|matrix_o_8_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_8_V       |    pointer   |
+|matrix_o_8_V_write                 | out |    1|   ap_fifo  |        matrix_o_8_V       |    pointer   |
+|matrix_o_9_V_din                   | out |   16|   ap_fifo  |        matrix_o_9_V       |    pointer   |
+|matrix_o_9_V_full_n                |  in |    1|   ap_fifo  |        matrix_o_9_V       |    pointer   |
+|matrix_o_9_V_write                 | out |    1|   ap_fifo  |        matrix_o_9_V       |    pointer   |
+|matrix_o_10_V_din                  | out |   16|   ap_fifo  |       matrix_o_10_V       |    pointer   |
+|matrix_o_10_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_10_V       |    pointer   |
+|matrix_o_10_V_write                | out |    1|   ap_fifo  |       matrix_o_10_V       |    pointer   |
+|matrix_o_11_V_din                  | out |   16|   ap_fifo  |       matrix_o_11_V       |    pointer   |
+|matrix_o_11_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_11_V       |    pointer   |
+|matrix_o_11_V_write                | out |    1|   ap_fifo  |       matrix_o_11_V       |    pointer   |
+|matrix_o_12_V_din                  | out |   16|   ap_fifo  |       matrix_o_12_V       |    pointer   |
+|matrix_o_12_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_12_V       |    pointer   |
+|matrix_o_12_V_write                | out |    1|   ap_fifo  |       matrix_o_12_V       |    pointer   |
+|matrix_o_13_V_din                  | out |   16|   ap_fifo  |       matrix_o_13_V       |    pointer   |
+|matrix_o_13_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_13_V       |    pointer   |
+|matrix_o_13_V_write                | out |    1|   ap_fifo  |       matrix_o_13_V       |    pointer   |
+|matrix_o_14_V_din                  | out |   16|   ap_fifo  |       matrix_o_14_V       |    pointer   |
+|matrix_o_14_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_14_V       |    pointer   |
+|matrix_o_14_V_write                | out |    1|   ap_fifo  |       matrix_o_14_V       |    pointer   |
+|matrix_o_15_V_din                  | out |   16|   ap_fifo  |       matrix_o_15_V       |    pointer   |
+|matrix_o_15_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_15_V       |    pointer   |
+|matrix_o_15_V_write                | out |    1|   ap_fifo  |       matrix_o_15_V       |    pointer   |
+|matrix_o_16_V_din                  | out |   16|   ap_fifo  |       matrix_o_16_V       |    pointer   |
+|matrix_o_16_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_16_V       |    pointer   |
+|matrix_o_16_V_write                | out |    1|   ap_fifo  |       matrix_o_16_V       |    pointer   |
+|matrix_o_17_V_din                  | out |   16|   ap_fifo  |       matrix_o_17_V       |    pointer   |
+|matrix_o_17_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_17_V       |    pointer   |
+|matrix_o_17_V_write                | out |    1|   ap_fifo  |       matrix_o_17_V       |    pointer   |
+|matrix_o_18_V_din                  | out |   16|   ap_fifo  |       matrix_o_18_V       |    pointer   |
+|matrix_o_18_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_18_V       |    pointer   |
+|matrix_o_18_V_write                | out |    1|   ap_fifo  |       matrix_o_18_V       |    pointer   |
+|matrix_o_19_V_din                  | out |   16|   ap_fifo  |       matrix_o_19_V       |    pointer   |
+|matrix_o_19_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_19_V       |    pointer   |
+|matrix_o_19_V_write                | out |    1|   ap_fifo  |       matrix_o_19_V       |    pointer   |
+|matrix_o_20_V_din                  | out |   16|   ap_fifo  |       matrix_o_20_V       |    pointer   |
+|matrix_o_20_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_20_V       |    pointer   |
+|matrix_o_20_V_write                | out |    1|   ap_fifo  |       matrix_o_20_V       |    pointer   |
+|matrix_o_21_V_din                  | out |   16|   ap_fifo  |       matrix_o_21_V       |    pointer   |
+|matrix_o_21_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_21_V       |    pointer   |
+|matrix_o_21_V_write                | out |    1|   ap_fifo  |       matrix_o_21_V       |    pointer   |
+|matrix_o_22_V_din                  | out |   16|   ap_fifo  |       matrix_o_22_V       |    pointer   |
+|matrix_o_22_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_22_V       |    pointer   |
+|matrix_o_22_V_write                | out |    1|   ap_fifo  |       matrix_o_22_V       |    pointer   |
+|matrix_o_23_V_din                  | out |   16|   ap_fifo  |       matrix_o_23_V       |    pointer   |
+|matrix_o_23_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_23_V       |    pointer   |
+|matrix_o_23_V_write                | out |    1|   ap_fifo  |       matrix_o_23_V       |    pointer   |
+|matrix_o_24_V_din                  | out |   16|   ap_fifo  |       matrix_o_24_V       |    pointer   |
+|matrix_o_24_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_24_V       |    pointer   |
+|matrix_o_24_V_write                | out |    1|   ap_fifo  |       matrix_o_24_V       |    pointer   |
+|matrix_o_25_V_din                  | out |   16|   ap_fifo  |       matrix_o_25_V       |    pointer   |
+|matrix_o_25_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_25_V       |    pointer   |
+|matrix_o_25_V_write                | out |    1|   ap_fifo  |       matrix_o_25_V       |    pointer   |
+|matrix_o_26_V_din                  | out |   16|   ap_fifo  |       matrix_o_26_V       |    pointer   |
+|matrix_o_26_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_26_V       |    pointer   |
+|matrix_o_26_V_write                | out |    1|   ap_fifo  |       matrix_o_26_V       |    pointer   |
+|matrix_o_27_V_din                  | out |   16|   ap_fifo  |       matrix_o_27_V       |    pointer   |
+|matrix_o_27_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_27_V       |    pointer   |
+|matrix_o_27_V_write                | out |    1|   ap_fifo  |       matrix_o_27_V       |    pointer   |
+|matrix_o_28_V_din                  | out |   16|   ap_fifo  |       matrix_o_28_V       |    pointer   |
+|matrix_o_28_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_28_V       |    pointer   |
+|matrix_o_28_V_write                | out |    1|   ap_fifo  |       matrix_o_28_V       |    pointer   |
+|matrix_o_29_V_din                  | out |   16|   ap_fifo  |       matrix_o_29_V       |    pointer   |
+|matrix_o_29_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_29_V       |    pointer   |
+|matrix_o_29_V_write                | out |    1|   ap_fifo  |       matrix_o_29_V       |    pointer   |
+|matrix_o_30_V_din                  | out |   16|   ap_fifo  |       matrix_o_30_V       |    pointer   |
+|matrix_o_30_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_30_V       |    pointer   |
+|matrix_o_30_V_write                | out |    1|   ap_fifo  |       matrix_o_30_V       |    pointer   |
+|matrix_o_31_V_din                  | out |   16|   ap_fifo  |       matrix_o_31_V       |    pointer   |
+|matrix_o_31_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_31_V       |    pointer   |
+|matrix_o_31_V_write                | out |    1|   ap_fifo  |       matrix_o_31_V       |    pointer   |
+|matrix_o_32_V_din                  | out |   16|   ap_fifo  |       matrix_o_32_V       |    pointer   |
+|matrix_o_32_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_32_V       |    pointer   |
+|matrix_o_32_V_write                | out |    1|   ap_fifo  |       matrix_o_32_V       |    pointer   |
+|matrix_o_33_V_din                  | out |   16|   ap_fifo  |       matrix_o_33_V       |    pointer   |
+|matrix_o_33_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_33_V       |    pointer   |
+|matrix_o_33_V_write                | out |    1|   ap_fifo  |       matrix_o_33_V       |    pointer   |
+|matrix_o_34_V_din                  | out |   16|   ap_fifo  |       matrix_o_34_V       |    pointer   |
+|matrix_o_34_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_34_V       |    pointer   |
+|matrix_o_34_V_write                | out |    1|   ap_fifo  |       matrix_o_34_V       |    pointer   |
+|matrix_o_35_V_din                  | out |   16|   ap_fifo  |       matrix_o_35_V       |    pointer   |
+|matrix_o_35_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_35_V       |    pointer   |
+|matrix_o_35_V_write                | out |    1|   ap_fifo  |       matrix_o_35_V       |    pointer   |
+|matrix_o_36_V_din                  | out |   16|   ap_fifo  |       matrix_o_36_V       |    pointer   |
+|matrix_o_36_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_36_V       |    pointer   |
+|matrix_o_36_V_write                | out |    1|   ap_fifo  |       matrix_o_36_V       |    pointer   |
+|matrix_o_37_V_din                  | out |   16|   ap_fifo  |       matrix_o_37_V       |    pointer   |
+|matrix_o_37_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_37_V       |    pointer   |
+|matrix_o_37_V_write                | out |    1|   ap_fifo  |       matrix_o_37_V       |    pointer   |
+|matrix_o_38_V_din                  | out |   16|   ap_fifo  |       matrix_o_38_V       |    pointer   |
+|matrix_o_38_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_38_V       |    pointer   |
+|matrix_o_38_V_write                | out |    1|   ap_fifo  |       matrix_o_38_V       |    pointer   |
+|matrix_o_39_V_din                  | out |   16|   ap_fifo  |       matrix_o_39_V       |    pointer   |
+|matrix_o_39_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_39_V       |    pointer   |
+|matrix_o_39_V_write                | out |    1|   ap_fifo  |       matrix_o_39_V       |    pointer   |
+|matrix_o_40_V_din                  | out |   16|   ap_fifo  |       matrix_o_40_V       |    pointer   |
+|matrix_o_40_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_40_V       |    pointer   |
+|matrix_o_40_V_write                | out |    1|   ap_fifo  |       matrix_o_40_V       |    pointer   |
+|matrix_o_41_V_din                  | out |   16|   ap_fifo  |       matrix_o_41_V       |    pointer   |
+|matrix_o_41_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_41_V       |    pointer   |
+|matrix_o_41_V_write                | out |    1|   ap_fifo  |       matrix_o_41_V       |    pointer   |
+|matrix_o_42_V_din                  | out |   16|   ap_fifo  |       matrix_o_42_V       |    pointer   |
+|matrix_o_42_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_42_V       |    pointer   |
+|matrix_o_42_V_write                | out |    1|   ap_fifo  |       matrix_o_42_V       |    pointer   |
+|matrix_o_43_V_din                  | out |   16|   ap_fifo  |       matrix_o_43_V       |    pointer   |
+|matrix_o_43_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_43_V       |    pointer   |
+|matrix_o_43_V_write                | out |    1|   ap_fifo  |       matrix_o_43_V       |    pointer   |
+|matrix_o_44_V_din                  | out |   16|   ap_fifo  |       matrix_o_44_V       |    pointer   |
+|matrix_o_44_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_44_V       |    pointer   |
+|matrix_o_44_V_write                | out |    1|   ap_fifo  |       matrix_o_44_V       |    pointer   |
+|matrix_o_45_V_din                  | out |   16|   ap_fifo  |       matrix_o_45_V       |    pointer   |
+|matrix_o_45_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_45_V       |    pointer   |
+|matrix_o_45_V_write                | out |    1|   ap_fifo  |       matrix_o_45_V       |    pointer   |
+|matrix_o_46_V_din                  | out |   16|   ap_fifo  |       matrix_o_46_V       |    pointer   |
+|matrix_o_46_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_46_V       |    pointer   |
+|matrix_o_46_V_write                | out |    1|   ap_fifo  |       matrix_o_46_V       |    pointer   |
+|matrix_o_47_V_din                  | out |   16|   ap_fifo  |       matrix_o_47_V       |    pointer   |
+|matrix_o_47_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_47_V       |    pointer   |
+|matrix_o_47_V_write                | out |    1|   ap_fifo  |       matrix_o_47_V       |    pointer   |
+|matrix_o_48_V_din                  | out |   16|   ap_fifo  |       matrix_o_48_V       |    pointer   |
+|matrix_o_48_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_48_V       |    pointer   |
+|matrix_o_48_V_write                | out |    1|   ap_fifo  |       matrix_o_48_V       |    pointer   |
+|matrix_o_49_V_din                  | out |   16|   ap_fifo  |       matrix_o_49_V       |    pointer   |
+|matrix_o_49_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_49_V       |    pointer   |
+|matrix_o_49_V_write                | out |    1|   ap_fifo  |       matrix_o_49_V       |    pointer   |
+|matrix_o_50_V_din                  | out |   16|   ap_fifo  |       matrix_o_50_V       |    pointer   |
+|matrix_o_50_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_50_V       |    pointer   |
+|matrix_o_50_V_write                | out |    1|   ap_fifo  |       matrix_o_50_V       |    pointer   |
+|matrix_o_51_V_din                  | out |   16|   ap_fifo  |       matrix_o_51_V       |    pointer   |
+|matrix_o_51_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_51_V       |    pointer   |
+|matrix_o_51_V_write                | out |    1|   ap_fifo  |       matrix_o_51_V       |    pointer   |
+|matrix_o_52_V_din                  | out |   16|   ap_fifo  |       matrix_o_52_V       |    pointer   |
+|matrix_o_52_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_52_V       |    pointer   |
+|matrix_o_52_V_write                | out |    1|   ap_fifo  |       matrix_o_52_V       |    pointer   |
+|matrix_o_53_V_din                  | out |   16|   ap_fifo  |       matrix_o_53_V       |    pointer   |
+|matrix_o_53_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_53_V       |    pointer   |
+|matrix_o_53_V_write                | out |    1|   ap_fifo  |       matrix_o_53_V       |    pointer   |
+|matrix_o_54_V_din                  | out |   16|   ap_fifo  |       matrix_o_54_V       |    pointer   |
+|matrix_o_54_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_54_V       |    pointer   |
+|matrix_o_54_V_write                | out |    1|   ap_fifo  |       matrix_o_54_V       |    pointer   |
+|matrix_o_55_V_din                  | out |   16|   ap_fifo  |       matrix_o_55_V       |    pointer   |
+|matrix_o_55_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_55_V       |    pointer   |
+|matrix_o_55_V_write                | out |    1|   ap_fifo  |       matrix_o_55_V       |    pointer   |
+|matrix_o_56_V_din                  | out |   16|   ap_fifo  |       matrix_o_56_V       |    pointer   |
+|matrix_o_56_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_56_V       |    pointer   |
+|matrix_o_56_V_write                | out |    1|   ap_fifo  |       matrix_o_56_V       |    pointer   |
+|matrix_o_57_V_din                  | out |   16|   ap_fifo  |       matrix_o_57_V       |    pointer   |
+|matrix_o_57_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_57_V       |    pointer   |
+|matrix_o_57_V_write                | out |    1|   ap_fifo  |       matrix_o_57_V       |    pointer   |
+|matrix_o_58_V_din                  | out |   16|   ap_fifo  |       matrix_o_58_V       |    pointer   |
+|matrix_o_58_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_58_V       |    pointer   |
+|matrix_o_58_V_write                | out |    1|   ap_fifo  |       matrix_o_58_V       |    pointer   |
+|matrix_o_59_V_din                  | out |   16|   ap_fifo  |       matrix_o_59_V       |    pointer   |
+|matrix_o_59_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_59_V       |    pointer   |
+|matrix_o_59_V_write                | out |    1|   ap_fifo  |       matrix_o_59_V       |    pointer   |
+|matrix_o_60_V_din                  | out |   16|   ap_fifo  |       matrix_o_60_V       |    pointer   |
+|matrix_o_60_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_60_V       |    pointer   |
+|matrix_o_60_V_write                | out |    1|   ap_fifo  |       matrix_o_60_V       |    pointer   |
+|matrix_o_61_V_din                  | out |   16|   ap_fifo  |       matrix_o_61_V       |    pointer   |
+|matrix_o_61_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_61_V       |    pointer   |
+|matrix_o_61_V_write                | out |    1|   ap_fifo  |       matrix_o_61_V       |    pointer   |
+|matrix_o_62_V_din                  | out |   16|   ap_fifo  |       matrix_o_62_V       |    pointer   |
+|matrix_o_62_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_62_V       |    pointer   |
+|matrix_o_62_V_write                | out |    1|   ap_fifo  |       matrix_o_62_V       |    pointer   |
+|matrix_o_63_V_din                  | out |   16|   ap_fifo  |       matrix_o_63_V       |    pointer   |
+|matrix_o_63_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_63_V       |    pointer   |
+|matrix_o_63_V_write                | out |    1|   ap_fifo  |       matrix_o_63_V       |    pointer   |
+|matrix_o_64_V_din                  | out |   16|   ap_fifo  |       matrix_o_64_V       |    pointer   |
+|matrix_o_64_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_64_V       |    pointer   |
+|matrix_o_64_V_write                | out |    1|   ap_fifo  |       matrix_o_64_V       |    pointer   |
+|matrix_o_65_V_din                  | out |   16|   ap_fifo  |       matrix_o_65_V       |    pointer   |
+|matrix_o_65_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_65_V       |    pointer   |
+|matrix_o_65_V_write                | out |    1|   ap_fifo  |       matrix_o_65_V       |    pointer   |
+|matrix_o_66_V_din                  | out |   16|   ap_fifo  |       matrix_o_66_V       |    pointer   |
+|matrix_o_66_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_66_V       |    pointer   |
+|matrix_o_66_V_write                | out |    1|   ap_fifo  |       matrix_o_66_V       |    pointer   |
+|matrix_o_67_V_din                  | out |   16|   ap_fifo  |       matrix_o_67_V       |    pointer   |
+|matrix_o_67_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_67_V       |    pointer   |
+|matrix_o_67_V_write                | out |    1|   ap_fifo  |       matrix_o_67_V       |    pointer   |
+|matrix_o_68_V_din                  | out |   16|   ap_fifo  |       matrix_o_68_V       |    pointer   |
+|matrix_o_68_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_68_V       |    pointer   |
+|matrix_o_68_V_write                | out |    1|   ap_fifo  |       matrix_o_68_V       |    pointer   |
+|matrix_o_69_V_din                  | out |   16|   ap_fifo  |       matrix_o_69_V       |    pointer   |
+|matrix_o_69_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_69_V       |    pointer   |
+|matrix_o_69_V_write                | out |    1|   ap_fifo  |       matrix_o_69_V       |    pointer   |
+|matrix_o_70_V_din                  | out |   16|   ap_fifo  |       matrix_o_70_V       |    pointer   |
+|matrix_o_70_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_70_V       |    pointer   |
+|matrix_o_70_V_write                | out |    1|   ap_fifo  |       matrix_o_70_V       |    pointer   |
+|matrix_o_71_V_din                  | out |   16|   ap_fifo  |       matrix_o_71_V       |    pointer   |
+|matrix_o_71_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_71_V       |    pointer   |
+|matrix_o_71_V_write                | out |    1|   ap_fifo  |       matrix_o_71_V       |    pointer   |
+|matrix_o_72_V_din                  | out |   16|   ap_fifo  |       matrix_o_72_V       |    pointer   |
+|matrix_o_72_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_72_V       |    pointer   |
+|matrix_o_72_V_write                | out |    1|   ap_fifo  |       matrix_o_72_V       |    pointer   |
+|matrix_o_73_V_din                  | out |   16|   ap_fifo  |       matrix_o_73_V       |    pointer   |
+|matrix_o_73_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_73_V       |    pointer   |
+|matrix_o_73_V_write                | out |    1|   ap_fifo  |       matrix_o_73_V       |    pointer   |
+|matrix_o_74_V_din                  | out |   16|   ap_fifo  |       matrix_o_74_V       |    pointer   |
+|matrix_o_74_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_74_V       |    pointer   |
+|matrix_o_74_V_write                | out |    1|   ap_fifo  |       matrix_o_74_V       |    pointer   |
+|matrix_o_75_V_din                  | out |   16|   ap_fifo  |       matrix_o_75_V       |    pointer   |
+|matrix_o_75_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_75_V       |    pointer   |
+|matrix_o_75_V_write                | out |    1|   ap_fifo  |       matrix_o_75_V       |    pointer   |
+|matrix_o_76_V_din                  | out |   16|   ap_fifo  |       matrix_o_76_V       |    pointer   |
+|matrix_o_76_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_76_V       |    pointer   |
+|matrix_o_76_V_write                | out |    1|   ap_fifo  |       matrix_o_76_V       |    pointer   |
+|matrix_o_77_V_din                  | out |   16|   ap_fifo  |       matrix_o_77_V       |    pointer   |
+|matrix_o_77_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_77_V       |    pointer   |
+|matrix_o_77_V_write                | out |    1|   ap_fifo  |       matrix_o_77_V       |    pointer   |
+|matrix_o_78_V_din                  | out |   16|   ap_fifo  |       matrix_o_78_V       |    pointer   |
+|matrix_o_78_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_78_V       |    pointer   |
+|matrix_o_78_V_write                | out |    1|   ap_fifo  |       matrix_o_78_V       |    pointer   |
+|matrix_o_79_V_din                  | out |   16|   ap_fifo  |       matrix_o_79_V       |    pointer   |
+|matrix_o_79_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_79_V       |    pointer   |
+|matrix_o_79_V_write                | out |    1|   ap_fifo  |       matrix_o_79_V       |    pointer   |
+|matrix_o_80_V_din                  | out |   16|   ap_fifo  |       matrix_o_80_V       |    pointer   |
+|matrix_o_80_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_80_V       |    pointer   |
+|matrix_o_80_V_write                | out |    1|   ap_fifo  |       matrix_o_80_V       |    pointer   |
+|matrix_o_81_V_din                  | out |   16|   ap_fifo  |       matrix_o_81_V       |    pointer   |
+|matrix_o_81_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_81_V       |    pointer   |
+|matrix_o_81_V_write                | out |    1|   ap_fifo  |       matrix_o_81_V       |    pointer   |
+|matrix_o_82_V_din                  | out |   16|   ap_fifo  |       matrix_o_82_V       |    pointer   |
+|matrix_o_82_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_82_V       |    pointer   |
+|matrix_o_82_V_write                | out |    1|   ap_fifo  |       matrix_o_82_V       |    pointer   |
+|matrix_o_83_V_din                  | out |   16|   ap_fifo  |       matrix_o_83_V       |    pointer   |
+|matrix_o_83_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_83_V       |    pointer   |
+|matrix_o_83_V_write                | out |    1|   ap_fifo  |       matrix_o_83_V       |    pointer   |
+|matrix_o_84_V_din                  | out |   16|   ap_fifo  |       matrix_o_84_V       |    pointer   |
+|matrix_o_84_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_84_V       |    pointer   |
+|matrix_o_84_V_write                | out |    1|   ap_fifo  |       matrix_o_84_V       |    pointer   |
+|matrix_o_85_V_din                  | out |   16|   ap_fifo  |       matrix_o_85_V       |    pointer   |
+|matrix_o_85_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_85_V       |    pointer   |
+|matrix_o_85_V_write                | out |    1|   ap_fifo  |       matrix_o_85_V       |    pointer   |
+|matrix_o_86_V_din                  | out |   16|   ap_fifo  |       matrix_o_86_V       |    pointer   |
+|matrix_o_86_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_86_V       |    pointer   |
+|matrix_o_86_V_write                | out |    1|   ap_fifo  |       matrix_o_86_V       |    pointer   |
+|matrix_o_87_V_din                  | out |   16|   ap_fifo  |       matrix_o_87_V       |    pointer   |
+|matrix_o_87_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_87_V       |    pointer   |
+|matrix_o_87_V_write                | out |    1|   ap_fifo  |       matrix_o_87_V       |    pointer   |
+|matrix_o_88_V_din                  | out |   16|   ap_fifo  |       matrix_o_88_V       |    pointer   |
+|matrix_o_88_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_88_V       |    pointer   |
+|matrix_o_88_V_write                | out |    1|   ap_fifo  |       matrix_o_88_V       |    pointer   |
+|matrix_o_89_V_din                  | out |   16|   ap_fifo  |       matrix_o_89_V       |    pointer   |
+|matrix_o_89_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_89_V       |    pointer   |
+|matrix_o_89_V_write                | out |    1|   ap_fifo  |       matrix_o_89_V       |    pointer   |
+|matrix_o_90_V_din                  | out |   16|   ap_fifo  |       matrix_o_90_V       |    pointer   |
+|matrix_o_90_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_90_V       |    pointer   |
+|matrix_o_90_V_write                | out |    1|   ap_fifo  |       matrix_o_90_V       |    pointer   |
+|matrix_o_91_V_din                  | out |   16|   ap_fifo  |       matrix_o_91_V       |    pointer   |
+|matrix_o_91_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_91_V       |    pointer   |
+|matrix_o_91_V_write                | out |    1|   ap_fifo  |       matrix_o_91_V       |    pointer   |
+|matrix_o_92_V_din                  | out |   16|   ap_fifo  |       matrix_o_92_V       |    pointer   |
+|matrix_o_92_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_92_V       |    pointer   |
+|matrix_o_92_V_write                | out |    1|   ap_fifo  |       matrix_o_92_V       |    pointer   |
+|matrix_o_93_V_din                  | out |   16|   ap_fifo  |       matrix_o_93_V       |    pointer   |
+|matrix_o_93_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_93_V       |    pointer   |
+|matrix_o_93_V_write                | out |    1|   ap_fifo  |       matrix_o_93_V       |    pointer   |
+|matrix_o_94_V_din                  | out |   16|   ap_fifo  |       matrix_o_94_V       |    pointer   |
+|matrix_o_94_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_94_V       |    pointer   |
+|matrix_o_94_V_write                | out |    1|   ap_fifo  |       matrix_o_94_V       |    pointer   |
+|matrix_o_95_V_din                  | out |   16|   ap_fifo  |       matrix_o_95_V       |    pointer   |
+|matrix_o_95_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_95_V       |    pointer   |
+|matrix_o_95_V_write                | out |    1|   ap_fifo  |       matrix_o_95_V       |    pointer   |
+|matrix_o_96_V_din                  | out |   16|   ap_fifo  |       matrix_o_96_V       |    pointer   |
+|matrix_o_96_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_96_V       |    pointer   |
+|matrix_o_96_V_write                | out |    1|   ap_fifo  |       matrix_o_96_V       |    pointer   |
+|matrix_o_97_V_din                  | out |   16|   ap_fifo  |       matrix_o_97_V       |    pointer   |
+|matrix_o_97_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_97_V       |    pointer   |
+|matrix_o_97_V_write                | out |    1|   ap_fifo  |       matrix_o_97_V       |    pointer   |
+|matrix_o_98_V_din                  | out |   16|   ap_fifo  |       matrix_o_98_V       |    pointer   |
+|matrix_o_98_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_98_V       |    pointer   |
+|matrix_o_98_V_write                | out |    1|   ap_fifo  |       matrix_o_98_V       |    pointer   |
+|matrix_o_99_V_din                  | out |   16|   ap_fifo  |       matrix_o_99_V       |    pointer   |
+|matrix_o_99_V_full_n               |  in |    1|   ap_fifo  |       matrix_o_99_V       |    pointer   |
+|matrix_o_99_V_write                | out |    1|   ap_fifo  |       matrix_o_99_V       |    pointer   |
+|matrix_o_100_V_din                 | out |   16|   ap_fifo  |       matrix_o_100_V      |    pointer   |
+|matrix_o_100_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_100_V      |    pointer   |
+|matrix_o_100_V_write               | out |    1|   ap_fifo  |       matrix_o_100_V      |    pointer   |
+|matrix_o_101_V_din                 | out |   16|   ap_fifo  |       matrix_o_101_V      |    pointer   |
+|matrix_o_101_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_101_V      |    pointer   |
+|matrix_o_101_V_write               | out |    1|   ap_fifo  |       matrix_o_101_V      |    pointer   |
+|matrix_o_102_V_din                 | out |   16|   ap_fifo  |       matrix_o_102_V      |    pointer   |
+|matrix_o_102_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_102_V      |    pointer   |
+|matrix_o_102_V_write               | out |    1|   ap_fifo  |       matrix_o_102_V      |    pointer   |
+|matrix_o_103_V_din                 | out |   16|   ap_fifo  |       matrix_o_103_V      |    pointer   |
+|matrix_o_103_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_103_V      |    pointer   |
+|matrix_o_103_V_write               | out |    1|   ap_fifo  |       matrix_o_103_V      |    pointer   |
+|matrix_o_104_V_din                 | out |   16|   ap_fifo  |       matrix_o_104_V      |    pointer   |
+|matrix_o_104_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_104_V      |    pointer   |
+|matrix_o_104_V_write               | out |    1|   ap_fifo  |       matrix_o_104_V      |    pointer   |
+|matrix_o_105_V_din                 | out |   16|   ap_fifo  |       matrix_o_105_V      |    pointer   |
+|matrix_o_105_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_105_V      |    pointer   |
+|matrix_o_105_V_write               | out |    1|   ap_fifo  |       matrix_o_105_V      |    pointer   |
+|matrix_o_106_V_din                 | out |   16|   ap_fifo  |       matrix_o_106_V      |    pointer   |
+|matrix_o_106_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_106_V      |    pointer   |
+|matrix_o_106_V_write               | out |    1|   ap_fifo  |       matrix_o_106_V      |    pointer   |
+|matrix_o_107_V_din                 | out |   16|   ap_fifo  |       matrix_o_107_V      |    pointer   |
+|matrix_o_107_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_107_V      |    pointer   |
+|matrix_o_107_V_write               | out |    1|   ap_fifo  |       matrix_o_107_V      |    pointer   |
+|matrix_o_108_V_din                 | out |   16|   ap_fifo  |       matrix_o_108_V      |    pointer   |
+|matrix_o_108_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_108_V      |    pointer   |
+|matrix_o_108_V_write               | out |    1|   ap_fifo  |       matrix_o_108_V      |    pointer   |
+|matrix_o_109_V_din                 | out |   16|   ap_fifo  |       matrix_o_109_V      |    pointer   |
+|matrix_o_109_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_109_V      |    pointer   |
+|matrix_o_109_V_write               | out |    1|   ap_fifo  |       matrix_o_109_V      |    pointer   |
+|matrix_o_110_V_din                 | out |   16|   ap_fifo  |       matrix_o_110_V      |    pointer   |
+|matrix_o_110_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_110_V      |    pointer   |
+|matrix_o_110_V_write               | out |    1|   ap_fifo  |       matrix_o_110_V      |    pointer   |
+|matrix_o_111_V_din                 | out |   16|   ap_fifo  |       matrix_o_111_V      |    pointer   |
+|matrix_o_111_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_111_V      |    pointer   |
+|matrix_o_111_V_write               | out |    1|   ap_fifo  |       matrix_o_111_V      |    pointer   |
+|matrix_o_112_V_din                 | out |   16|   ap_fifo  |       matrix_o_112_V      |    pointer   |
+|matrix_o_112_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_112_V      |    pointer   |
+|matrix_o_112_V_write               | out |    1|   ap_fifo  |       matrix_o_112_V      |    pointer   |
+|matrix_o_113_V_din                 | out |   16|   ap_fifo  |       matrix_o_113_V      |    pointer   |
+|matrix_o_113_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_113_V      |    pointer   |
+|matrix_o_113_V_write               | out |    1|   ap_fifo  |       matrix_o_113_V      |    pointer   |
+|matrix_o_114_V_din                 | out |   16|   ap_fifo  |       matrix_o_114_V      |    pointer   |
+|matrix_o_114_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_114_V      |    pointer   |
+|matrix_o_114_V_write               | out |    1|   ap_fifo  |       matrix_o_114_V      |    pointer   |
+|matrix_o_115_V_din                 | out |   16|   ap_fifo  |       matrix_o_115_V      |    pointer   |
+|matrix_o_115_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_115_V      |    pointer   |
+|matrix_o_115_V_write               | out |    1|   ap_fifo  |       matrix_o_115_V      |    pointer   |
+|matrix_o_116_V_din                 | out |   16|   ap_fifo  |       matrix_o_116_V      |    pointer   |
+|matrix_o_116_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_116_V      |    pointer   |
+|matrix_o_116_V_write               | out |    1|   ap_fifo  |       matrix_o_116_V      |    pointer   |
+|matrix_o_117_V_din                 | out |   16|   ap_fifo  |       matrix_o_117_V      |    pointer   |
+|matrix_o_117_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_117_V      |    pointer   |
+|matrix_o_117_V_write               | out |    1|   ap_fifo  |       matrix_o_117_V      |    pointer   |
+|matrix_o_118_V_din                 | out |   16|   ap_fifo  |       matrix_o_118_V      |    pointer   |
+|matrix_o_118_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_118_V      |    pointer   |
+|matrix_o_118_V_write               | out |    1|   ap_fifo  |       matrix_o_118_V      |    pointer   |
+|matrix_o_119_V_din                 | out |   16|   ap_fifo  |       matrix_o_119_V      |    pointer   |
+|matrix_o_119_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_119_V      |    pointer   |
+|matrix_o_119_V_write               | out |    1|   ap_fifo  |       matrix_o_119_V      |    pointer   |
+|matrix_o_120_V_din                 | out |   16|   ap_fifo  |       matrix_o_120_V      |    pointer   |
+|matrix_o_120_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_120_V      |    pointer   |
+|matrix_o_120_V_write               | out |    1|   ap_fifo  |       matrix_o_120_V      |    pointer   |
+|matrix_o_121_V_din                 | out |   16|   ap_fifo  |       matrix_o_121_V      |    pointer   |
+|matrix_o_121_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_121_V      |    pointer   |
+|matrix_o_121_V_write               | out |    1|   ap_fifo  |       matrix_o_121_V      |    pointer   |
+|matrix_o_122_V_din                 | out |   16|   ap_fifo  |       matrix_o_122_V      |    pointer   |
+|matrix_o_122_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_122_V      |    pointer   |
+|matrix_o_122_V_write               | out |    1|   ap_fifo  |       matrix_o_122_V      |    pointer   |
+|matrix_o_123_V_din                 | out |   16|   ap_fifo  |       matrix_o_123_V      |    pointer   |
+|matrix_o_123_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_123_V      |    pointer   |
+|matrix_o_123_V_write               | out |    1|   ap_fifo  |       matrix_o_123_V      |    pointer   |
+|matrix_o_124_V_din                 | out |   16|   ap_fifo  |       matrix_o_124_V      |    pointer   |
+|matrix_o_124_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_124_V      |    pointer   |
+|matrix_o_124_V_write               | out |    1|   ap_fifo  |       matrix_o_124_V      |    pointer   |
+|matrix_o_125_V_din                 | out |   16|   ap_fifo  |       matrix_o_125_V      |    pointer   |
+|matrix_o_125_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_125_V      |    pointer   |
+|matrix_o_125_V_write               | out |    1|   ap_fifo  |       matrix_o_125_V      |    pointer   |
+|matrix_o_126_V_din                 | out |   16|   ap_fifo  |       matrix_o_126_V      |    pointer   |
+|matrix_o_126_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_126_V      |    pointer   |
+|matrix_o_126_V_write               | out |    1|   ap_fifo  |       matrix_o_126_V      |    pointer   |
+|matrix_o_127_V_din                 | out |   16|   ap_fifo  |       matrix_o_127_V      |    pointer   |
+|matrix_o_127_V_full_n              |  in |    1|   ap_fifo  |       matrix_o_127_V      |    pointer   |
+|matrix_o_127_V_write               | out |    1|   ap_fifo  |       matrix_o_127_V      |    pointer   |
++-----------------------------------+-----+-----+------------+---------------------------+--------------+
+
