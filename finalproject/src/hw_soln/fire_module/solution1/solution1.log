@@ -7,22 +7,934 @@ Copyright (C) 2015 Xilinx Inc. All rights reserved.
 
 @I [SYN-201] Setting up clock 'default' with a period of 5ns.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [SIM-47] Using XSIM for RTL simulation.
-@I [SIM-14] Instrumenting C test bench ...
-@E [SIM-329] Aborting co-simulation: C simulation failed, no 'main' function.
-@E [SIM-317] C++ compile error.
-@E [SIM-321] EXE file generate failed.
-@E [SIM-321] EXE file generate failed.
-@E [SIM-331] Aborting co-simulation: C simulation failed, compilation errors.
-@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***
-command 'ap_source' returned error code
-    while executing
-"source C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module/solution1/cosim.tcl"
-    invoked from within
-"hls::main C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module/solution1/cosim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
+@I [HLS-10] Analyzing design file 'fire_module.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-1.1' (fire_module.cpp:83) in function 'combine' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-2.1' (fire_module.cpp:95) in function 'combine' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Depth' (fire_module.cpp:202) in function 'expand3x3' for pipelining.
+@I [XFORM-502] Unrolling all loops for pipelining in function 'fill_window' (fire_module.cpp:141).
+@W [XFORM-505] Ignored pipeline directive for loop 'Loop-1' (fire_module.cpp:145) because its parent loop or function is pipelined.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Copy_Col' (fire_module.cpp:66) in function 'copy' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.1' (fire_module.cpp:85) in function 'combine' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.1.1' (fire_module.cpp:97) in function 'combine' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.1.1.1.1' (fire_module.cpp:212) in function 'expand3x3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.1.1.1.1.1' (fire_module.cpp:213) in function 'expand3x3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (fire_module.cpp:145) in function 'fill_window' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (fire_module.cpp:148) in function 'fill_window' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.2' (fire_module.cpp:160) in function 'fill_window' completely.
+@I [XFORM-501] Unrolling loop 'Copy_Dim' (fire_module.cpp:68) in function 'copy' completely.
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_s1x1_stream_o.V' (fire_module.cpp:254) .
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_e1x1_stream_i.V' (fire_module.cpp:256) .
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_e3x3_stream_o.V' (fire_module.cpp:260) .
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_e1x1_stream_o.V' (fire_module.cpp:259) .
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_e3x3_stream_i.V' (fire_module.cpp:257) .
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_i.V' (fire_module.cpp:243) .
+@I [XFORM-102] Automatically partitioning streamed array 'matrix_o.V' (fire_module.cpp:247) .
+@I [XFORM-101] Partitioning array 'kernel_e3x3' (fire_module.cpp:246) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel_e1x1' (fire_module.cpp:245) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel_s1x1' (fire_module.cpp:244) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'line_buffer' (fire_module.cpp:176) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer' (fire_module.cpp:179) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'depth_buffer' (fire_module.cpp:114) in dimension 1 completely.
+@W [XFORM-104] Completely partitioning array 'depth_buffer' (fire_module.cpp:35) accessed through non-constant indices on dimension 1 (fire_module.cpp:49:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+@I [XFORM-101] Partitioning array 'depth_buffer' (fire_module.cpp:35) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_s1x1_stream_o.V' (fire_module.cpp:254) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_e1x1_stream_i.V' (fire_module.cpp:256) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_e3x3_stream_o.V' (fire_module.cpp:260) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_e1x1_stream_o.V' (fire_module.cpp:259) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_e3x3_stream_i.V' (fire_module.cpp:257) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_i.V' (fire_module.cpp:243) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix_o.V' (fire_module.cpp:247) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel_e3x3.0' (fire_module.cpp:246) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel_e3x3.1' (fire_module.cpp:246) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel_e3x3.2' (fire_module.cpp:246) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'line_buffer.0' (fire_module.cpp:176) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'line_buffer.1' (fire_module.cpp:176) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'line_buffer.2' (fire_module.cpp:176) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer.0' (fire_module.cpp:179) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer.1' (fire_module.cpp:179) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer.2' (fire_module.cpp:179) in dimension 1 completely.
+@W [XFORM-104] Completely partitioning array 'matrix_e3x3_stream_o.V' (fire_module.cpp:260) accessed through non-constant indices on dimension 1 (fire_module.cpp:231:5), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+@W [XFORM-104] Completely partitioning array 'matrix_i.V' (fire_module.cpp:243) accessed through non-constant indices on dimension 1 (fire_module.cpp:42:23), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+@W [XFORM-104] Completely partitioning array 'kernel_s1x1' (fire_module.cpp:244) accessed through non-constant indices on dimension 1 (fire_module.cpp:49:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+@I [XFORM-102] Partitioning array 'line_buffer.0.0' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.1' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.2' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.3' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.4' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.5' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.6' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.7' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.8' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.9' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.10' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.11' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.12' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.13' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.14' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.15' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.16' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.17' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.18' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.19' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.20' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.21' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.22' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.23' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.24' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.25' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.26' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.27' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.28' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.29' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.30' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.31' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.32' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.33' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.34' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.35' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.36' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.37' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.38' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.39' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.40' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.41' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.42' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.43' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.44' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.45' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.46' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.47' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.48' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.49' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.50' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.51' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.52' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.53' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.0.54' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.0' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.1' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.2' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.3' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.4' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.5' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.6' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.7' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.8' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.9' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.10' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.11' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.12' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.13' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.14' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.15' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.16' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.17' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.18' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.19' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.20' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.21' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.22' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.23' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.24' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.25' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.26' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.27' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.28' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.29' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.30' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.31' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.32' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.33' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.34' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.35' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.36' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.37' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.38' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.39' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.40' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.41' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.42' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.43' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.44' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.45' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.46' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.47' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.48' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.49' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.50' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.51' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.52' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.53' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.1.54' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.0' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.1' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.2' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.3' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.4' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.5' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.6' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.7' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.8' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.9' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.10' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.11' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.12' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.13' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.14' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.15' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.16' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.17' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.18' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.19' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.20' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.21' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.22' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.23' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.24' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.25' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.26' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.27' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.28' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.29' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.30' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.31' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.32' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.33' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.34' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.35' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.36' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.37' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.38' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.39' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.40' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.41' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.42' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.43' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.44' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.45' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.46' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.47' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.48' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.49' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.50' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.51' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.52' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.53' (fire_module.cpp:176) automatically.
+@I [XFORM-102] Partitioning array 'line_buffer.2.54' (fire_module.cpp:176) automatically.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[0].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[1].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[2].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[3].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[4].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[5].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[6].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[7].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[8].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[9].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[10].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[11].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[12].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[13].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[14].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_s1x1_stream_o[15].V' (fire_module.cpp:254) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[0].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[1].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[2].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[3].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[4].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[5].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[6].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[7].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[8].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[9].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[10].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[11].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[12].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[13].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[14].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e1x1_stream_i[15].V' (fire_module.cpp:256) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[0].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[1].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[2].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[3].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[4].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[5].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[6].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[7].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[8].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[9].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[10].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[11].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[12].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[13].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[14].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_i[15].V' (fire_module.cpp:257) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[0].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[1].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[2].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[3].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[4].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[5].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[6].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[7].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[8].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[9].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[10].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[11].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[12].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[13].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[14].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[15].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[16].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[17].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[18].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[19].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[20].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[21].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[22].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[23].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[24].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[25].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[26].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[27].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[28].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[29].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[30].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[31].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[32].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[33].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[34].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[35].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[36].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[37].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[38].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[39].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[40].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[41].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[42].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[43].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[44].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[45].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[46].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[47].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[48].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[49].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[50].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[51].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[52].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[53].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[54].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[55].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[56].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[57].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[58].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[59].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[60].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[61].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[62].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-731] Internal stream variable 'matrix_e1x1_stream_o[63].V' (fire_module.cpp:259) is invalid: it has no data producer
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[0].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[1].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[2].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[3].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[4].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[5].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[6].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[7].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[8].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[9].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[10].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[11].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[12].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[13].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[14].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[15].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[16].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[17].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[18].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[19].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[20].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[21].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[22].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[23].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[24].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[25].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[26].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[27].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[28].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[29].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[30].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[31].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[32].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[33].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[34].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[35].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[36].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[37].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[38].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[39].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[40].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[41].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[42].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[43].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[44].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[45].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[46].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[47].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[48].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[49].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[50].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[51].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[52].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[53].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[54].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[55].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[56].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[57].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[58].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[59].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[60].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[61].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[62].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@W [XFORM-732] An internal stream 'matrix_e3x3_stream_o[63].V' (fire_module.cpp:260) with default size is used in a non-dataflow region, which may result in deadlock. Please consider to resize the stream using the directive 'set_directive_stream'.
+@I [XFORM-712] Applying dataflow to function 'fire2' (fire_module.cpp:243), detected/extracted 5 process function(s):
+	 'squeeze'
+	 'copy'
+	 'expand1x1'
+	 'expand3x3'
+	 'combine'.
+@I [XFORM-401] Performing if-conversion on hyperblock from (fire_module.cpp:125:30) to (fire_module.cpp:118:32) in function 'expand1x1'... converting 2 basic blocks.
+@I [XFORM-11] Balancing expressions in function 'expand3x3' (fire_module.cpp:169)...9 expression(s) balanced.
+@W [XFORM-542] Cannot flatten a loop nest 'Convolution' (fire_module.cpp:46:48) in function 'squeeze' : 
+               the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+@W [XFORM-542] Cannot flatten a loop nest 'Col' (fire_module.cpp:39:38) in function 'squeeze' : 
+               more than one sub loop.
+@I [XFORM-541] Flattening a loop nest 'Row' (fire_module.cpp:38:37) in function 'squeeze'.
+@W [XFORM-542] Cannot flatten a loop nest 'Convolution' (fire_module.cpp:201:48) in function 'expand3x3' : 
+               the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+@W [XFORM-542] Cannot flatten a loop nest 'Col' (fire_module.cpp:196:40) in function 'expand3x3' : 
+               the outer loop is not a perfect loop.
+@I [XFORM-541] Flattening a loop nest 'Row' (fire_module.cpp:195:39) in function 'expand3x3'.
+@I [XFORM-541] Flattening a loop nest 'Copy_Row' (fire_module.cpp:65:42) in function 'copy'.
+@I [XFORM-541] Flattening a loop nest 'Loop-1' (fire_module.cpp:82:15) in function 'combine'.
+@I [XFORM-541] Flattening a loop nest 'Loop-2' (fire_module.cpp:94:15) in function 'combine'.
+@I [HLS-111] Elapsed time: 258.136 seconds; current memory usage: 253 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'fire2' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2_squeeze' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Depth'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 11.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 27.426 seconds; current memory usage: 270 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2_squeeze' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 5.976 seconds; current memory usage: 269 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2_copy' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Copy_Row_Copy_Col'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 16.551 seconds; current memory usage: 269 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2_copy' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.888 seconds; current memory usage: 269 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2_expand1x1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 4.547 seconds; current memory usage: 269 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2_expand1x1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.687 seconds; current memory usage: 269 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2_fill_window' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'fire2_fill_window'.
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
+   between 'store' operation (fire_module.cpp:162) of variable 'wb_0_2_load', fire_module.cpp:162 on array 'wb_0_1' and 'load' operation ('wb_0_1_load', fire_module.cpp:161) on array 'wb_0_1'.
+@W [SCHED-69] Unable to schedule 'load' operation ('wb_0_2_load_4', fire_module.cpp:162) on array 'wb_0_2' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 16, Depth: 16.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 12.145 seconds; current memory usage: 268 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2_fill_window' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 3.184 seconds; current memory usage: 268 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2_expand3x3' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Init'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 16, Depth: 17.
+@I [SCHED-61] Pipelining loop 'Depth'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 13.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 22.287 seconds; current memory usage: 267 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2_expand3x3' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 2.589 seconds; current memory usage: 268 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2_combine' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+@I [SCHED-61] Pipelining loop 'Loop 2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 35.566 seconds; current memory usage: 270 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2_combine' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 1.873 seconds; current memory usage: 271 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fire2' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 3.155 seconds; current memory usage: 278 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fire2' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 4.704 seconds; current memory usage: 281 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2_squeeze' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Generating core module 'fire2_mul_32s_32s_32_7': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fire2_mux_96to1_sel7_32_1': 2 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'fire2_squeeze'.
+@I [HLS-111] Elapsed time: 18.394 seconds; current memory usage: 284 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2_copy' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'fire2_copy'.
+@I [HLS-111] Elapsed time: 15.7 seconds; current memory usage: 286 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2_expand1x1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'fire2_expand1x1'.
+@I [HLS-111] Elapsed time: 2.002 seconds; current memory usage: 286 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2_fill_window' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'fire2_fill_window'.
+@I [HLS-111] Elapsed time: 2.848 seconds; current memory usage: 293 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2_expand3x3' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Generating core module 'fire2_mul_32s_32s_32_7': 9 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'fire2_expand3x3'.
+@I [HLS-111] Elapsed time: 13.26 seconds; current memory usage: 304 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2_combine' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'fire2_combine'.
+@I [HLS-111] Elapsed time: 8.945 seconds; current memory usage: 306 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fire2' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_0_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_1_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_2_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_3_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_4_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_5_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_6_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_7_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_8_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_9_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_10_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_11_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_12_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_13_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_14_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_15_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_16_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_17_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_18_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_19_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_20_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_21_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_22_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_23_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_24_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_25_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_26_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_27_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_28_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_29_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_30_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_31_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_32_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_33_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_34_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_35_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_36_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_37_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_38_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_39_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_40_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_41_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_42_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_43_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_44_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_45_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_46_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_47_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_48_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_49_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_50_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_51_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_52_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_53_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_54_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_55_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_56_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_57_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_58_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_59_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_60_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_61_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_62_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_63_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_64_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_65_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_66_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_67_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_68_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_69_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_70_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_71_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_72_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_73_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_74_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_75_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_76_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_77_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_78_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_79_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_80_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_81_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_82_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_83_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_84_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_85_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_86_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_87_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_88_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_89_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_90_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_91_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_92_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_93_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_94_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_i_95_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_0' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_1' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_2' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_3' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_4' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_5' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_6' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_7' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_8' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_9' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_10' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_11' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_12' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_13' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_14' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_15' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_16' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_17' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_18' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_19' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_20' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_21' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_22' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_23' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_24' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_25' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_26' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_27' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_28' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_29' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_30' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_31' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_32' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_33' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_34' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_35' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_36' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_37' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_38' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_39' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_40' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_41' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_42' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_43' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_44' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_45' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_46' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_47' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_48' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_49' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_50' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_51' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_52' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_53' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_54' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_55' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_56' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_57' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_58' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_59' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_60' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_61' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_62' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_63' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_64' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_65' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_66' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_67' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_68' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_69' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_70' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_71' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_72' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_73' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_74' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_75' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_76' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_77' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_78' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_79' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_80' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_81' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_82' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_83' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_84' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_85' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_86' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_87' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_88' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_89' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_90' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_91' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_92' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_93' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_94' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_s1x1_95' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_0' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_1' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_2' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_3' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_4' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_5' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_6' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_7' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_8' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_9' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_10' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_11' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_12' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_13' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_14' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e1x1_15' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_0_0' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_0_1' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_0_2' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_1_0' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_1_1' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_1_2' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_2_0' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_2_1' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/kernel_e3x3_2_2' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_0_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_1_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_2_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_3_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_4_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_5_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_6_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_7_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_8_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_9_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_10_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_11_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_12_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_13_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_14_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_15_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_16_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_17_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_18_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_19_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_20_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_21_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_22_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_23_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_24_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_25_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_26_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_27_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_28_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_29_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_30_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_31_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_32_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_33_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_34_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_35_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_36_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_37_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_38_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_39_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_40_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_41_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_42_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_43_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_44_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_45_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_46_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_47_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_48_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_49_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_50_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_51_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_52_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_53_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_54_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_55_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_56_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_57_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_58_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_59_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_60_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_61_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_62_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_63_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_64_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_65_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_66_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_67_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_68_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_69_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_70_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_71_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_72_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_73_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_74_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_75_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_76_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_77_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_78_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_79_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_80_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_81_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_82_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_83_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_84_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_85_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_86_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_87_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_88_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_89_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_90_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_91_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_92_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_93_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_94_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_95_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_96_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_97_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_98_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_99_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_100_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_101_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_102_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_103_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_104_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_105_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_106_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_107_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_108_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_109_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_110_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_111_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_112_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_113_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_114_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_115_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_116_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_117_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_118_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_119_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_120_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_121_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_122_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_123_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_124_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_125_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_126_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'fire2/matrix_o_127_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on function 'fire2' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'fire2'.
+@I [HLS-111] Elapsed time: 10.111 seconds; current memory usage: 316 MB.
+@I [RTMG-282] Generating pipelined core: 'fire2_mul_32s_32s_32_7_MulnS_0'
+@I [RTMG-278] Implementing memory 'fire2_expand3x3_window_buffer_0_0_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'fire2_expand3x3_window_buffer_0_1_ram' using block RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'fire2'.
+@I [WVHDL-304] Generating RTL VHDL for 'fire2'.
+@I [WVLOG-307] Generating RTL Verilog for 'fire2'.
+@I [HLS-112] Total elapsed time: 515.801 seconds; peak memory usage: 316 MB.

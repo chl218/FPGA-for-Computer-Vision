@@ -98,7 +98,7 @@ fire2_copy::fire2_copy(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( mat2_o_13_V_full_n );
     sensitive << ( mat2_o_14_V_full_n );
     sensitive << ( mat2_o_15_V_full_n );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
 
     SC_METHOD(thread_ap_sig_bdd_392);
     sensitive << ( ap_start );
@@ -116,531 +116,531 @@ fire2_copy::fire2_copy(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_ap_sig_cseq_ST_st4_fsm_2);
     sensitive << ( ap_sig_bdd_483 );
 
-    SC_METHOD(thread_exitcond_flatten_fu_879_p2);
-    sensitive << ( indvar_flatten_reg_868 );
+    SC_METHOD(thread_exitcond_flatten_fu_497_p2);
+    sensitive << ( indvar_flatten_reg_486 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_reg_ppiten_pp0_it0 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
-    SC_METHOD(thread_indvar_flatten_next_fu_885_p2);
-    sensitive << ( indvar_flatten_reg_868 );
+    SC_METHOD(thread_indvar_flatten_next_fu_503_p2);
+    sensitive << ( indvar_flatten_reg_486 );
 
     SC_METHOD(thread_mat1_o_0_V_din);
     sensitive << ( mat_i_0_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_0_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_10_V_din);
     sensitive << ( mat_i_10_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_10_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_11_V_din);
     sensitive << ( mat_i_11_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_11_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_12_V_din);
     sensitive << ( mat_i_12_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_12_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_13_V_din);
     sensitive << ( mat_i_13_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_13_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_14_V_din);
     sensitive << ( mat_i_14_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_14_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_15_V_din);
     sensitive << ( mat_i_15_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_15_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_1_V_din);
     sensitive << ( mat_i_1_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_1_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_2_V_din);
     sensitive << ( mat_i_2_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_2_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_3_V_din);
     sensitive << ( mat_i_3_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_3_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_4_V_din);
     sensitive << ( mat_i_4_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_4_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_5_V_din);
     sensitive << ( mat_i_5_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_5_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_6_V_din);
     sensitive << ( mat_i_6_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_6_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_7_V_din);
     sensitive << ( mat_i_7_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_7_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_8_V_din);
     sensitive << ( mat_i_8_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_8_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_9_V_din);
     sensitive << ( mat_i_9_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat1_o_9_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_0_V_din);
     sensitive << ( mat_i_0_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_0_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_10_V_din);
     sensitive << ( mat_i_10_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_10_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_11_V_din);
     sensitive << ( mat_i_11_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_11_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_12_V_din);
     sensitive << ( mat_i_12_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_12_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_13_V_din);
     sensitive << ( mat_i_13_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_13_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_14_V_din);
     sensitive << ( mat_i_14_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_14_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_15_V_din);
     sensitive << ( mat_i_15_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_15_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_1_V_din);
     sensitive << ( mat_i_1_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_1_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_2_V_din);
     sensitive << ( mat_i_2_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_2_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_3_V_din);
     sensitive << ( mat_i_3_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_3_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_4_V_din);
     sensitive << ( mat_i_4_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_4_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_5_V_din);
     sensitive << ( mat_i_5_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_5_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_6_V_din);
     sensitive << ( mat_i_6_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_6_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_7_V_din);
     sensitive << ( mat_i_7_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_7_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_8_V_din);
     sensitive << ( mat_i_8_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_8_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_9_V_din);
     sensitive << ( mat_i_9_V_dout );
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat2_o_9_V_write);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_0_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_10_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_11_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_12_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_13_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_14_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_15_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_1_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_2_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_3_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_4_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_5_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_6_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_7_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_8_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_mat_i_9_V_read);
-    sensitive << ( exitcond_flatten_reg_891 );
+    sensitive << ( exitcond_flatten_reg_509 );
     sensitive << ( ap_sig_cseq_ST_pp0_stg0_fsm_1 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_CS_fsm );
-    sensitive << ( exitcond_flatten_fu_879_p2 );
+    sensitive << ( exitcond_flatten_fu_497_p2 );
     sensitive << ( ap_reg_ppiten_pp0_it0 );
     sensitive << ( ap_sig_bdd_379 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
@@ -815,15 +815,15 @@ fire2_copy::fire2_copy(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st1_fsm_0, "ap_sig_cseq_ST_st1_fsm_0");
     sc_trace(mVcdFile, ap_sig_bdd_22, "ap_sig_bdd_22");
-    sc_trace(mVcdFile, indvar_flatten_reg_868, "indvar_flatten_reg_868");
-    sc_trace(mVcdFile, exitcond_flatten_fu_879_p2, "exitcond_flatten_fu_879_p2");
-    sc_trace(mVcdFile, exitcond_flatten_reg_891, "exitcond_flatten_reg_891");
+    sc_trace(mVcdFile, indvar_flatten_reg_486, "indvar_flatten_reg_486");
+    sc_trace(mVcdFile, exitcond_flatten_fu_497_p2, "exitcond_flatten_fu_497_p2");
+    sc_trace(mVcdFile, exitcond_flatten_reg_509, "exitcond_flatten_reg_509");
     sc_trace(mVcdFile, ap_sig_cseq_ST_pp0_stg0_fsm_1, "ap_sig_cseq_ST_pp0_stg0_fsm_1");
     sc_trace(mVcdFile, ap_sig_bdd_230, "ap_sig_bdd_230");
     sc_trace(mVcdFile, ap_reg_ppiten_pp0_it0, "ap_reg_ppiten_pp0_it0");
     sc_trace(mVcdFile, ap_sig_bdd_379, "ap_sig_bdd_379");
     sc_trace(mVcdFile, ap_reg_ppiten_pp0_it1, "ap_reg_ppiten_pp0_it1");
-    sc_trace(mVcdFile, indvar_flatten_next_fu_885_p2, "indvar_flatten_next_fu_885_p2");
+    sc_trace(mVcdFile, indvar_flatten_next_fu_503_p2, "indvar_flatten_next_fu_503_p2");
     sc_trace(mVcdFile, ap_sig_bdd_392, "ap_sig_bdd_392");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st4_fsm_2, "ap_sig_cseq_ST_st4_fsm_2");
     sc_trace(mVcdFile, ap_sig_bdd_483, "ap_sig_bdd_483");
@@ -859,7 +859,7 @@ void fire2_copy::thread_ap_clk_no_reset_() {
     } else {
         if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
              !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && 
-             !esl_seteq<1,1,1>(exitcond_flatten_fu_879_p2.read(), ap_const_lv1_0))) {
+             !esl_seteq<1,1,1>(exitcond_flatten_fu_497_p2.read(), ap_const_lv1_0))) {
             ap_reg_ppiten_pp0_it0 = ap_const_logic_0;
         } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
                     !ap_sig_bdd_392.read())) {
@@ -871,27 +871,27 @@ void fire2_copy::thread_ap_clk_no_reset_() {
     } else {
         if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
              !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && 
-             esl_seteq<1,1,1>(exitcond_flatten_fu_879_p2.read(), ap_const_lv1_0))) {
+             esl_seteq<1,1,1>(exitcond_flatten_fu_497_p2.read(), ap_const_lv1_0))) {
             ap_reg_ppiten_pp0_it1 = ap_const_logic_1;
         } else if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
                      !ap_sig_bdd_392.read()) || 
                     (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
                      !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && 
-                     !esl_seteq<1,1,1>(exitcond_flatten_fu_879_p2.read(), ap_const_lv1_0)))) {
+                     !esl_seteq<1,1,1>(exitcond_flatten_fu_497_p2.read(), ap_const_lv1_0)))) {
             ap_reg_ppiten_pp0_it1 = ap_const_logic_0;
         }
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && 
-         esl_seteq<1,1,1>(exitcond_flatten_fu_879_p2.read(), ap_const_lv1_0))) {
-        indvar_flatten_reg_868 = indvar_flatten_next_fu_885_p2.read();
+         esl_seteq<1,1,1>(exitcond_flatten_fu_497_p2.read(), ap_const_lv1_0))) {
+        indvar_flatten_reg_486 = indvar_flatten_next_fu_503_p2.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
                 !ap_sig_bdd_392.read())) {
-        indvar_flatten_reg_868 = ap_const_lv12_0;
+        indvar_flatten_reg_486 = ap_const_lv12_0;
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
-        exitcond_flatten_reg_891 = exitcond_flatten_fu_879_p2.read();
+        exitcond_flatten_reg_509 = exitcond_flatten_fu_497_p2.read();
     }
 }
 
@@ -931,53 +931,53 @@ void fire2_copy::thread_ap_sig_bdd_230() {
 
 void fire2_copy::thread_ap_sig_bdd_379() {
     ap_sig_bdd_379 = ((esl_seteq<1,1,1>(mat_i_0_V_empty_n.read(), ap_const_logic_0) && 
-  esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_0_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_0_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_1_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_1_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_1_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_2_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_2_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_2_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_3_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_3_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_3_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_4_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_4_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_4_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_5_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_5_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_5_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_6_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_6_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_6_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_7_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_7_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_7_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_8_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_8_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_8_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_9_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_9_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_9_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_10_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_10_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_10_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_11_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_11_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_11_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_12_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_12_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_12_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_13_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_13_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_13_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_14_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_14_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat2_o_14_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat_i_15_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
-  esl_seteq<1,1,1>(mat1_o_15_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_0_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_0_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_1_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_1_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_1_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_2_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_2_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_2_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_3_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_3_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_3_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_4_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_4_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_4_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_5_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_5_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_5_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_6_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_6_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_6_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_7_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_7_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_7_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_8_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_8_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_8_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_9_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_9_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_9_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_10_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_10_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_10_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_11_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_11_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_11_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_12_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_12_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_12_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_13_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_13_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_13_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_14_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_14_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat2_o_14_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat_i_15_V_empty_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
+  esl_seteq<1,1,1>(mat1_o_15_V_full_n.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
   esl_seteq<1,1,1>(mat2_o_15_V_full_n.read(), ap_const_logic_0)));
 }
 
@@ -1013,12 +1013,12 @@ void fire2_copy::thread_ap_sig_cseq_ST_st4_fsm_2() {
     }
 }
 
-void fire2_copy::thread_exitcond_flatten_fu_879_p2() {
-    exitcond_flatten_fu_879_p2 = (!indvar_flatten_reg_868.read().is_01() || !ap_const_lv12_BD1.is_01())? sc_lv<1>(): sc_lv<1>(indvar_flatten_reg_868.read() == ap_const_lv12_BD1);
+void fire2_copy::thread_exitcond_flatten_fu_497_p2() {
+    exitcond_flatten_fu_497_p2 = (!indvar_flatten_reg_486.read().is_01() || !ap_const_lv12_BD1.is_01())? sc_lv<1>(): sc_lv<1>(indvar_flatten_reg_486.read() == ap_const_lv12_BD1);
 }
 
-void fire2_copy::thread_indvar_flatten_next_fu_885_p2() {
-    indvar_flatten_next_fu_885_p2 = (!indvar_flatten_reg_868.read().is_01() || !ap_const_lv12_1.is_01())? sc_lv<12>(): (sc_biguint<12>(indvar_flatten_reg_868.read()) + sc_biguint<12>(ap_const_lv12_1));
+void fire2_copy::thread_indvar_flatten_next_fu_503_p2() {
+    indvar_flatten_next_fu_503_p2 = (!indvar_flatten_reg_486.read().is_01() || !ap_const_lv12_1.is_01())? sc_lv<12>(): (sc_biguint<12>(indvar_flatten_reg_486.read()) + sc_biguint<12>(ap_const_lv12_1));
 }
 
 void fire2_copy::thread_mat1_o_0_V_din() {
@@ -1027,7 +1027,7 @@ void fire2_copy::thread_mat1_o_0_V_din() {
 
 void fire2_copy::thread_mat1_o_0_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_0_V_write = ap_const_logic_1;
@@ -1042,7 +1042,7 @@ void fire2_copy::thread_mat1_o_10_V_din() {
 
 void fire2_copy::thread_mat1_o_10_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_10_V_write = ap_const_logic_1;
@@ -1057,7 +1057,7 @@ void fire2_copy::thread_mat1_o_11_V_din() {
 
 void fire2_copy::thread_mat1_o_11_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_11_V_write = ap_const_logic_1;
@@ -1072,7 +1072,7 @@ void fire2_copy::thread_mat1_o_12_V_din() {
 
 void fire2_copy::thread_mat1_o_12_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_12_V_write = ap_const_logic_1;
@@ -1087,7 +1087,7 @@ void fire2_copy::thread_mat1_o_13_V_din() {
 
 void fire2_copy::thread_mat1_o_13_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_13_V_write = ap_const_logic_1;
@@ -1102,7 +1102,7 @@ void fire2_copy::thread_mat1_o_14_V_din() {
 
 void fire2_copy::thread_mat1_o_14_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_14_V_write = ap_const_logic_1;
@@ -1117,7 +1117,7 @@ void fire2_copy::thread_mat1_o_15_V_din() {
 
 void fire2_copy::thread_mat1_o_15_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_15_V_write = ap_const_logic_1;
@@ -1132,7 +1132,7 @@ void fire2_copy::thread_mat1_o_1_V_din() {
 
 void fire2_copy::thread_mat1_o_1_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_1_V_write = ap_const_logic_1;
@@ -1147,7 +1147,7 @@ void fire2_copy::thread_mat1_o_2_V_din() {
 
 void fire2_copy::thread_mat1_o_2_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_2_V_write = ap_const_logic_1;
@@ -1162,7 +1162,7 @@ void fire2_copy::thread_mat1_o_3_V_din() {
 
 void fire2_copy::thread_mat1_o_3_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_3_V_write = ap_const_logic_1;
@@ -1177,7 +1177,7 @@ void fire2_copy::thread_mat1_o_4_V_din() {
 
 void fire2_copy::thread_mat1_o_4_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_4_V_write = ap_const_logic_1;
@@ -1192,7 +1192,7 @@ void fire2_copy::thread_mat1_o_5_V_din() {
 
 void fire2_copy::thread_mat1_o_5_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_5_V_write = ap_const_logic_1;
@@ -1207,7 +1207,7 @@ void fire2_copy::thread_mat1_o_6_V_din() {
 
 void fire2_copy::thread_mat1_o_6_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_6_V_write = ap_const_logic_1;
@@ -1222,7 +1222,7 @@ void fire2_copy::thread_mat1_o_7_V_din() {
 
 void fire2_copy::thread_mat1_o_7_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_7_V_write = ap_const_logic_1;
@@ -1237,7 +1237,7 @@ void fire2_copy::thread_mat1_o_8_V_din() {
 
 void fire2_copy::thread_mat1_o_8_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_8_V_write = ap_const_logic_1;
@@ -1252,7 +1252,7 @@ void fire2_copy::thread_mat1_o_9_V_din() {
 
 void fire2_copy::thread_mat1_o_9_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat1_o_9_V_write = ap_const_logic_1;
@@ -1267,7 +1267,7 @@ void fire2_copy::thread_mat2_o_0_V_din() {
 
 void fire2_copy::thread_mat2_o_0_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_0_V_write = ap_const_logic_1;
@@ -1282,7 +1282,7 @@ void fire2_copy::thread_mat2_o_10_V_din() {
 
 void fire2_copy::thread_mat2_o_10_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_10_V_write = ap_const_logic_1;
@@ -1297,7 +1297,7 @@ void fire2_copy::thread_mat2_o_11_V_din() {
 
 void fire2_copy::thread_mat2_o_11_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_11_V_write = ap_const_logic_1;
@@ -1312,7 +1312,7 @@ void fire2_copy::thread_mat2_o_12_V_din() {
 
 void fire2_copy::thread_mat2_o_12_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_12_V_write = ap_const_logic_1;
@@ -1327,7 +1327,7 @@ void fire2_copy::thread_mat2_o_13_V_din() {
 
 void fire2_copy::thread_mat2_o_13_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_13_V_write = ap_const_logic_1;
@@ -1342,7 +1342,7 @@ void fire2_copy::thread_mat2_o_14_V_din() {
 
 void fire2_copy::thread_mat2_o_14_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_14_V_write = ap_const_logic_1;
@@ -1357,7 +1357,7 @@ void fire2_copy::thread_mat2_o_15_V_din() {
 
 void fire2_copy::thread_mat2_o_15_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_15_V_write = ap_const_logic_1;
@@ -1372,7 +1372,7 @@ void fire2_copy::thread_mat2_o_1_V_din() {
 
 void fire2_copy::thread_mat2_o_1_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_1_V_write = ap_const_logic_1;
@@ -1387,7 +1387,7 @@ void fire2_copy::thread_mat2_o_2_V_din() {
 
 void fire2_copy::thread_mat2_o_2_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_2_V_write = ap_const_logic_1;
@@ -1402,7 +1402,7 @@ void fire2_copy::thread_mat2_o_3_V_din() {
 
 void fire2_copy::thread_mat2_o_3_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_3_V_write = ap_const_logic_1;
@@ -1417,7 +1417,7 @@ void fire2_copy::thread_mat2_o_4_V_din() {
 
 void fire2_copy::thread_mat2_o_4_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_4_V_write = ap_const_logic_1;
@@ -1432,7 +1432,7 @@ void fire2_copy::thread_mat2_o_5_V_din() {
 
 void fire2_copy::thread_mat2_o_5_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_5_V_write = ap_const_logic_1;
@@ -1447,7 +1447,7 @@ void fire2_copy::thread_mat2_o_6_V_din() {
 
 void fire2_copy::thread_mat2_o_6_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_6_V_write = ap_const_logic_1;
@@ -1462,7 +1462,7 @@ void fire2_copy::thread_mat2_o_7_V_din() {
 
 void fire2_copy::thread_mat2_o_7_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_7_V_write = ap_const_logic_1;
@@ -1477,7 +1477,7 @@ void fire2_copy::thread_mat2_o_8_V_din() {
 
 void fire2_copy::thread_mat2_o_8_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_8_V_write = ap_const_logic_1;
@@ -1492,7 +1492,7 @@ void fire2_copy::thread_mat2_o_9_V_din() {
 
 void fire2_copy::thread_mat2_o_9_V_write() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat2_o_9_V_write = ap_const_logic_1;
@@ -1503,7 +1503,7 @@ void fire2_copy::thread_mat2_o_9_V_write() {
 
 void fire2_copy::thread_mat_i_0_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_0_V_read = ap_const_logic_1;
@@ -1514,7 +1514,7 @@ void fire2_copy::thread_mat_i_0_V_read() {
 
 void fire2_copy::thread_mat_i_10_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_10_V_read = ap_const_logic_1;
@@ -1525,7 +1525,7 @@ void fire2_copy::thread_mat_i_10_V_read() {
 
 void fire2_copy::thread_mat_i_11_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_11_V_read = ap_const_logic_1;
@@ -1536,7 +1536,7 @@ void fire2_copy::thread_mat_i_11_V_read() {
 
 void fire2_copy::thread_mat_i_12_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_12_V_read = ap_const_logic_1;
@@ -1547,7 +1547,7 @@ void fire2_copy::thread_mat_i_12_V_read() {
 
 void fire2_copy::thread_mat_i_13_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_13_V_read = ap_const_logic_1;
@@ -1558,7 +1558,7 @@ void fire2_copy::thread_mat_i_13_V_read() {
 
 void fire2_copy::thread_mat_i_14_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_14_V_read = ap_const_logic_1;
@@ -1569,7 +1569,7 @@ void fire2_copy::thread_mat_i_14_V_read() {
 
 void fire2_copy::thread_mat_i_15_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_15_V_read = ap_const_logic_1;
@@ -1580,7 +1580,7 @@ void fire2_copy::thread_mat_i_15_V_read() {
 
 void fire2_copy::thread_mat_i_1_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_1_V_read = ap_const_logic_1;
@@ -1591,7 +1591,7 @@ void fire2_copy::thread_mat_i_1_V_read() {
 
 void fire2_copy::thread_mat_i_2_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_2_V_read = ap_const_logic_1;
@@ -1602,7 +1602,7 @@ void fire2_copy::thread_mat_i_2_V_read() {
 
 void fire2_copy::thread_mat_i_3_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_3_V_read = ap_const_logic_1;
@@ -1613,7 +1613,7 @@ void fire2_copy::thread_mat_i_3_V_read() {
 
 void fire2_copy::thread_mat_i_4_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_4_V_read = ap_const_logic_1;
@@ -1624,7 +1624,7 @@ void fire2_copy::thread_mat_i_4_V_read() {
 
 void fire2_copy::thread_mat_i_5_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_5_V_read = ap_const_logic_1;
@@ -1635,7 +1635,7 @@ void fire2_copy::thread_mat_i_5_V_read() {
 
 void fire2_copy::thread_mat_i_6_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_6_V_read = ap_const_logic_1;
@@ -1646,7 +1646,7 @@ void fire2_copy::thread_mat_i_6_V_read() {
 
 void fire2_copy::thread_mat_i_7_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_7_V_read = ap_const_logic_1;
@@ -1657,7 +1657,7 @@ void fire2_copy::thread_mat_i_7_V_read() {
 
 void fire2_copy::thread_mat_i_8_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_8_V_read = ap_const_logic_1;
@@ -1668,7 +1668,7 @@ void fire2_copy::thread_mat_i_8_V_read() {
 
 void fire2_copy::thread_mat_i_9_V_read() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_pp0_stg0_fsm_1.read()) && 
-         esl_seteq<1,1,1>(exitcond_flatten_reg_891.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(exitcond_flatten_reg_509.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read()) && 
          !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
         mat_i_9_V_read = ap_const_logic_1;
@@ -1687,9 +1687,9 @@ void fire2_copy::thread_ap_NS_fsm() {
             }
             break;
         case 2 : 
-            if (!(esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && !esl_seteq<1,1,1>(exitcond_flatten_fu_879_p2.read(), ap_const_lv1_0))) {
+            if (!(esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && !esl_seteq<1,1,1>(exitcond_flatten_fu_497_p2.read(), ap_const_lv1_0))) {
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
-            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && !esl_seteq<1,1,1>(exitcond_flatten_fu_879_p2.read(), ap_const_lv1_0))) {
+            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && !(ap_sig_bdd_379.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())) && !esl_seteq<1,1,1>(exitcond_flatten_fu_497_p2.read(), ap_const_lv1_0))) {
                 ap_NS_fsm = ap_ST_st4_fsm_2;
             } else {
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;

@@ -57,6 +57,46 @@
 			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module_tb.cpp</location>
 		</link>
 		<link>
+			<name>testbench/golden_soln.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/golden_soln.dat</location>
+		</link>
+		<link>
+			<name>testbench/golden_soln_e1x1.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/golden_soln_e1x1.dat</location>
+		</link>
+		<link>
+			<name>testbench/golden_soln_e3x3.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/golden_soln_e3x3.dat</location>
+		</link>
+		<link>
+			<name>testbench/golden_soln_s1x1.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/golden_soln_s1x1.dat</location>
+		</link>
+		<link>
+			<name>testbench/kernel_e1x1.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/kernel_e1x1.dat</location>
+		</link>
+		<link>
+			<name>testbench/kernel_e3x3.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/kernel_e3x3.dat</location>
+		</link>
+		<link>
+			<name>testbench/kernel_s1x1.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/kernel_s1x1.dat</location>
+		</link>
+		<link>
+			<name>testbench/matrix_input.dat</name>
+			<type>1</type>
+			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/matrix_input.dat</location>
+		</link>
+		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>C:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln/fire_module/solution1/solution1.directive</location>

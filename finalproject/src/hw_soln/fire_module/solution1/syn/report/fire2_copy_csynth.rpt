@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'fire2_copy'
 ================================================================
-* Date:           Sat Apr 29 16:14:25 2017
+* Date:           Mon May 01 22:01:20 2017
 
 * Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
 * Project:        fire_module
@@ -85,8 +85,8 @@
     +-------------------------------+----------+-------+---+----+------------+------------+
     |         Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-------------------------------+----------+-------+---+----+------------+------------+
-    |indvar_flatten_next_fu_885_p2  |     +    |      0|  0|  12|          12|           1|
-    |exitcond_flatten_fu_879_p2     |   icmp   |      0|  0|   5|          12|          12|
+    |indvar_flatten_next_fu_503_p2  |     +    |      0|  0|  12|          12|           1|
+    |exitcond_flatten_fu_497_p2     |   icmp   |      0|  0|   5|          12|          12|
     |ap_sig_bdd_379                 |    or    |      0|  0|   1|           1|           1|
     |ap_sig_bdd_392                 |    or    |      0|  0|   1|           1|           1|
     +-------------------------------+----------+-------+---+----+------------+------------+
@@ -98,7 +98,7 @@
     |          Name          | LUT| Input Size| Bits| Total Bits|
     +------------------------+----+-----------+-----+-----------+
     |ap_NS_fsm               |   1|          4|    1|          4|
-    |indvar_flatten_reg_868  |  12|          2|   12|         24|
+    |indvar_flatten_reg_486  |  12|          2|   12|         24|
     +------------------------+----+-----------+-----+-----------+
     |Total                   |  13|          6|   13|         28|
     +------------------------+----+-----------+-----+-----------+
@@ -111,8 +111,8 @@
     |ap_done_reg               |   1|   0|    1|          0|
     |ap_reg_ppiten_pp0_it0     |   1|   0|    1|          0|
     |ap_reg_ppiten_pp0_it1     |   1|   0|    1|          0|
-    |exitcond_flatten_reg_891  |   1|   0|    1|          0|
-    |indvar_flatten_reg_868    |  12|   0|   12|          0|
+    |exitcond_flatten_reg_509  |   1|   0|    1|          0|
+    |indvar_flatten_reg_486    |  12|   0|   12|          0|
     +--------------------------+----+----+-----+-----------+
     |Total                     |  19|   0|   19|          0|
     +--------------------------+----+----+-----+-----------+
@@ -133,148 +133,148 @@
 |ap_continue         |  in |    1| ap_ctrl_hs |  fire2_copy  | return value |
 |ap_idle             | out |    1| ap_ctrl_hs |  fire2_copy  | return value |
 |ap_ready            | out |    1| ap_ctrl_hs |  fire2_copy  | return value |
-|mat_i_0_V_dout      |  in |   16|   ap_fifo  |   mat_i_0_V  |    pointer   |
+|mat_i_0_V_dout      |  in |   32|   ap_fifo  |   mat_i_0_V  |    pointer   |
 |mat_i_0_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_0_V  |    pointer   |
 |mat_i_0_V_read      | out |    1|   ap_fifo  |   mat_i_0_V  |    pointer   |
-|mat_i_1_V_dout      |  in |   16|   ap_fifo  |   mat_i_1_V  |    pointer   |
+|mat_i_1_V_dout      |  in |   32|   ap_fifo  |   mat_i_1_V  |    pointer   |
 |mat_i_1_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_1_V  |    pointer   |
 |mat_i_1_V_read      | out |    1|   ap_fifo  |   mat_i_1_V  |    pointer   |
-|mat_i_2_V_dout      |  in |   16|   ap_fifo  |   mat_i_2_V  |    pointer   |
+|mat_i_2_V_dout      |  in |   32|   ap_fifo  |   mat_i_2_V  |    pointer   |
 |mat_i_2_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_2_V  |    pointer   |
 |mat_i_2_V_read      | out |    1|   ap_fifo  |   mat_i_2_V  |    pointer   |
-|mat_i_3_V_dout      |  in |   16|   ap_fifo  |   mat_i_3_V  |    pointer   |
+|mat_i_3_V_dout      |  in |   32|   ap_fifo  |   mat_i_3_V  |    pointer   |
 |mat_i_3_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_3_V  |    pointer   |
 |mat_i_3_V_read      | out |    1|   ap_fifo  |   mat_i_3_V  |    pointer   |
-|mat_i_4_V_dout      |  in |   16|   ap_fifo  |   mat_i_4_V  |    pointer   |
+|mat_i_4_V_dout      |  in |   32|   ap_fifo  |   mat_i_4_V  |    pointer   |
 |mat_i_4_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_4_V  |    pointer   |
 |mat_i_4_V_read      | out |    1|   ap_fifo  |   mat_i_4_V  |    pointer   |
-|mat_i_5_V_dout      |  in |   16|   ap_fifo  |   mat_i_5_V  |    pointer   |
+|mat_i_5_V_dout      |  in |   32|   ap_fifo  |   mat_i_5_V  |    pointer   |
 |mat_i_5_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_5_V  |    pointer   |
 |mat_i_5_V_read      | out |    1|   ap_fifo  |   mat_i_5_V  |    pointer   |
-|mat_i_6_V_dout      |  in |   16|   ap_fifo  |   mat_i_6_V  |    pointer   |
+|mat_i_6_V_dout      |  in |   32|   ap_fifo  |   mat_i_6_V  |    pointer   |
 |mat_i_6_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_6_V  |    pointer   |
 |mat_i_6_V_read      | out |    1|   ap_fifo  |   mat_i_6_V  |    pointer   |
-|mat_i_7_V_dout      |  in |   16|   ap_fifo  |   mat_i_7_V  |    pointer   |
+|mat_i_7_V_dout      |  in |   32|   ap_fifo  |   mat_i_7_V  |    pointer   |
 |mat_i_7_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_7_V  |    pointer   |
 |mat_i_7_V_read      | out |    1|   ap_fifo  |   mat_i_7_V  |    pointer   |
-|mat_i_8_V_dout      |  in |   16|   ap_fifo  |   mat_i_8_V  |    pointer   |
+|mat_i_8_V_dout      |  in |   32|   ap_fifo  |   mat_i_8_V  |    pointer   |
 |mat_i_8_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_8_V  |    pointer   |
 |mat_i_8_V_read      | out |    1|   ap_fifo  |   mat_i_8_V  |    pointer   |
-|mat_i_9_V_dout      |  in |   16|   ap_fifo  |   mat_i_9_V  |    pointer   |
+|mat_i_9_V_dout      |  in |   32|   ap_fifo  |   mat_i_9_V  |    pointer   |
 |mat_i_9_V_empty_n   |  in |    1|   ap_fifo  |   mat_i_9_V  |    pointer   |
 |mat_i_9_V_read      | out |    1|   ap_fifo  |   mat_i_9_V  |    pointer   |
-|mat_i_10_V_dout     |  in |   16|   ap_fifo  |  mat_i_10_V  |    pointer   |
+|mat_i_10_V_dout     |  in |   32|   ap_fifo  |  mat_i_10_V  |    pointer   |
 |mat_i_10_V_empty_n  |  in |    1|   ap_fifo  |  mat_i_10_V  |    pointer   |
 |mat_i_10_V_read     | out |    1|   ap_fifo  |  mat_i_10_V  |    pointer   |
-|mat_i_11_V_dout     |  in |   16|   ap_fifo  |  mat_i_11_V  |    pointer   |
+|mat_i_11_V_dout     |  in |   32|   ap_fifo  |  mat_i_11_V  |    pointer   |
 |mat_i_11_V_empty_n  |  in |    1|   ap_fifo  |  mat_i_11_V  |    pointer   |
 |mat_i_11_V_read     | out |    1|   ap_fifo  |  mat_i_11_V  |    pointer   |
-|mat_i_12_V_dout     |  in |   16|   ap_fifo  |  mat_i_12_V  |    pointer   |
+|mat_i_12_V_dout     |  in |   32|   ap_fifo  |  mat_i_12_V  |    pointer   |
 |mat_i_12_V_empty_n  |  in |    1|   ap_fifo  |  mat_i_12_V  |    pointer   |
 |mat_i_12_V_read     | out |    1|   ap_fifo  |  mat_i_12_V  |    pointer   |
-|mat_i_13_V_dout     |  in |   16|   ap_fifo  |  mat_i_13_V  |    pointer   |
+|mat_i_13_V_dout     |  in |   32|   ap_fifo  |  mat_i_13_V  |    pointer   |
 |mat_i_13_V_empty_n  |  in |    1|   ap_fifo  |  mat_i_13_V  |    pointer   |
 |mat_i_13_V_read     | out |    1|   ap_fifo  |  mat_i_13_V  |    pointer   |
-|mat_i_14_V_dout     |  in |   16|   ap_fifo  |  mat_i_14_V  |    pointer   |
+|mat_i_14_V_dout     |  in |   32|   ap_fifo  |  mat_i_14_V  |    pointer   |
 |mat_i_14_V_empty_n  |  in |    1|   ap_fifo  |  mat_i_14_V  |    pointer   |
 |mat_i_14_V_read     | out |    1|   ap_fifo  |  mat_i_14_V  |    pointer   |
-|mat_i_15_V_dout     |  in |   16|   ap_fifo  |  mat_i_15_V  |    pointer   |
+|mat_i_15_V_dout     |  in |   32|   ap_fifo  |  mat_i_15_V  |    pointer   |
 |mat_i_15_V_empty_n  |  in |    1|   ap_fifo  |  mat_i_15_V  |    pointer   |
 |mat_i_15_V_read     | out |    1|   ap_fifo  |  mat_i_15_V  |    pointer   |
-|mat1_o_0_V_din      | out |   16|   ap_fifo  |  mat1_o_0_V  |    pointer   |
+|mat1_o_0_V_din      | out |   32|   ap_fifo  |  mat1_o_0_V  |    pointer   |
 |mat1_o_0_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_0_V  |    pointer   |
 |mat1_o_0_V_write    | out |    1|   ap_fifo  |  mat1_o_0_V  |    pointer   |
-|mat1_o_1_V_din      | out |   16|   ap_fifo  |  mat1_o_1_V  |    pointer   |
+|mat1_o_1_V_din      | out |   32|   ap_fifo  |  mat1_o_1_V  |    pointer   |
 |mat1_o_1_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_1_V  |    pointer   |
 |mat1_o_1_V_write    | out |    1|   ap_fifo  |  mat1_o_1_V  |    pointer   |
-|mat1_o_2_V_din      | out |   16|   ap_fifo  |  mat1_o_2_V  |    pointer   |
+|mat1_o_2_V_din      | out |   32|   ap_fifo  |  mat1_o_2_V  |    pointer   |
 |mat1_o_2_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_2_V  |    pointer   |
 |mat1_o_2_V_write    | out |    1|   ap_fifo  |  mat1_o_2_V  |    pointer   |
-|mat1_o_3_V_din      | out |   16|   ap_fifo  |  mat1_o_3_V  |    pointer   |
+|mat1_o_3_V_din      | out |   32|   ap_fifo  |  mat1_o_3_V  |    pointer   |
 |mat1_o_3_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_3_V  |    pointer   |
 |mat1_o_3_V_write    | out |    1|   ap_fifo  |  mat1_o_3_V  |    pointer   |
-|mat1_o_4_V_din      | out |   16|   ap_fifo  |  mat1_o_4_V  |    pointer   |
+|mat1_o_4_V_din      | out |   32|   ap_fifo  |  mat1_o_4_V  |    pointer   |
 |mat1_o_4_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_4_V  |    pointer   |
 |mat1_o_4_V_write    | out |    1|   ap_fifo  |  mat1_o_4_V  |    pointer   |
-|mat1_o_5_V_din      | out |   16|   ap_fifo  |  mat1_o_5_V  |    pointer   |
+|mat1_o_5_V_din      | out |   32|   ap_fifo  |  mat1_o_5_V  |    pointer   |
 |mat1_o_5_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_5_V  |    pointer   |
 |mat1_o_5_V_write    | out |    1|   ap_fifo  |  mat1_o_5_V  |    pointer   |
-|mat1_o_6_V_din      | out |   16|   ap_fifo  |  mat1_o_6_V  |    pointer   |
+|mat1_o_6_V_din      | out |   32|   ap_fifo  |  mat1_o_6_V  |    pointer   |
 |mat1_o_6_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_6_V  |    pointer   |
 |mat1_o_6_V_write    | out |    1|   ap_fifo  |  mat1_o_6_V  |    pointer   |
-|mat1_o_7_V_din      | out |   16|   ap_fifo  |  mat1_o_7_V  |    pointer   |
+|mat1_o_7_V_din      | out |   32|   ap_fifo  |  mat1_o_7_V  |    pointer   |
 |mat1_o_7_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_7_V  |    pointer   |
 |mat1_o_7_V_write    | out |    1|   ap_fifo  |  mat1_o_7_V  |    pointer   |
-|mat1_o_8_V_din      | out |   16|   ap_fifo  |  mat1_o_8_V  |    pointer   |
+|mat1_o_8_V_din      | out |   32|   ap_fifo  |  mat1_o_8_V  |    pointer   |
 |mat1_o_8_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_8_V  |    pointer   |
 |mat1_o_8_V_write    | out |    1|   ap_fifo  |  mat1_o_8_V  |    pointer   |
-|mat1_o_9_V_din      | out |   16|   ap_fifo  |  mat1_o_9_V  |    pointer   |
+|mat1_o_9_V_din      | out |   32|   ap_fifo  |  mat1_o_9_V  |    pointer   |
 |mat1_o_9_V_full_n   |  in |    1|   ap_fifo  |  mat1_o_9_V  |    pointer   |
 |mat1_o_9_V_write    | out |    1|   ap_fifo  |  mat1_o_9_V  |    pointer   |
-|mat1_o_10_V_din     | out |   16|   ap_fifo  |  mat1_o_10_V |    pointer   |
+|mat1_o_10_V_din     | out |   32|   ap_fifo  |  mat1_o_10_V |    pointer   |
 |mat1_o_10_V_full_n  |  in |    1|   ap_fifo  |  mat1_o_10_V |    pointer   |
 |mat1_o_10_V_write   | out |    1|   ap_fifo  |  mat1_o_10_V |    pointer   |
-|mat1_o_11_V_din     | out |   16|   ap_fifo  |  mat1_o_11_V |    pointer   |
+|mat1_o_11_V_din     | out |   32|   ap_fifo  |  mat1_o_11_V |    pointer   |
 |mat1_o_11_V_full_n  |  in |    1|   ap_fifo  |  mat1_o_11_V |    pointer   |
 |mat1_o_11_V_write   | out |    1|   ap_fifo  |  mat1_o_11_V |    pointer   |
-|mat1_o_12_V_din     | out |   16|   ap_fifo  |  mat1_o_12_V |    pointer   |
+|mat1_o_12_V_din     | out |   32|   ap_fifo  |  mat1_o_12_V |    pointer   |
 |mat1_o_12_V_full_n  |  in |    1|   ap_fifo  |  mat1_o_12_V |    pointer   |
 |mat1_o_12_V_write   | out |    1|   ap_fifo  |  mat1_o_12_V |    pointer   |
-|mat1_o_13_V_din     | out |   16|   ap_fifo  |  mat1_o_13_V |    pointer   |
+|mat1_o_13_V_din     | out |   32|   ap_fifo  |  mat1_o_13_V |    pointer   |
 |mat1_o_13_V_full_n  |  in |    1|   ap_fifo  |  mat1_o_13_V |    pointer   |
 |mat1_o_13_V_write   | out |    1|   ap_fifo  |  mat1_o_13_V |    pointer   |
-|mat1_o_14_V_din     | out |   16|   ap_fifo  |  mat1_o_14_V |    pointer   |
+|mat1_o_14_V_din     | out |   32|   ap_fifo  |  mat1_o_14_V |    pointer   |
 |mat1_o_14_V_full_n  |  in |    1|   ap_fifo  |  mat1_o_14_V |    pointer   |
 |mat1_o_14_V_write   | out |    1|   ap_fifo  |  mat1_o_14_V |    pointer   |
-|mat1_o_15_V_din     | out |   16|   ap_fifo  |  mat1_o_15_V |    pointer   |
+|mat1_o_15_V_din     | out |   32|   ap_fifo  |  mat1_o_15_V |    pointer   |
 |mat1_o_15_V_full_n  |  in |    1|   ap_fifo  |  mat1_o_15_V |    pointer   |
 |mat1_o_15_V_write   | out |    1|   ap_fifo  |  mat1_o_15_V |    pointer   |
-|mat2_o_0_V_din      | out |   16|   ap_fifo  |  mat2_o_0_V  |    pointer   |
+|mat2_o_0_V_din      | out |   32|   ap_fifo  |  mat2_o_0_V  |    pointer   |
 |mat2_o_0_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_0_V  |    pointer   |
 |mat2_o_0_V_write    | out |    1|   ap_fifo  |  mat2_o_0_V  |    pointer   |
-|mat2_o_1_V_din      | out |   16|   ap_fifo  |  mat2_o_1_V  |    pointer   |
+|mat2_o_1_V_din      | out |   32|   ap_fifo  |  mat2_o_1_V  |    pointer   |
 |mat2_o_1_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_1_V  |    pointer   |
 |mat2_o_1_V_write    | out |    1|   ap_fifo  |  mat2_o_1_V  |    pointer   |
-|mat2_o_2_V_din      | out |   16|   ap_fifo  |  mat2_o_2_V  |    pointer   |
+|mat2_o_2_V_din      | out |   32|   ap_fifo  |  mat2_o_2_V  |    pointer   |
 |mat2_o_2_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_2_V  |    pointer   |
 |mat2_o_2_V_write    | out |    1|   ap_fifo  |  mat2_o_2_V  |    pointer   |
-|mat2_o_3_V_din      | out |   16|   ap_fifo  |  mat2_o_3_V  |    pointer   |
+|mat2_o_3_V_din      | out |   32|   ap_fifo  |  mat2_o_3_V  |    pointer   |
 |mat2_o_3_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_3_V  |    pointer   |
 |mat2_o_3_V_write    | out |    1|   ap_fifo  |  mat2_o_3_V  |    pointer   |
-|mat2_o_4_V_din      | out |   16|   ap_fifo  |  mat2_o_4_V  |    pointer   |
+|mat2_o_4_V_din      | out |   32|   ap_fifo  |  mat2_o_4_V  |    pointer   |
 |mat2_o_4_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_4_V  |    pointer   |
 |mat2_o_4_V_write    | out |    1|   ap_fifo  |  mat2_o_4_V  |    pointer   |
-|mat2_o_5_V_din      | out |   16|   ap_fifo  |  mat2_o_5_V  |    pointer   |
+|mat2_o_5_V_din      | out |   32|   ap_fifo  |  mat2_o_5_V  |    pointer   |
 |mat2_o_5_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_5_V  |    pointer   |
 |mat2_o_5_V_write    | out |    1|   ap_fifo  |  mat2_o_5_V  |    pointer   |
-|mat2_o_6_V_din      | out |   16|   ap_fifo  |  mat2_o_6_V  |    pointer   |
+|mat2_o_6_V_din      | out |   32|   ap_fifo  |  mat2_o_6_V  |    pointer   |
 |mat2_o_6_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_6_V  |    pointer   |
 |mat2_o_6_V_write    | out |    1|   ap_fifo  |  mat2_o_6_V  |    pointer   |
-|mat2_o_7_V_din      | out |   16|   ap_fifo  |  mat2_o_7_V  |    pointer   |
+|mat2_o_7_V_din      | out |   32|   ap_fifo  |  mat2_o_7_V  |    pointer   |
 |mat2_o_7_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_7_V  |    pointer   |
 |mat2_o_7_V_write    | out |    1|   ap_fifo  |  mat2_o_7_V  |    pointer   |
-|mat2_o_8_V_din      | out |   16|   ap_fifo  |  mat2_o_8_V  |    pointer   |
+|mat2_o_8_V_din      | out |   32|   ap_fifo  |  mat2_o_8_V  |    pointer   |
 |mat2_o_8_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_8_V  |    pointer   |
 |mat2_o_8_V_write    | out |    1|   ap_fifo  |  mat2_o_8_V  |    pointer   |
-|mat2_o_9_V_din      | out |   16|   ap_fifo  |  mat2_o_9_V  |    pointer   |
+|mat2_o_9_V_din      | out |   32|   ap_fifo  |  mat2_o_9_V  |    pointer   |
 |mat2_o_9_V_full_n   |  in |    1|   ap_fifo  |  mat2_o_9_V  |    pointer   |
 |mat2_o_9_V_write    | out |    1|   ap_fifo  |  mat2_o_9_V  |    pointer   |
-|mat2_o_10_V_din     | out |   16|   ap_fifo  |  mat2_o_10_V |    pointer   |
+|mat2_o_10_V_din     | out |   32|   ap_fifo  |  mat2_o_10_V |    pointer   |
 |mat2_o_10_V_full_n  |  in |    1|   ap_fifo  |  mat2_o_10_V |    pointer   |
 |mat2_o_10_V_write   | out |    1|   ap_fifo  |  mat2_o_10_V |    pointer   |
-|mat2_o_11_V_din     | out |   16|   ap_fifo  |  mat2_o_11_V |    pointer   |
+|mat2_o_11_V_din     | out |   32|   ap_fifo  |  mat2_o_11_V |    pointer   |
 |mat2_o_11_V_full_n  |  in |    1|   ap_fifo  |  mat2_o_11_V |    pointer   |
 |mat2_o_11_V_write   | out |    1|   ap_fifo  |  mat2_o_11_V |    pointer   |
-|mat2_o_12_V_din     | out |   16|   ap_fifo  |  mat2_o_12_V |    pointer   |
+|mat2_o_12_V_din     | out |   32|   ap_fifo  |  mat2_o_12_V |    pointer   |
 |mat2_o_12_V_full_n  |  in |    1|   ap_fifo  |  mat2_o_12_V |    pointer   |
 |mat2_o_12_V_write   | out |    1|   ap_fifo  |  mat2_o_12_V |    pointer   |
-|mat2_o_13_V_din     | out |   16|   ap_fifo  |  mat2_o_13_V |    pointer   |
+|mat2_o_13_V_din     | out |   32|   ap_fifo  |  mat2_o_13_V |    pointer   |
 |mat2_o_13_V_full_n  |  in |    1|   ap_fifo  |  mat2_o_13_V |    pointer   |
 |mat2_o_13_V_write   | out |    1|   ap_fifo  |  mat2_o_13_V |    pointer   |
-|mat2_o_14_V_din     | out |   16|   ap_fifo  |  mat2_o_14_V |    pointer   |
+|mat2_o_14_V_din     | out |   32|   ap_fifo  |  mat2_o_14_V |    pointer   |
 |mat2_o_14_V_full_n  |  in |    1|   ap_fifo  |  mat2_o_14_V |    pointer   |
 |mat2_o_14_V_write   | out |    1|   ap_fifo  |  mat2_o_14_V |    pointer   |
-|mat2_o_15_V_din     | out |   16|   ap_fifo  |  mat2_o_15_V |    pointer   |
+|mat2_o_15_V_din     | out |   32|   ap_fifo  |  mat2_o_15_V |    pointer   |
 |mat2_o_15_V_full_n  |  in |    1|   ap_fifo  |  mat2_o_15_V |    pointer   |
 |mat2_o_15_V_write   | out |    1|   ap_fifo  |  mat2_o_15_V |    pointer   |
 +--------------------+-----+-----+------------+--------------+--------------+

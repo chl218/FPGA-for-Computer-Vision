@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fire2_combine'" level="0">
-<item name = "Date">Sat Apr 29 16:14:05 2017
+<item name = "Date">Mon May 01 22:00:36 2017
 </item>
 <item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
 <item name = "Project">fire_module</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00, 3.51, 0.63</column>
+<column name="ap_clk">5.00, 3.71, 0.63</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">6065, 6065, 6065, 6065, none</column>
+<column name="">6053, 6053, 6053, 6053, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,8 +36,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">3025, 3025, 2, 1, 1, 3025, yes</column>
-<column name="- Loop 2">9, 9, 1, 1, 1, 9, yes</column>
-<column name="- Loop 3">3025, 3025, 2, 1, 1, 3025, yes</column>
+<column name="- Loop 2">3025, 3025, 2, 1, 1, 3025, yes</column>
 </table>
 </item>
 </section>

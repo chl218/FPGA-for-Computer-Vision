@@ -13,7 +13,7 @@ set Pointer0 "0"
 set Reference0 "0"
 set Dims0 [list 96]
 set Interface0 [list AP_STREAM 0] 
-set DataType0 "short"
+set DataType0 "int"
 set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
 lappend PortList $Port0
 set PortName1 "kernel_s1x1"
@@ -23,9 +23,9 @@ set Const1 "0"
 set Volatile1 "0"
 set Pointer1 "0"
 set Reference1 "0"
-set Dims1 [list 16]
+set Dims1 [list 96 16]
 set Interface1 "wire"
-set DataType1 "short"
+set DataType1 "int"
 set Port1 [list $PortName1 $Interface1 $DataType1 $Pointer1 $Dims1 $Const1 $Volatile1 $ArrayOpt1]
 lappend PortList $Port1
 set PortName2 "kernel_e1x1"
@@ -35,9 +35,9 @@ set Const2 "0"
 set Volatile2 "0"
 set Pointer2 "0"
 set Reference2 "0"
-set Dims2 [list 64]
+set Dims2 [list 16 64]
 set Interface2 "wire"
-set DataType2 "short"
+set DataType2 "int"
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2
 set PortName3 "kernel_e3x3"
@@ -47,9 +47,9 @@ set Const3 "0"
 set Volatile3 "0"
 set Pointer3 "0"
 set Reference3 "0"
-set Dims3 [list 3 3 64]
+set Dims3 [list 3 3 16 64]
 set Interface3 "wire"
-set DataType3 "short"
+set DataType3 "int"
 set Port3 [list $PortName3 $Interface3 $DataType3 $Pointer3 $Dims3 $Const3 $Volatile3 $ArrayOpt3]
 lappend PortList $Port3
 set PortName4 "matrix_o"
@@ -61,7 +61,7 @@ set Pointer4 "0"
 set Reference4 "0"
 set Dims4 [list 128]
 set Interface4 [list AP_STREAM 0] 
-set DataType4 "short"
+set DataType4 "int"
 set Port4 [list $PortName4 $Interface4 $DataType4 $Pointer4 $Dims4 $Const4 $Volatile4 $ArrayOpt4]
 lappend PortList $Port4
 set globalAPint "" 

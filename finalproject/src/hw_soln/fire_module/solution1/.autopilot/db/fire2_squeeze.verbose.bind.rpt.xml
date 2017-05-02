@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fire2_squeeze'" level="0">
-<item name = "Date">Sat Apr 29 16:12:20 2017
+<item name = "Date">Mon May 01 21:58:58 2017
 </item>
 <item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
 <item name = "Project">fire_module</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00, 3.89, 0.63</column>
+<column name="ap_clk">5.00, 3.74, 0.63</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">48413, 48413, 48413, 48413, none</column>
+<column name="">6446468, 6446468, 6446468, 6446468, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- For_Each_Kernel_For_Each_Row_For_Each_Col">48411, 48411, 13, 1, 1, 48400, yes</column>
+<column name="- memset_depth_buffer">191, 191, 2, -, -, 96, no</column>
+<column name="- Row_Col">6446275, 6446275, 2131, -, -, 3025, no</column>
+<column name=" + Buffer">384, 384, 4, -, -, 96, no</column>
+<column name=" + Convolution">1744, 1744, 109, -, -, 16, no</column>
+<column name="  ++ Depth">106, 106, 11, 1, 1, 96, yes</column>
 </table>
 </item>
 </section>

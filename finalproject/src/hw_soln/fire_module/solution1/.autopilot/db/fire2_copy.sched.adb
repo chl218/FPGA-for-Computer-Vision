@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -56,7 +56,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -84,7 +84,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -112,7 +112,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -140,7 +140,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -168,7 +168,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -196,7 +196,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -224,7 +224,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -252,7 +252,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -280,7 +280,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -308,7 +308,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -336,7 +336,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -364,7 +364,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -392,7 +392,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -420,7 +420,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -448,7 +448,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -476,7 +476,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -504,7 +504,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -532,7 +532,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -560,7 +560,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -588,7 +588,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -616,7 +616,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -644,7 +644,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -672,7 +672,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -700,7 +700,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -728,7 +728,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -756,7 +756,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -784,7 +784,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -812,7 +812,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -840,7 +840,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -868,7 +868,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -896,7 +896,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -924,7 +924,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -952,7 +952,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -980,7 +980,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1008,7 +1008,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1036,7 +1036,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1064,7 +1064,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1092,7 +1092,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1120,7 +1120,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1148,7 +1148,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1176,7 +1176,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1204,7 +1204,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1232,7 +1232,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1260,7 +1260,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1288,7 +1288,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1316,7 +1316,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1344,7 +1344,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -1366,7 +1366,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1381,7 +1381,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>29</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -1522,7 +1522,7 @@
 						<name>tmp</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1537,7 +1537,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -1546,7 +1546,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1564,7 +1564,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1579,7 +1579,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -1607,7 +1607,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1622,7 +1622,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1647,10 +1647,10 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>tmp_233</name>
+						<name>tmp_123</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1665,7 +1665,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -1674,7 +1674,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1692,7 +1692,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1707,7 +1707,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -1735,7 +1735,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1750,7 +1750,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1775,10 +1775,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>tmp_234</name>
+						<name>tmp_124</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1793,7 +1793,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -1802,7 +1802,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1820,7 +1820,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1835,7 +1835,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -1863,7 +1863,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1878,7 +1878,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1903,10 +1903,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>tmp_235</name>
+						<name>tmp_125</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1921,7 +1921,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -1930,7 +1930,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1948,7 +1948,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1963,7 +1963,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -1991,7 +1991,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2006,7 +2006,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2031,10 +2031,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>tmp_236</name>
+						<name>tmp_126</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2049,7 +2049,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2058,7 +2058,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2076,7 +2076,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2091,7 +2091,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2119,7 +2119,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2134,7 +2134,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2159,10 +2159,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>tmp_237</name>
+						<name>tmp_127</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2177,7 +2177,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2186,7 +2186,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2204,7 +2204,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2219,7 +2219,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2247,7 +2247,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2262,7 +2262,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2287,10 +2287,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>tmp_238</name>
+						<name>tmp_128</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2305,7 +2305,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2314,7 +2314,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2332,7 +2332,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2347,7 +2347,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2375,7 +2375,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2390,7 +2390,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2415,10 +2415,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>tmp_239</name>
+						<name>tmp_129</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2433,7 +2433,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2442,7 +2442,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2460,7 +2460,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2475,7 +2475,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2503,7 +2503,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2518,7 +2518,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2543,10 +2543,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>tmp_240</name>
+						<name>tmp_130</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2561,7 +2561,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2570,7 +2570,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2588,7 +2588,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2603,7 +2603,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2631,7 +2631,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2646,7 +2646,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2671,10 +2671,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>tmp_241</name>
+						<name>tmp_131</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2689,7 +2689,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2698,7 +2698,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2716,7 +2716,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2731,7 +2731,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2759,7 +2759,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2774,7 +2774,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2799,10 +2799,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>tmp_242</name>
+						<name>tmp_132</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2817,7 +2817,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2826,7 +2826,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2844,7 +2844,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2859,7 +2859,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -2887,7 +2887,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2902,7 +2902,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -2927,10 +2927,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>tmp_243</name>
+						<name>tmp_133</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2945,7 +2945,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -2954,7 +2954,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2972,7 +2972,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2987,7 +2987,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3015,7 +3015,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3030,7 +3030,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3055,10 +3055,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>tmp_244</name>
+						<name>tmp_134</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3073,7 +3073,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3082,7 +3082,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3100,7 +3100,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3115,7 +3115,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3143,7 +3143,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3158,7 +3158,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3183,10 +3183,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>tmp_245</name>
+						<name>tmp_135</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3201,7 +3201,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3210,7 +3210,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3228,7 +3228,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3243,7 +3243,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3271,7 +3271,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3286,7 +3286,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3311,10 +3311,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>tmp_246</name>
+						<name>tmp_136</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3329,7 +3329,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3338,7 +3338,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3356,7 +3356,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3371,7 +3371,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3399,7 +3399,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3414,7 +3414,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3439,10 +3439,10 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>tmp_247</name>
+						<name>tmp_137</name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3457,7 +3457,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>34</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3466,7 +3466,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3484,7 +3484,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3499,7 +3499,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>35</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3527,7 +3527,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3542,7 +3542,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>36</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3597,7 +3597,7 @@
 						<name></name>
 						<fileName>fire_module.cpp</fileName>
 						<fileDirectory>c:/Users/Jack/Desktop/cse291/individual/finalproject/src/hw_soln</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>75</lineNumber>
 						<contextFuncName>copy</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3612,7 +3612,7 @@
 											<first>fire_module.cpp</first>
 											<second>copy</second>
 										</first>
-										<second>40</second>
+										<second>75</second>
 									</item>
 								</second>
 							</item>
@@ -4412,25 +4412,25 @@
 				<sink_obj>158</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_204">
-				<id>1060</id>
+				<id>869</id>
 				<edge_type>2</edge_type>
 				<source_obj>98</source_obj>
 				<sink_obj>103</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_205">
-				<id>1061</id>
+				<id>870</id>
 				<edge_type>2</edge_type>
 				<source_obj>103</source_obj>
 				<sink_obj>161</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_206">
-				<id>1062</id>
+				<id>871</id>
 				<edge_type>2</edge_type>
 				<source_obj>103</source_obj>
 				<sink_obj>159</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_207">
-				<id>1063</id>
+				<id>872</id>
 				<edge_type>2</edge_type>
 				<source_obj>159</source_obj>
 				<sink_obj>103</sink_obj>

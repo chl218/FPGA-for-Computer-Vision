@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fire2'" level="0">
-<item name = "Date">Sat Apr 29 16:14:15 2017
+<item name = "Date">Mon May 01 22:00:46 2017
 </item>
 <item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
 <item name = "Project">fire_module</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00, 4.08, 0.63</column>
+<column name="ap_clk">5.00, 4.12, 0.63</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">196662, 196662, 193611, 193611, dataflow</column>
+<column name="">6446468, 6446468, 6446469, 6446469, dataflow</column>
 </table>
 </item>
 <item name = "Detail">

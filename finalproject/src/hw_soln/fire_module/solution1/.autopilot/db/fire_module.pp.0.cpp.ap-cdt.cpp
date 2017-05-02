@@ -587,6 +587,394 @@ __extension__ typedef unsigned long long uintmax_t;
 /* 7.18.4  Macros for integer constants */
 #pragma line 33 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/include\\stdint.h" 2 3 4
 #pragma line 5 "./fire_module.h" 2
+#pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 1 3
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 1 3
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+#pragma line 9 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 2 3
+#pragma empty_line
+#pragma empty_line
+#pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw_print_push.h" 1 3
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+#pragma empty_line
+/* Undefine __mingw_<printf> macros.  */
+#pragma line 11 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 2 3
+#pragma empty_line
+#pragma empty_line
+#pragma pack(push,_CRT_PACKING)
+#pragma empty_line
+#pragma empty_line
+extern "C" {
+#pragma line 26 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  struct _iobuf {
+    char *_ptr;
+    int _cnt;
+    char *_base;
+    int _flag;
+    int _file;
+    int _charbuf;
+    int _bufsiz;
+    char *_tmpfname;
+  };
+  typedef struct _iobuf FILE;
+#pragma line 84 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  typedef long _off_t;
+#pragma empty_line
+  typedef long off_t;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __extension__ typedef long long _off64_t;
+#pragma empty_line
+  __extension__ typedef long long off64_t;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __attribute__ ((__dllimport__)) FILE * __iob_func(void);
+#pragma line 120 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  __extension__ typedef long long fpos_t;
+#pragma line 157 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) int _filbuf(FILE *_File);
+  __attribute__ ((__dllimport__)) int _flsbuf(int _Ch,FILE *_File);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __attribute__ ((__dllimport__)) FILE * _fsopen(const char *_Filename,const char *_Mode,int _ShFlag);
+#pragma empty_line
+  void clearerr(FILE *_File);
+  int fclose(FILE *_File);
+  __attribute__ ((__dllimport__)) int _fcloseall(void);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __attribute__ ((__dllimport__)) FILE * _fdopen(int _FileHandle,const char *_Mode);
+#pragma empty_line
+  int feof(FILE *_File);
+  int ferror(FILE *_File);
+  int fflush(FILE *_File);
+  int fgetc(FILE *_File);
+  __attribute__ ((__dllimport__)) int _fgetchar(void);
+  int fgetpos(FILE * __restrict__ _File ,fpos_t * __restrict__ _Pos);
+  char * fgets(char * __restrict__ _Buf,int _MaxCount,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) int _fileno(FILE *_File);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __attribute__ ((__dllimport__)) char * _tempnam(const char *_DirName,const char *_FilePrefix);
+  __attribute__ ((__dllimport__)) int _flushall(void);
+  FILE * fopen(const char * __restrict__ _Filename,const char * __restrict__ _Mode) ;
+  FILE *fopen64(const char * __restrict__ filename,const char * __restrict__ mode);
+  int fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+  int fputc(int _Ch,FILE *_File);
+  __attribute__ ((__dllimport__)) int _fputchar(int _Ch);
+  int fputs(const char * __restrict__ _Str,FILE * __restrict__ _File);
+  size_t fread(void * __restrict__ _DstBuf,size_t _ElementSize,size_t _Count,FILE * __restrict__ _File);
+  FILE * freopen(const char * __restrict__ _Filename,const char * __restrict__ _Mode,FILE * __restrict__ _File) ;
+  int fscanf(FILE * __restrict__ _File,const char * __restrict__ _Format,...) ;
+  int _fscanf_l(FILE * __restrict__ _File,const char * __restrict__ _Format,_locale_t locale,...) ;
+  int fsetpos(FILE *_File,const fpos_t *_Pos);
+  int fseek(FILE *_File,long _Offset,int _Origin);
+  int fseeko64(FILE* stream, _off64_t offset, int whence);
+  long ftell(FILE *_File);
+  _off64_t ftello64(FILE * stream);
+  __extension__ int _fseeki64(FILE *_File,long long _Offset,int _Origin);
+  __extension__ long long _ftelli64(FILE *_File);
+  size_t fwrite(const void * __restrict__ _Str,size_t _Size,size_t _Count,FILE * __restrict__ _File);
+  int getc(FILE *_File);
+  int getchar(void);
+  __attribute__ ((__dllimport__)) int _getmaxstdio(void);
+  char * gets(char *_Buffer) ;
+  int _getw(FILE *_File);
+#pragma empty_line
+#pragma empty_line
+  void perror(const char *_ErrMsg);
+#pragma empty_line
+  __attribute__ ((__dllimport__)) int _pclose(FILE *_File);
+  __attribute__ ((__dllimport__)) FILE * _popen(const char *_Command,const char *_Mode);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  int printf(const char * __restrict__ _Format,...);
+  int putc(int _Ch,FILE *_File);
+  int putchar(int _Ch);
+  int puts(const char *_Str);
+  __attribute__ ((__dllimport__)) int _putw(int _Word,FILE *_File);
+#pragma empty_line
+#pragma empty_line
+  int remove(const char *_Filename);
+  int rename(const char *_OldFilename,const char *_NewFilename);
+  __attribute__ ((__dllimport__)) int _unlink(const char *_Filename);
+#pragma empty_line
+  int unlink(const char *_Filename) ;
+#pragma empty_line
+#pragma empty_line
+  void rewind(FILE *_File);
+  __attribute__ ((__dllimport__)) int _rmtmp(void);
+  int scanf(const char * __restrict__ _Format,...) ;
+  int _scanf_l(const char * __restrict__ format,_locale_t locale,... ) ;
+  void setbuf(FILE * __restrict__ _File,char * __restrict__ _Buffer) ;
+  __attribute__ ((__dllimport__)) int _setmaxstdio(int _Max);
+  __attribute__ ((__dllimport__)) unsigned int _set_output_format(unsigned int _Format);
+  __attribute__ ((__dllimport__)) unsigned int _get_output_format(void);
+  unsigned int __mingw_set_output_format(unsigned int _Format);
+  unsigned int __mingw_get_output_format(void);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  int setvbuf(FILE * __restrict__ _File,char * __restrict__ _Buf,int _Mode,size_t _Size);
+  __attribute__ ((__dllimport__)) int _scprintf(const char * __restrict__ _Format,...);
+  int sscanf(const char * __restrict__ _Src,const char * __restrict__ _Format,...) ;
+  int _sscanf_l(const char * __restrict__ buffer,const char * __restrict__ format,_locale_t locale,...) ;
+  __attribute__ ((__dllimport__)) int _snscanf(const char * __restrict__ _Src,size_t _MaxCount,const char * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int _snscanf_l(const char * __restrict__ input,size_t length,const char * __restrict__ format,_locale_t locale,...) ;
+  FILE * tmpfile(void) ;
+  char * tmpnam(char *_Buffer);
+  int ungetc(int _Ch,FILE *_File);
+  int vfprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,va_list _ArgList);
+  int vprintf(const char * __restrict__ _Format,va_list _ArgList);
+#pragma empty_line
+  /* Make sure macros are not defined.  */
+  extern
+    __attribute__((__format__ (gnu_printf, 3, 0))) __attribute__ ((__nonnull__ (3)))
+    int __mingw_vsnprintf(char * __restrict__ _DstBuf,size_t _MaxCount,const char * __restrict__ _Format,
+      va_list _ArgList);
+  extern
+    __attribute__((__format__ (gnu_printf, 3, 4))) __attribute__ ((__nonnull__ (3)))
+    int __mingw_snprintf(char * __restrict__ s, size_t n, const char * __restrict__ format, ...);
+  extern
+    __attribute__((__format__ (gnu_printf, 1, 2))) __attribute__ ((__nonnull__ (1)))
+    int __mingw_printf(const char * __restrict__ , ... ) __attribute__ ((__nothrow__));
+  extern
+    __attribute__((__format__ (gnu_printf, 1, 0))) __attribute__ ((__nonnull__ (1)))
+    int __mingw_vprintf (const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+  extern
+    __attribute__((__format__ (gnu_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+    int __mingw_fprintf (FILE * __restrict__ , const char * __restrict__ , ...) __attribute__ ((__nothrow__));
+  extern
+    __attribute__((__format__ (gnu_printf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+    int __mingw_vfprintf (FILE * __restrict__ , const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+  extern
+    __attribute__((__format__ (gnu_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+    int __mingw_sprintf (char * __restrict__ , const char * __restrict__ , ...) __attribute__ ((__nothrow__));
+  extern
+    __attribute__((__format__ (gnu_printf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+    int __mingw_vsprintf (char * __restrict__ , const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+#pragma empty_line
+  __attribute__ ((__dllimport__)) int _snprintf(char * __restrict__ _Dest,size_t _Count,const char * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int _snprintf_l(char * __restrict__ buffer,size_t count,const char * __restrict__ format,_locale_t locale,...) ;
+  __attribute__ ((__dllimport__)) int _vsnprintf(char * __restrict__ _Dest,size_t _Count,const char * __restrict__ _Format,va_list _Args) ;
+  __attribute__ ((__dllimport__)) int _vsnprintf_l(char * __restrict__ buffer,size_t count,const char * __restrict__ format,_locale_t locale,va_list argptr) ;
+  int sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) ;
+  int _sprintf_l(char * __restrict__ buffer,const char * __restrict__ format,_locale_t locale,...) ;
+  int vsprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,va_list _Args) ;
+#pragma empty_line
+/* this is here to deal with software defining
+ * vsnprintf as _vsnprintf, eg. libxml2.  */
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  int vsnprintf(char * __restrict__ _DstBuf,size_t _MaxCount,const char * __restrict__ _Format,va_list _ArgList) ;
+#pragma empty_line
+  int snprintf(char * __restrict__ s, size_t n, const char * __restrict__ format, ...);
+#pragma line 312 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  int vscanf(const char * __restrict__ Format, va_list argp);
+  int vfscanf (FILE * __restrict__ fp, const char * __restrict__ Format,va_list argp);
+  int vsscanf (const char * __restrict__ _Str,const char * __restrict__ Format,va_list argp);
+#pragma empty_line
+  __attribute__ ((__dllimport__)) int _vscprintf(const char * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _set_printf_count_output(int _Value);
+  __attribute__ ((__dllimport__)) int _get_printf_count_output(void);
+#pragma line 330 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) FILE * _wfsopen(const wchar_t *_Filename,const wchar_t *_Mode,int _ShFlag);
+#pragma empty_line
+#pragma empty_line
+  wint_t fgetwc(FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t _fgetwchar(void);
+  wint_t fputwc(wchar_t _Ch,FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t _fputwchar(wchar_t _Ch);
+  wint_t getwc(FILE *_File);
+  wint_t getwchar(void);
+  wint_t putwc(wchar_t _Ch,FILE *_File);
+  wint_t putwchar(wchar_t _Ch);
+  wint_t ungetwc(wint_t _Ch,FILE *_File);
+  wchar_t * fgetws(wchar_t * __restrict__ _Dst,int _SizeInWords,FILE * __restrict__ _File);
+  int fputws(const wchar_t * __restrict__ _Str,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) wchar_t * _getws(wchar_t *_String) ;
+  __attribute__ ((__dllimport__)) int _putws(const wchar_t *_Str);
+  int fwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
+  int wprintf(const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _scwprintf(const wchar_t * __restrict__ _Format,...);
+  int vfwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
+  int vwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int swprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ , ...) ;
+  __attribute__ ((__dllimport__)) int _swprintf_l(wchar_t * __restrict__ buffer,size_t count,const wchar_t * __restrict__ format,_locale_t locale,... ) ;
+  __attribute__ ((__dllimport__)) int vswprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ ,va_list) ;
+  __attribute__ ((__dllimport__)) int _swprintf_c(wchar_t * __restrict__ _DstBuf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _vswprintf_c(wchar_t * __restrict__ _DstBuf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _snwprintf(wchar_t * __restrict__ _Dest,size_t _Count,const wchar_t * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int _vsnwprintf(wchar_t * __restrict__ _Dest,size_t _Count,const wchar_t * __restrict__ _Format,va_list _Args) ;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  int snwprintf (wchar_t * __restrict__ s, size_t n, const wchar_t * __restrict__ format, ...);
+  int vsnwprintf (wchar_t * __restrict__ , size_t, const wchar_t * __restrict__ , va_list);
+#pragma line 373 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  int vwscanf (const wchar_t * __restrict__ , va_list);
+  int vfwscanf (FILE * __restrict__ ,const wchar_t * __restrict__ ,va_list);
+  int vswscanf (const wchar_t * __restrict__ ,const wchar_t * __restrict__ ,va_list);
+#pragma empty_line
+  __attribute__ ((__dllimport__)) int _fwprintf_p(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _wprintf_p(const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _vfwprintf_p(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _vwprintf_p(const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _swprintf_p(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _vswprintf_p(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _scwprintf_p(const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _vscwprintf_p(const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _wprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _wprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _vwprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _vwprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _fwprintf_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _fwprintf_p_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _vfwprintf_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _vfwprintf_p_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _swprintf_c_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _swprintf_p_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _vswprintf_c_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _vswprintf_p_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _scwprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _scwprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _vscwprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _snwprintf_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  __attribute__ ((__dllimport__)) int _vsnwprintf_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList) ;
+  __attribute__ ((__dllimport__)) int _swprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _vswprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,va_list _Args);
+  __attribute__ ((__dllimport__)) int __swprintf_l(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,_locale_t _Plocinfo,...) ;
+  __attribute__ ((__dllimport__)) int _vswprintf_l(wchar_t * __restrict__ buffer,size_t count,const wchar_t * __restrict__ format,_locale_t locale,va_list argptr) ;
+  __attribute__ ((__dllimport__)) int __vswprintf_l(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,_locale_t _Plocinfo,va_list _Args) ;
+#pragma line 417 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) wchar_t * _wtempnam(const wchar_t *_Directory,const wchar_t *_FilePrefix);
+  __attribute__ ((__dllimport__)) int _vscwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int _vscwprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
+  int fwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int _fwscanf_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,...) ;
+  int swscanf(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int _swscanf_l(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,_locale_t _Locale,...) ;
+  __attribute__ ((__dllimport__)) int _snwscanf(const wchar_t * __restrict__ _Src,size_t _MaxCount,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int _snwscanf_l(const wchar_t * __restrict__ _Src,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
+  int wscanf(const wchar_t * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int _wscanf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...) ;
+  __attribute__ ((__dllimport__)) FILE * _wfdopen(int _FileHandle ,const wchar_t *_Mode);
+  __attribute__ ((__dllimport__)) FILE * _wfopen(const wchar_t * __restrict__ _Filename,const wchar_t *__restrict__ _Mode) ;
+  __attribute__ ((__dllimport__)) FILE * _wfreopen(const wchar_t * __restrict__ _Filename,const wchar_t * __restrict__ _Mode,FILE * __restrict__ _OldFile) ;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __attribute__ ((__dllimport__)) void _wperror(const wchar_t *_ErrMsg);
+#pragma empty_line
+  __attribute__ ((__dllimport__)) FILE * _wpopen(const wchar_t *_Command,const wchar_t *_Mode);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  __attribute__ ((__dllimport__)) int _wremove(const wchar_t *_Filename);
+  __attribute__ ((__dllimport__)) wchar_t * _wtmpnam(wchar_t *_Buffer);
+  __attribute__ ((__dllimport__)) wint_t _fgetwc_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t _fputwc_nolock(wchar_t _Ch,FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t _ungetwc_nolock(wint_t _Ch,FILE *_File);
+#pragma line 475 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) void _lock_file(FILE *_File);
+  __attribute__ ((__dllimport__)) void _unlock_file(FILE *_File);
+  __attribute__ ((__dllimport__)) int _fclose_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) int _fflush_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) size_t _fread_nolock(void * __restrict__ _DstBuf,size_t _ElementSize,size_t _Count,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) int _fseek_nolock(FILE *_File,long _Offset,int _Origin);
+  __attribute__ ((__dllimport__)) long _ftell_nolock(FILE *_File);
+  __extension__ __attribute__ ((__dllimport__)) int _fseeki64_nolock(FILE *_File,long long _Offset,int _Origin);
+  __extension__ __attribute__ ((__dllimport__)) long long _ftelli64_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) size_t _fwrite_nolock(const void * __restrict__ _DstBuf,size_t _Size,size_t _Count,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) int _ungetc_nolock(int _Ch,FILE *_File);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+  char * tempnam(const char *_Directory,const char *_FilePrefix) ;
+  int fcloseall(void) ;
+  FILE * fdopen(int _FileHandle,const char *_Format) ;
+  int fgetchar(void) ;
+  int fileno(FILE *_File) ;
+  int flushall(void) ;
+  int fputchar(int _Ch) ;
+  int getw(FILE *_File) ;
+  int putw(int _Ch,FILE *_File) ;
+  int rmtmp(void) ;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+}
+#pragma empty_line
+#pragma empty_line
+#pragma pack(pop)
+#pragma empty_line
+#pragma empty_line
+#pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\sec_api/stdio_s.h" 1 3
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 1 3
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+#pragma line 9 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\sec_api/stdio_s.h" 2 3
+#pragma line 509 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 2 3
+#pragma empty_line
+#pragma empty_line
+#pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw_print_pop.h" 1 3
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+#pragma empty_line
+/* Define __mingw_<printf> macros.  */
+#pragma line 511 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 2 3
+#pragma line 6 "./fire_module.h" 2
 #pragma empty_line
 #pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/common/technology/autopilot\\hls_stream.h" 1
 /* -*- c++ -*-*/
@@ -886,7 +1274,7 @@ class stream
 };
 #pragma empty_line
 } // namespace hls
-#pragma line 7 "./fire_module.h" 2
+#pragma line 8 "./fire_module.h" 2
 #pragma line 1 "C:/Xilinx/Vivado_HLS/2015.4/common/technology/autopilot\\ap_int.h" 1
 // -*- c++ -*-
 /*
@@ -2490,24 +2878,6 @@ namespace std {
 #pragma empty_line
 #pragma empty_line
 extern "C" {
-#pragma line 27 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\wchar.h" 3
-  struct _iobuf {
-    char *_ptr;
-    int _cnt;
-    char *_base;
-    int _flag;
-    int _file;
-    int _charbuf;
-    int _bufsiz;
-    char *_tmpfname;
-  };
-  typedef struct _iobuf FILE;
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-  __attribute__ ((__dllimport__)) FILE * __iob_func(void);
 #pragma line 66 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\wchar.h" 3
   typedef unsigned long _fsize_t;
 #pragma empty_line
@@ -2672,25 +3042,6 @@ extern "C" {
   typedef unsigned int _dev_t;
 #pragma empty_line
   typedef unsigned int dev_t;
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-  typedef long _off_t;
-#pragma empty_line
-  typedef long off_t;
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-  __extension__ typedef long long _off64_t;
-#pragma empty_line
-  __extension__ typedef long long off64_t;
 #pragma line 412 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\wchar.h" 3
   struct _stat32 {
     _dev_t st_dev;
@@ -2790,107 +3141,6 @@ extern "C" {
   wint_t _getwch_nolock(void);
   wint_t _getwche_nolock(void);
   wint_t _ungetwch_nolock(wint_t _WCh);
-#pragma line 540 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\wchar.h" 3
-  __attribute__ ((__dllimport__)) FILE * _wfsopen(const wchar_t *_Filename,const wchar_t *_Mode,int _ShFlag);
-#pragma empty_line
-#pragma empty_line
-  wint_t fgetwc(FILE *_File);
-  __attribute__ ((__dllimport__)) wint_t _fgetwchar(void);
-  wint_t fputwc(wchar_t _Ch,FILE *_File);
-  __attribute__ ((__dllimport__)) wint_t _fputwchar(wchar_t _Ch);
-  wint_t getwc(FILE *_File);
-  wint_t getwchar(void);
-  wint_t putwc(wchar_t _Ch,FILE *_File);
-  wint_t putwchar(wchar_t _Ch);
-  wint_t ungetwc(wint_t _Ch,FILE *_File);
-  wchar_t * fgetws(wchar_t * __restrict__ _Dst,int _SizeInWords,FILE * __restrict__ _File);
-  int fputws(const wchar_t * __restrict__ _Str,FILE * __restrict__ _File);
-  __attribute__ ((__dllimport__)) wchar_t * _getws(wchar_t *_String) ;
-  __attribute__ ((__dllimport__)) int _putws(const wchar_t *_Str);
-  int fwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
-  int wprintf(const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _scwprintf(const wchar_t * __restrict__ _Format,...);
-  int vfwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
-  int vwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int swprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ , ...) ;
-  __attribute__ ((__dllimport__)) int _swprintf_l(wchar_t * __restrict__ ,size_t _SizeInWords,const wchar_t * __restrict__ _Format,_locale_t _Locale,... ) ;
-  __attribute__ ((__dllimport__)) int vswprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ ,va_list) ;
-  __attribute__ ((__dllimport__)) int _swprintf_c(wchar_t * __restrict__ _DstBuf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _vswprintf_c(wchar_t * __restrict__ _DstBuf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _snwprintf(wchar_t * __restrict__ _Dest,size_t _Count,const wchar_t * __restrict__ _Format,...) ;
-  __attribute__ ((__dllimport__)) int _vsnwprintf(wchar_t * __restrict__ _Dest,size_t _Count,const wchar_t * __restrict__ _Format,va_list _Args) ;
-#pragma empty_line
-  int snwprintf (wchar_t * __restrict__ s, size_t n, const wchar_t * __restrict__ format, ...);
-  int vsnwprintf (wchar_t * __restrict__ , size_t, const wchar_t * __restrict__ , va_list);
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-  int vwscanf (const wchar_t * __restrict__ , va_list);
-  int vfwscanf (FILE * __restrict__ ,const wchar_t * __restrict__ ,va_list);
-  int vswscanf (const wchar_t * __restrict__ ,const wchar_t * __restrict__ ,va_list);
-#pragma empty_line
-  __attribute__ ((__dllimport__)) int _fwprintf_p(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _wprintf_p(const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _vfwprintf_p(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _vwprintf_p(const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _swprintf_p(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _vswprintf_p(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _scwprintf_p(const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _vscwprintf_p(const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _wprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _wprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _vwprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _vwprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _fwprintf_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _fwprintf_p_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _vfwprintf_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _vfwprintf_p_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _swprintf_c_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _swprintf_p_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _vswprintf_c_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _vswprintf_p_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _scwprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _scwprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _vscwprintf_p_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _snwprintf_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  __attribute__ ((__dllimport__)) int _vsnwprintf_l(wchar_t * __restrict__ _DstBuf,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList) ;
-  __attribute__ ((__dllimport__)) int _swprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _vswprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,va_list _Args);
-  __attribute__ ((__dllimport__)) int __swprintf_l(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,_locale_t _Plocinfo,...) ;
-  __attribute__ ((__dllimport__)) int _vswprintf_l(wchar_t * __restrict__ _Dest,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList) ;
-  __attribute__ ((__dllimport__)) int __vswprintf_l(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,_locale_t _Plocinfo,va_list _Args) ;
-#pragma line 621 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\wchar.h" 3
-  __attribute__ ((__dllimport__)) wchar_t * _wtempnam(const wchar_t *_Directory,const wchar_t *_FilePrefix);
-  __attribute__ ((__dllimport__)) int _vscwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
-  __attribute__ ((__dllimport__)) int _vscwprintf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,va_list _ArgList);
-  int fwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...) ;
-  __attribute__ ((__dllimport__)) int _fwscanf_l(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,_locale_t _Locale,...) ;
-  int swscanf(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,...) ;
-  __attribute__ ((__dllimport__)) int _swscanf_l(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,_locale_t _Locale,...) ;
-  __attribute__ ((__dllimport__)) int _snwscanf(const wchar_t * __restrict__ _Src,size_t _MaxCount,const wchar_t * __restrict__ _Format,...);
-  __attribute__ ((__dllimport__)) int _snwscanf_l(const wchar_t * __restrict__ _Src,size_t _MaxCount,const wchar_t * __restrict__ _Format,_locale_t _Locale,...);
-  int wscanf(const wchar_t * __restrict__ _Format,...) ;
-  __attribute__ ((__dllimport__)) int _wscanf_l(const wchar_t * __restrict__ _Format,_locale_t _Locale,...) ;
-  __attribute__ ((__dllimport__)) FILE * _wfdopen(int _FileHandle ,const wchar_t *_Mode);
-  __attribute__ ((__dllimport__)) FILE * _wfopen(const wchar_t * __restrict__ _Filename,const wchar_t * __restrict__ _Mode) ;
-  __attribute__ ((__dllimport__)) FILE * _wfreopen(const wchar_t * __restrict__ _Filename,const wchar_t * __restrict__ _Mode,FILE * __restrict__ _OldFile) ;
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-  __attribute__ ((__dllimport__)) void _wperror(const wchar_t *_ErrMsg);
-#pragma empty_line
-  __attribute__ ((__dllimport__)) FILE * _wpopen(const wchar_t *_Command,const wchar_t *_Mode);
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-  __attribute__ ((__dllimport__)) int _wremove(const wchar_t *_Filename);
-  __attribute__ ((__dllimport__)) wchar_t * _wtmpnam(wchar_t *_Buffer);
-  __attribute__ ((__dllimport__)) wint_t _fgetwc_nolock(FILE *_File);
-  __attribute__ ((__dllimport__)) wint_t _fputwc_nolock(wchar_t _Ch,FILE *_File);
-  __attribute__ ((__dllimport__)) wint_t _ungetwc_nolock(wint_t _Ch,FILE *_File);
 #pragma line 669 "C:/Xilinx/Vivado_HLS/2015.4/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\wchar.h" 3
   __attribute__ ((__dllimport__)) wchar_t * _itow(int _Value,wchar_t *_Dest,int _Radix) ;
   __attribute__ ((__dllimport__)) wchar_t * _ltow(long _Value,wchar_t *_Dest,int _Radix) ;
@@ -32500,50 +32750,96 @@ struct ap_ufixed: ap_fixed_base<_AP_W, _AP_I, false, _AP_Q, _AP_O, _AP_N> {
     }
 #pragma empty_line
 };
-#pragma line 8 "./fire_module.h" 2
+#pragma line 9 "./fire_module.h" 2
 #pragma empty_line
 using namespace std;
 #pragma empty_line
-typedef int16_t DTYPE;
+typedef int DTYPE;
 typedef hls::stream<DTYPE> DSTREAM;
 #pragma empty_line
-const int ROW = 55;
-const int COL = 55;
+const int DEBUG = 0;
+const int DEBUG_S1X1 = 0;
+const int DEBUG_E1X1 = 0;
+const int DEBUG_E3X3 = 0;
 #pragma empty_line
-const int DIM_I = 96;
-const int DIM_O = 128;
 #pragma empty_line
 const int S1X1 = 16;
 const int E1X1 = 64;
 const int E3X3 = 64;
 #pragma empty_line
+const int ROW = 55;
+const int COL = 55;
 #pragma empty_line
-void fire2(DSTREAM matrix_in[DIM_I], DSTREAM matrix_o[DIM_O]);
+const int DIM_I = 96;
+const int DIM_O = E1X1+E3X3;
+#pragma empty_line
+#pragma empty_line
+void fire2(DSTREAM matrix_i[DIM_I],
+     DTYPE kernel_s1x1[S1X1],
+     DTYPE kernel_e1x1[E1X1],
+     DTYPE kernel_e3x3[3][3][E3X3],
+     DSTREAM matrix_o[DIM_O]);
 #pragma line 2 "fire_module.cpp" 2
 #pragma empty_line
+void print_dth_line_buffer(int d, DTYPE lb[3][COL][S1X1]) {_ssdm_SpecArrayDimSize(lb,3);
+ for(int r = 0; r < 3; r++) {
+  for(int c = 0; c < COL; c++) {
+   printf("%3d ", (int16_t)lb[r][c][d]);
+  }
+  printf("\n");
+ }
+ printf("\n");
+}
+#pragma empty_line
+void print_dth_window_buffer(int d, DTYPE wb[3][3][S1X1]) {_ssdm_SpecArrayDimSize(wb,3);
+ for(int r = 0; r < 3; r++) {
+  for(int c = 0; c < 3; c++) {
+   printf("%3d ", (int16_t)wb[r][c][d]);
+  }
+  printf("\n");
+ }
+ printf("\n");
+}
 #pragma empty_line
 DTYPE ReLu(DTYPE val) {
- return val < (DTYPE)0 ? (DTYPE)0 : val;
+ return val < (DTYPE)0 ? (DTYPE)0 :
+     val > (DTYPE)255 ? (DTYPE)255 : val;
 }
 #pragma empty_line
 void squeeze(DSTREAM matrix_i[DIM_I],
-    DTYPE kernel_s1x1[S1X1],
-    DSTREAM matrix_o[S1X1]) {_ssdm_SpecArrayDimSize(kernel_s1x1,S1X1);_ssdm_SpecArrayDimSize(matrix_o,S1X1);_ssdm_SpecArrayDimSize(matrix_i,DIM_I);
+    DTYPE kernel_s1x1[DIM_I][S1X1],
+    DSTREAM matrix_o[S1X1]) {_ssdm_SpecArrayDimSize(kernel_s1x1,DIM_I);_ssdm_SpecArrayDimSize(matrix_o,S1X1);_ssdm_SpecArrayDimSize(matrix_i,DIM_I);
 #pragma empty_line
- // for each kernel
- For_Each_Kernel: for(int k = 0; k < S1X1; k++) {
-  DTYPE convVal = 0;
-  For_Each_Row: for(int r = 0; r < ROW; r++) {
-   For_Each_Col: for(int c = 0; c < COL; c++) {
-#pragma HLS PIPELINE II=1
- For_Each_Dim: for(int d = 0; d < DIM_I; d++) {
-#pragma HLS UNROLL
- convVal += (matrix_i[d].read() * kernel_s1x1[k]);
-    }
-    matrix_o[k].write(ReLu(convVal));
+ int writeCount = 0;
+ int maccCount = 0;
+#pragma empty_line
+ DTYPE depth_buffer[DIM_I] = {0};
+#pragma HLS ARRAY_PARTITION variable=depth_buffer complete dim=1
+#pragma empty_line
+ Row: for(int r = 0; r < ROW; r++) {
+  Col: for(int c = 0; c < COL; c++) {
+#pragma empty_line
+   Buffer: for(int d = 0; d < DIM_I; d++) {
+    depth_buffer[d] = matrix_i[d].read();
    }
-  }
- }
+#pragma empty_line
+   DTYPE convVal = 0;
+   Convolution: for(int k = 0; k < S1X1; k++) {
+    Depth: for(int d = 0; d < DIM_I; d++) {
+#pragma HLS PIPELINE II=1
+ convVal += (depth_buffer[d] * kernel_s1x1[d][k]);
+     maccCount++;
+    }
+    matrix_o[k].write(convVal);
+    writeCount++;
+   }
+#pragma empty_line
+  } // end col
+ } // end row
+#pragma empty_line
+ printf("s1x1 write count: %d\n", writeCount);
+ printf("s1x1 macc  count: %d\n", maccCount);
+ printf("\n");
 }
 #pragma empty_line
 void copy(DSTREAM mat_i[S1X1], DSTREAM mat1_o[S1X1], DSTREAM mat2_o[S1X1]) {_ssdm_SpecArrayDimSize(mat_i,S1X1);_ssdm_SpecArrayDimSize(mat1_o,S1X1);_ssdm_SpecArrayDimSize(mat2_o,S1X1);
@@ -32551,8 +32847,7 @@ void copy(DSTREAM mat_i[S1X1], DSTREAM mat1_o[S1X1], DSTREAM mat2_o[S1X1]) {_ssd
   Copy_Col: for(int c = 0; c < COL; c++) {
 #pragma HLS PIPELINE II=1
  Copy_Dim: for(int d = 0; d < S1X1; d++) {
-#pragma HLS UNROLL
- DTYPE val = mat_i[d].read();
+    DTYPE val = mat_i[d].read();
     mat1_o[d].write(val);
     mat2_o[d].write(val);
    }
@@ -32564,112 +32859,177 @@ void combine(DSTREAM matrix_e1x1_stream_o[E1X1],
       DSTREAM matrix_e3x3_stream_o[E3X3],
     DSTREAM matrix_o[DIM_O]) {_ssdm_SpecArrayDimSize(matrix_e1x1_stream_o,E1X1);_ssdm_SpecArrayDimSize(matrix_o,DIM_O);_ssdm_SpecArrayDimSize(matrix_e3x3_stream_o,E3X3);
 #pragma empty_line
+ int readCount = 0;
  for(int r = 0; r < ROW; r++){
   for(int c = 0; c < COL; c++) {
 #pragma HLS PIPELINE II=1
  for(int d = 0; d < E1X1; d++) {
-#pragma HLS UNROLL
- matrix_o[d].write(matrix_e1x1_stream_o[d].read());
+    matrix_o[d].write(matrix_e1x1_stream_o[d].read());
+    readCount++;
    }
   }
  }
+ printf("e1x1 read count: %d\n", readCount);
 #pragma empty_line
- // throw away 9 garbage value
- for(int i = 0; i < 9; i++) {
-#pragma HLS PIPELINE II=1
- for(int d = 0; d < E3X3; d++) {
-#pragma HLS UNROLL
- matrix_e3x3_stream_o[d].read();
-  }
- }
-#pragma empty_line
+ readCount = 0;
  for(int r = 0; r < ROW; r++){
   for(int c = 0; c < COL; c++) {
 #pragma HLS PIPELINE II=1
- for(int d = E1X1; d < E1X1+E3X3; d++) {
-#pragma HLS UNROLL
- matrix_o[d].write(matrix_e3x3_stream_o[d].read());
+ for(int d = 0; d < E3X3; d++) {
+    matrix_o[d+E1X1].write(matrix_e3x3_stream_o[d].read());
+    readCount++;
    }
   }
  }
+ printf("e3x3 read count: %d\n", readCount);
 #pragma empty_line
 }
 #pragma empty_line
 void expand1x1(DSTREAM matrix_e1x1_i[S1X1],
-      DTYPE kernel_e1x1[E1X1],
-      DSTREAM matrix_e1x1_o[E1X1]) {_ssdm_SpecArrayDimSize(kernel_e1x1,E1X1);_ssdm_SpecArrayDimSize(matrix_e1x1_o,E1X1);_ssdm_SpecArrayDimSize(matrix_e1x1_i,S1X1);
+      DTYPE kernel_e1x1[S1X1][E1X1],
+      DSTREAM matrix_e1x1_o[E1X1]) {_ssdm_SpecArrayDimSize(kernel_e1x1,S1X1);_ssdm_SpecArrayDimSize(matrix_e1x1_o,E1X1);_ssdm_SpecArrayDimSize(matrix_e1x1_i,S1X1);
 #pragma empty_line
- for(int k = 0; k < E1X1; k++) {
-  DTYPE convVal = 0;
-  for(int r = 0; r < ROW; r++) {
-   for(int c = 0; c < COL; c++) {
-#pragma HLS PIPELINE II=1
- for(int d = 0; d < S1X1; d++) {
-     convVal += (matrix_e1x1_i[d].read() * kernel_e1x1[k]);
-    }
-    matrix_e1x1_o[k].write(ReLu(convVal));
+ int writeCount = 0;
+ int maccCount = 0;
+#pragma empty_line
+ DTYPE depth_buffer[S1X1] = {0};
+#pragma HLS ARRAY_PARTITION variable=depth_buffer complete dim=1
+#pragma empty_line
+ Row: for(int r = 0; r < ROW; r++) {
+  Col: for(int c = 0; c < COL; c++) {
+#pragma empty_line
+   Buffer: for(int d = 0; d < S1X1; d++) {
+    depth_buffer[d] = matrix_e1x1_i[d].read();
    }
-  }
- }
+#pragma empty_line
+   DTYPE convVal = 0;
+   Convolution: for(int k = 0; k < E1X1; k++) {
+    Depth: for(int d = 0; d < S1X1; d++) {
+#pragma HLS PIPELINE II=1
+ convVal += (depth_buffer[d] * kernel_e1x1[d][k]);
+     maccCount++;
+    }
+   }
+#pragma empty_line
+  } // end col
+ } // end row
+#pragma empty_line
+ printf("e1x1 write count: %d\n", writeCount);
+ printf("e1x1 macc  count: %d\n", maccCount);
+ printf("\n");
 }
 #pragma empty_line
-#pragma empty_line
-void fill_buffer(DSTREAM matrix_e3x3_i[S1X1],
-     DTYPE line_buffer[3][COL][S1X1],
-     DTYPE window_buffer[3][3][S1X1]) {_ssdm_SpecArrayDimSize(window_buffer,3);_ssdm_SpecArrayDimSize(matrix_e3x3_i,S1X1);_ssdm_SpecArrayDimSize(line_buffer,3);
+void fill_window(DSTREAM e3x3_i[S1X1],
+     DTYPE lb[3][COL][S1X1],
+     DTYPE wb[3][3][S1X1]) {_ssdm_SpecArrayDimSize(lb,3);_ssdm_SpecArrayDimSize(wb,3);_ssdm_SpecArrayDimSize(e3x3_i,S1X1);
 #pragma empty_line
  for(int d = 0; d < S1X1; d++) {
 #pragma HLS PIPELINE II=1
- line_buffer[2][0][d] = line_buffer[1][COL-1][d];
-  line_buffer[1][0][d] = line_buffer[0][COL-1][d];
-  line_buffer[0][0][d] = matrix_e3x3_i[d].read();
+#pragma empty_line
+ for(int c = 1; c < COL; c++) {
+   lb[2][c][d] = lb[2][c-1][d];
+   lb[1][c][d] = lb[1][c-1][d];
+   lb[0][c][d] = lb[0][c-1][d];
+  }
+#pragma empty_line
+  lb[2][0][d] = lb[1][COL-1][d];
+  lb[1][0][d] = lb[0][COL-1][d];
+  lb[0][0][d] = e3x3_i[d].empty() ? 0 : e3x3_i[d].read();
+#pragma empty_line
+  // if(DEBUG) printf("%3d ", lb[0][0][d]);
 #pragma empty_line
   for(int i = 0; i < 3; i++) {
-   for(int j = 0; j < 3; j++) {
-    window_buffer[i][j ][d] = window_buffer[i][j+1][d];
-    window_buffer[i][j+1][d] = window_buffer[i][j+2][d];
-    window_buffer[i][j+2][d] = line_buffer[i][COL-1][d];
-   }
+   wb[i][0][d] = wb[i][1][d];
+   wb[i][1][d] = wb[i][2][d];
+   wb[i][2][d] = lb[i][COL-1][d];
   }
  }
+ // if(DEBUG) printf("\n");
 }
 #pragma empty_line
 void expand3x3(DSTREAM matrix_e3x3_i[S1X1],
-      DTYPE kernel_e3x3[3][3][E3X3],
+      DTYPE kernel_e3x3[3][3][S1X1][E3X3],
        DSTREAM matrix_e3x3_o[E3X3]) {_ssdm_SpecArrayDimSize(matrix_e3x3_o,E3X3);_ssdm_SpecArrayDimSize(matrix_e3x3_i,S1X1);_ssdm_SpecArrayDimSize(kernel_e3x3,3);
 #pragma empty_line
+ int writeCount = 0;
+ int maccCount = 0;
 #pragma empty_line
  DTYPE line_buffer[3][COL][S1X1];
+#pragma HLS ARRAY_PARTITION variable=line_buffer complete dim=2
+#pragma HLS ARRAY_PARTITION variable=line_buffer cyclic factor=3 dim=1
  DTYPE window_buffer[3][3][S1X1];
+#pragma HLS ARRAY_PARTITION variable=window_buffer complete dim=2
+#pragma HLS ARRAY_PARTITION variable=window_buffer complete dim=1
 #pragma empty_line
- fill_buffer(matrix_e3x3_i, line_buffer, window_buffer);
-#pragma empty_line
- for(int i = 0; i < E3X3; i++) {
+ // initialize window buffer
+ Init: for(int i = 0; i < 8; i++) {
 #pragma HLS PIPELINE II=1
- DTYPE convVal = 0;
-  for(int d = 0; d < S1X1; d++) {
-   convVal += window_buffer[0][0][d] * kernel_e3x3[0][0][i] +
-        window_buffer[0][1][d] * kernel_e3x3[0][1][i] +
-        window_buffer[0][2][d] * kernel_e3x3[0][2][i] +
-#pragma empty_line
-        window_buffer[1][0][d] * kernel_e3x3[1][0][i] +
-        window_buffer[1][1][d] * kernel_e3x3[1][1][i] +
-        window_buffer[1][2][d] * kernel_e3x3[1][2][i] +
-#pragma empty_line
-        window_buffer[2][0][d] * kernel_e3x3[2][0][i] +
-        window_buffer[2][1][d] * kernel_e3x3[2][1][i] +
-        window_buffer[2][2][d] * kernel_e3x3[2][2][i];
-  }
-  matrix_e3x3_o[i].write(ReLu(convVal));
+ fill_window(matrix_e3x3_i, line_buffer, window_buffer);
  }
+#pragma empty_line
+//		printf("After init window buffer\n-------------------------------------\n");
+//		print_dth_line_buffer(0, line_buffer);
+//		print_dth_window_buffer(0, window_buffer);
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+ Row: for(int r = 0; r < ROW-2; r++) {
+  Col: for(int c = 0; c < COL-2; c++) {
+#pragma empty_line
+   fill_window(matrix_e3x3_i, line_buffer, window_buffer);
+#pragma empty_line
+   DTYPE convVal = 0;
+   Convolution: for(int k = 0; k < E3X3; k++) {
+    Depth: for(int d = 0; d < S1X1; d++) {
+#pragma HLS PIPELINE II=1
+//					printf("%3d %3d %3d\n",  (int16_t)window_buffer[0][0][d], (int16_t)window_buffer[0][1][d], (int16_t)window_buffer[0][2][d]);
+//					printf("%3d %3d %3d\n",  (int16_t)window_buffer[1][0][d], (int16_t)window_buffer[1][1][d], (int16_t)window_buffer[1][2][d]);
+//					printf("%3d %3d %3d\n\n",(int16_t)window_buffer[2][0][d], (int16_t)window_buffer[2][1][d], (int16_t)window_buffer[2][2][d]);
+//					printf("%3d %3d %3d\n",  (int16_t)kernel_e3x3[0][0][d], (int16_t)kernel_e3x3[0][1][d], (int16_t)kernel_e3x3[0][2][d]);
+//					printf("%3d %3d %3d\n",  (int16_t)kernel_e3x3[1][0][d], (int16_t)kernel_e3x3[1][1][d], (int16_t)kernel_e3x3[1][2][d]);
+//					printf("%3d %3d %3d\n\n",(int16_t)kernel_e3x3[2][0][d], (int16_t)kernel_e3x3[2][1][d], (int16_t)kernel_e3x3[2][2][d]);
+//					printf("----------------------------------------------\n");
+#pragma empty_line
+     for(int i = 0; i < 3; i++) {
+      for(int j = 0; j < 3; j++) {
+       convVal += window_buffer[i][j][d] * kernel_e3x3[i][j][d][k];
+      }
+     }
+//					convVal += window_buffer[0][0][d] * kernel_e3x3[0][0][d][k] +
+//							   window_buffer[0][1][d] * kernel_e3x3[0][1][d][k] +
+//							   window_buffer[0][2][d] * kernel_e3x3[0][2][d][k] +
+//
+//							   window_buffer[1][0][d] * kernel_e3x3[1][0][d][k] +
+//							   window_buffer[1][1][d] * kernel_e3x3[1][1][d][k] +
+//							   window_buffer[1][2][d] * kernel_e3x3[1][2][d][k] +
+//
+//							   window_buffer[2][0][d] * kernel_e3x3[2][0][d][k] +
+//							   window_buffer[2][1][d] * kernel_e3x3[2][1][d][k] +
+//							   window_buffer[2][2][d] * kernel_e3x3[2][2][d][k];
+     maccCount += 9;
+    } // end depth
+#pragma empty_line
+    matrix_e3x3_o[k].write(convVal);
+    writeCount++;
+   } // end conv
+#pragma empty_line
+  } // end col
+ } // end row
+#pragma empty_line
+#pragma empty_line
+ printf("e3x3 write count: %d\n", writeCount);
+ printf("e3x3 macc  count: %d\n\n", maccCount);
 }
 #pragma empty_line
-#pragma empty_line
 void fire2(DSTREAM matrix_i[DIM_I],
-     DTYPE kernel_s1x1[S1X1],
-     DTYPE kernel_e1x1[E1X1],
-     DTYPE kernel_e3x3[3][3][E3X3],
-     DSTREAM matrix_o[DIM_O]) {_ssdm_SpecArrayDimSize(kernel_s1x1,S1X1);_ssdm_SpecArrayDimSize(kernel_e1x1,E1X1);_ssdm_SpecArrayDimSize(matrix_o,DIM_O);_ssdm_SpecArrayDimSize(matrix_i,DIM_I);_ssdm_SpecArrayDimSize(kernel_e3x3,3);
+     DTYPE kernel_s1x1[DIM_I][S1X1],
+     DTYPE kernel_e1x1[S1X1][E1X1],
+     DTYPE kernel_e3x3[3][3][S1X1][E3X3],
+     DSTREAM matrix_o[DIM_O]) {_ssdm_SpecArrayDimSize(kernel_s1x1,DIM_I);_ssdm_SpecArrayDimSize(kernel_e1x1,S1X1);_ssdm_SpecArrayDimSize(matrix_o,DIM_O);_ssdm_SpecArrayDimSize(matrix_i,DIM_I);_ssdm_SpecArrayDimSize(kernel_e3x3,3);
+#pragma HLS ARRAY_PARTITION variable=kernel_e3x3 complete dim=2
+#pragma HLS ARRAY_PARTITION variable=kernel_e3x3 complete dim=1
+#pragma HLS ARRAY_PARTITION variable=kernel_e1x1 complete dim=1
+#pragma HLS ARRAY_PARTITION variable=kernel_s1x1 complete dim=1
 #pragma HLS DATAFLOW
 #pragma empty_line
  DSTREAM matrix_s1x1_stream_o[S1X1];
@@ -32680,13 +33040,18 @@ void fire2(DSTREAM matrix_i[DIM_I],
  DSTREAM matrix_e1x1_stream_o[E1X1];
  DSTREAM matrix_e3x3_stream_o[E3X3];
 #pragma empty_line
+ printf("---[Squeeze Layer 1x1]---\n");
  squeeze(matrix_i, kernel_s1x1, matrix_s1x1_stream_o);
 #pragma empty_line
+ printf("---[Stream Duplication]---\n");
  copy(matrix_s1x1_stream_o, matrix_e1x1_stream_i, matrix_e3x3_stream_i);
 #pragma empty_line
+ printf("---[Expand Layer 1x1]---\n");
  expand1x1(matrix_e1x1_stream_i, kernel_e1x1, matrix_e1x1_stream_o);
+ printf("---[Expand Layer 3x3]---\n");
  expand3x3(matrix_e3x3_stream_i, kernel_e3x3, matrix_e3x3_stream_o);
 #pragma empty_line
+ printf("---[Stream Combine]---\n");
  combine(matrix_e1x1_stream_o, matrix_e3x3_stream_o, matrix_o);
 #pragma empty_line
 }
@@ -32694,13 +33059,17 @@ void fire2(DSTREAM matrix_i[DIM_I],
 class ssdm_global_array_fire_modulepp0cppaplinecpp {
 	public:
 		 inline __attribute__((always_inline)) ssdm_global_array_fire_modulepp0cppaplinecpp() {
+			_ssdm_SpecConstant(&DEBUG);
+			_ssdm_SpecConstant(&DEBUG_S1X1);
+			_ssdm_SpecConstant(&DEBUG_E1X1);
+			_ssdm_SpecConstant(&DEBUG_E3X3);
+			_ssdm_SpecConstant(&S1X1);
+			_ssdm_SpecConstant(&E1X1);
+			_ssdm_SpecConstant(&E3X3);
 			_ssdm_SpecConstant(&ROW);
 			_ssdm_SpecConstant(&COL);
 			_ssdm_SpecConstant(&DIM_I);
 			_ssdm_SpecConstant(&DIM_O);
-			_ssdm_SpecConstant(&S1X1);
-			_ssdm_SpecConstant(&E1X1);
-			_ssdm_SpecConstant(&E3X3);
 		}
 };
 static ssdm_global_array_fire_modulepp0cppaplinecpp ssdm_global_array_ins;

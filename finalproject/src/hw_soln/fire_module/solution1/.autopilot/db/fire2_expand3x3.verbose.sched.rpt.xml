@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fire2_expand3x3'" level="0">
-<item name = "Date">Sat Apr 29 16:13:14 2017
+<item name = "Date">Mon May 01 21:59:58 2017
 </item>
 <item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
 <item name = "Project">fire_module</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00, 4.08, 0.63</column>
+<column name="ap_clk">5.00, 4.12, 0.63</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">4741, 4741, 4741, 4741, none</column>
+<column name="">5623749, 5623749, 5623749, 5623749, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">4623, 4623, 88, 72, 1, 64, yes</column>
+<column name="- Init">129, 129, 17, 16, 1, 8, yes</column>
+<column name="- Row_Col">5623618, 5623618, 2002, -, -, 2809, no</column>
+<column name=" + Convolution">1984, 1984, 31, -, -, 64, no</column>
+<column name="  ++ Depth">28, 28, 13, 1, 1, 16, yes</column>
 </table>
 </item>
 </section>

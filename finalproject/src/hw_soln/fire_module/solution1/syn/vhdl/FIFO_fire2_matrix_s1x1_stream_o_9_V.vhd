@@ -12,7 +12,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity FIFO_fire2_matrix_s1x1_stream_o_9_V_shiftReg is
     generic (
-        DATA_WIDTH : integer := 16;
+        DATA_WIDTH : integer := 32;
         ADDR_WIDTH : integer := 1;
         DEPTH : integer := 2);
     port (
@@ -49,7 +49,7 @@ use ieee.std_logic_unsigned.all;
 entity FIFO_fire2_matrix_s1x1_stream_o_9_V is 
     generic (
         MEM_STYLE  : string := "auto"; 
-        DATA_WIDTH : integer := 16;
+        DATA_WIDTH : integer := 32;
         ADDR_WIDTH : integer := 1;
         DEPTH : integer := 2);
     port (
@@ -69,7 +69,7 @@ architecture rtl of FIFO_fire2_matrix_s1x1_stream_o_9_V is
 
     component FIFO_fire2_matrix_s1x1_stream_o_9_V_shiftReg is
     generic (
-        DATA_WIDTH : integer := 16;
+        DATA_WIDTH : integer := 32;
         ADDR_WIDTH : integer := 1;
         DEPTH : integer := 2);
     port (

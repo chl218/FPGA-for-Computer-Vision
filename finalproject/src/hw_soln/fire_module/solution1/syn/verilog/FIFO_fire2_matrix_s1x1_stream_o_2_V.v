@@ -15,7 +15,7 @@ module FIFO_fire2_matrix_s1x1_stream_o_2_V_shiftReg (
     a,
     q);
 
-parameter DATA_WIDTH = 32'd16;
+parameter DATA_WIDTH = 32'd32;
 parameter ADDR_WIDTH = 32'd1;
 parameter DEPTH = 32'd2;
 
@@ -55,7 +55,7 @@ module FIFO_fire2_matrix_s1x1_stream_o_2_V (
     if_din);
 
 parameter MEM_STYLE = "auto";
-parameter DATA_WIDTH = 32'd16;
+parameter DATA_WIDTH = 32'd32;
 parameter ADDR_WIDTH = 32'd1;
 parameter DEPTH = 32'd2;
 

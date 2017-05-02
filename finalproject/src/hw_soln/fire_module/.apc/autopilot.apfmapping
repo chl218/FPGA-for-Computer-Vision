@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="fire_module.cpp" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\fire_module.cpp"/>
     <originFiles name="fire_module.h" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\fire_module.h"/>
+    <originFiles name="fire_module.cpp" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\fire_module.cpp"/>
   </source>
   <testbench>
     <originFiles name="fire_module_tb.cpp" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\fire_module_tb.cpp"/>
+    <originFiles name="golden_soln.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\golden_soln.dat"/>
+    <originFiles name="golden_soln_e1x1.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\golden_soln_e1x1.dat"/>
+    <originFiles name="golden_soln_e3x3.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\golden_soln_e3x3.dat"/>
+    <originFiles name="golden_soln_s1x1.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\golden_soln_s1x1.dat"/>
+    <originFiles name="kernel_e1x1.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\kernel_e1x1.dat"/>
+    <originFiles name="kernel_s1x1.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\kernel_s1x1.dat"/>
+    <originFiles name="matrix_input.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\matrix_input.dat"/>
+    <originFiles name="kernel_e3x3.dat" path="C:\Users\Jack\Desktop\cse291\individual\finalproject\src\hw_soln\kernel_e3x3.dat"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

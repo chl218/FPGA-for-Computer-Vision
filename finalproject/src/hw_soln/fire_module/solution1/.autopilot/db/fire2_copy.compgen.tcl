@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 114 \
+    id 211 \
     name mat_i_0_V \
     type fifo \
     dir I \
@@ -18,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_0_V \
     op interface \
-    ports { mat_i_0_V_dout { I 16 vector } mat_i_0_V_empty_n { I 1 bit } mat_i_0_V_read { O 1 bit } } \
+    ports { mat_i_0_V_dout { I 32 vector } mat_i_0_V_empty_n { I 1 bit } mat_i_0_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 115 \
+    id 212 \
     name mat_i_1_V \
     type fifo \
     dir I \
@@ -33,14 +33,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_1_V \
     op interface \
-    ports { mat_i_1_V_dout { I 16 vector } mat_i_1_V_empty_n { I 1 bit } mat_i_1_V_read { O 1 bit } } \
+    ports { mat_i_1_V_dout { I 32 vector } mat_i_1_V_empty_n { I 1 bit } mat_i_1_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 116 \
+    id 213 \
     name mat_i_2_V \
     type fifo \
     dir I \
@@ -48,14 +48,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_2_V \
     op interface \
-    ports { mat_i_2_V_dout { I 16 vector } mat_i_2_V_empty_n { I 1 bit } mat_i_2_V_read { O 1 bit } } \
+    ports { mat_i_2_V_dout { I 32 vector } mat_i_2_V_empty_n { I 1 bit } mat_i_2_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 117 \
+    id 214 \
     name mat_i_3_V \
     type fifo \
     dir I \
@@ -63,14 +63,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_3_V \
     op interface \
-    ports { mat_i_3_V_dout { I 16 vector } mat_i_3_V_empty_n { I 1 bit } mat_i_3_V_read { O 1 bit } } \
+    ports { mat_i_3_V_dout { I 32 vector } mat_i_3_V_empty_n { I 1 bit } mat_i_3_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 118 \
+    id 215 \
     name mat_i_4_V \
     type fifo \
     dir I \
@@ -78,14 +78,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_4_V \
     op interface \
-    ports { mat_i_4_V_dout { I 16 vector } mat_i_4_V_empty_n { I 1 bit } mat_i_4_V_read { O 1 bit } } \
+    ports { mat_i_4_V_dout { I 32 vector } mat_i_4_V_empty_n { I 1 bit } mat_i_4_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 119 \
+    id 216 \
     name mat_i_5_V \
     type fifo \
     dir I \
@@ -93,14 +93,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_5_V \
     op interface \
-    ports { mat_i_5_V_dout { I 16 vector } mat_i_5_V_empty_n { I 1 bit } mat_i_5_V_read { O 1 bit } } \
+    ports { mat_i_5_V_dout { I 32 vector } mat_i_5_V_empty_n { I 1 bit } mat_i_5_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 120 \
+    id 217 \
     name mat_i_6_V \
     type fifo \
     dir I \
@@ -108,14 +108,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_6_V \
     op interface \
-    ports { mat_i_6_V_dout { I 16 vector } mat_i_6_V_empty_n { I 1 bit } mat_i_6_V_read { O 1 bit } } \
+    ports { mat_i_6_V_dout { I 32 vector } mat_i_6_V_empty_n { I 1 bit } mat_i_6_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 121 \
+    id 218 \
     name mat_i_7_V \
     type fifo \
     dir I \
@@ -123,14 +123,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_7_V \
     op interface \
-    ports { mat_i_7_V_dout { I 16 vector } mat_i_7_V_empty_n { I 1 bit } mat_i_7_V_read { O 1 bit } } \
+    ports { mat_i_7_V_dout { I 32 vector } mat_i_7_V_empty_n { I 1 bit } mat_i_7_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 122 \
+    id 219 \
     name mat_i_8_V \
     type fifo \
     dir I \
@@ -138,14 +138,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_8_V \
     op interface \
-    ports { mat_i_8_V_dout { I 16 vector } mat_i_8_V_empty_n { I 1 bit } mat_i_8_V_read { O 1 bit } } \
+    ports { mat_i_8_V_dout { I 32 vector } mat_i_8_V_empty_n { I 1 bit } mat_i_8_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 123 \
+    id 220 \
     name mat_i_9_V \
     type fifo \
     dir I \
@@ -153,14 +153,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_9_V \
     op interface \
-    ports { mat_i_9_V_dout { I 16 vector } mat_i_9_V_empty_n { I 1 bit } mat_i_9_V_read { O 1 bit } } \
+    ports { mat_i_9_V_dout { I 32 vector } mat_i_9_V_empty_n { I 1 bit } mat_i_9_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 124 \
+    id 221 \
     name mat_i_10_V \
     type fifo \
     dir I \
@@ -168,14 +168,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_10_V \
     op interface \
-    ports { mat_i_10_V_dout { I 16 vector } mat_i_10_V_empty_n { I 1 bit } mat_i_10_V_read { O 1 bit } } \
+    ports { mat_i_10_V_dout { I 32 vector } mat_i_10_V_empty_n { I 1 bit } mat_i_10_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 125 \
+    id 222 \
     name mat_i_11_V \
     type fifo \
     dir I \
@@ -183,14 +183,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_11_V \
     op interface \
-    ports { mat_i_11_V_dout { I 16 vector } mat_i_11_V_empty_n { I 1 bit } mat_i_11_V_read { O 1 bit } } \
+    ports { mat_i_11_V_dout { I 32 vector } mat_i_11_V_empty_n { I 1 bit } mat_i_11_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 126 \
+    id 223 \
     name mat_i_12_V \
     type fifo \
     dir I \
@@ -198,14 +198,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_12_V \
     op interface \
-    ports { mat_i_12_V_dout { I 16 vector } mat_i_12_V_empty_n { I 1 bit } mat_i_12_V_read { O 1 bit } } \
+    ports { mat_i_12_V_dout { I 32 vector } mat_i_12_V_empty_n { I 1 bit } mat_i_12_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 127 \
+    id 224 \
     name mat_i_13_V \
     type fifo \
     dir I \
@@ -213,14 +213,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_13_V \
     op interface \
-    ports { mat_i_13_V_dout { I 16 vector } mat_i_13_V_empty_n { I 1 bit } mat_i_13_V_read { O 1 bit } } \
+    ports { mat_i_13_V_dout { I 32 vector } mat_i_13_V_empty_n { I 1 bit } mat_i_13_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 128 \
+    id 225 \
     name mat_i_14_V \
     type fifo \
     dir I \
@@ -228,14 +228,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_14_V \
     op interface \
-    ports { mat_i_14_V_dout { I 16 vector } mat_i_14_V_empty_n { I 1 bit } mat_i_14_V_read { O 1 bit } } \
+    ports { mat_i_14_V_dout { I 32 vector } mat_i_14_V_empty_n { I 1 bit } mat_i_14_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 129 \
+    id 226 \
     name mat_i_15_V \
     type fifo \
     dir I \
@@ -243,14 +243,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat_i_15_V \
     op interface \
-    ports { mat_i_15_V_dout { I 16 vector } mat_i_15_V_empty_n { I 1 bit } mat_i_15_V_read { O 1 bit } } \
+    ports { mat_i_15_V_dout { I 32 vector } mat_i_15_V_empty_n { I 1 bit } mat_i_15_V_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 130 \
+    id 227 \
     name mat1_o_0_V \
     type fifo \
     dir O \
@@ -258,14 +258,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_0_V \
     op interface \
-    ports { mat1_o_0_V_din { O 16 vector } mat1_o_0_V_full_n { I 1 bit } mat1_o_0_V_write { O 1 bit } } \
+    ports { mat1_o_0_V_din { O 32 vector } mat1_o_0_V_full_n { I 1 bit } mat1_o_0_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 131 \
+    id 228 \
     name mat1_o_1_V \
     type fifo \
     dir O \
@@ -273,14 +273,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_1_V \
     op interface \
-    ports { mat1_o_1_V_din { O 16 vector } mat1_o_1_V_full_n { I 1 bit } mat1_o_1_V_write { O 1 bit } } \
+    ports { mat1_o_1_V_din { O 32 vector } mat1_o_1_V_full_n { I 1 bit } mat1_o_1_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 132 \
+    id 229 \
     name mat1_o_2_V \
     type fifo \
     dir O \
@@ -288,14 +288,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_2_V \
     op interface \
-    ports { mat1_o_2_V_din { O 16 vector } mat1_o_2_V_full_n { I 1 bit } mat1_o_2_V_write { O 1 bit } } \
+    ports { mat1_o_2_V_din { O 32 vector } mat1_o_2_V_full_n { I 1 bit } mat1_o_2_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 133 \
+    id 230 \
     name mat1_o_3_V \
     type fifo \
     dir O \
@@ -303,14 +303,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_3_V \
     op interface \
-    ports { mat1_o_3_V_din { O 16 vector } mat1_o_3_V_full_n { I 1 bit } mat1_o_3_V_write { O 1 bit } } \
+    ports { mat1_o_3_V_din { O 32 vector } mat1_o_3_V_full_n { I 1 bit } mat1_o_3_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 134 \
+    id 231 \
     name mat1_o_4_V \
     type fifo \
     dir O \
@@ -318,14 +318,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_4_V \
     op interface \
-    ports { mat1_o_4_V_din { O 16 vector } mat1_o_4_V_full_n { I 1 bit } mat1_o_4_V_write { O 1 bit } } \
+    ports { mat1_o_4_V_din { O 32 vector } mat1_o_4_V_full_n { I 1 bit } mat1_o_4_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 135 \
+    id 232 \
     name mat1_o_5_V \
     type fifo \
     dir O \
@@ -333,14 +333,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_5_V \
     op interface \
-    ports { mat1_o_5_V_din { O 16 vector } mat1_o_5_V_full_n { I 1 bit } mat1_o_5_V_write { O 1 bit } } \
+    ports { mat1_o_5_V_din { O 32 vector } mat1_o_5_V_full_n { I 1 bit } mat1_o_5_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 136 \
+    id 233 \
     name mat1_o_6_V \
     type fifo \
     dir O \
@@ -348,14 +348,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_6_V \
     op interface \
-    ports { mat1_o_6_V_din { O 16 vector } mat1_o_6_V_full_n { I 1 bit } mat1_o_6_V_write { O 1 bit } } \
+    ports { mat1_o_6_V_din { O 32 vector } mat1_o_6_V_full_n { I 1 bit } mat1_o_6_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 137 \
+    id 234 \
     name mat1_o_7_V \
     type fifo \
     dir O \
@@ -363,14 +363,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_7_V \
     op interface \
-    ports { mat1_o_7_V_din { O 16 vector } mat1_o_7_V_full_n { I 1 bit } mat1_o_7_V_write { O 1 bit } } \
+    ports { mat1_o_7_V_din { O 32 vector } mat1_o_7_V_full_n { I 1 bit } mat1_o_7_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 138 \
+    id 235 \
     name mat1_o_8_V \
     type fifo \
     dir O \
@@ -378,14 +378,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_8_V \
     op interface \
-    ports { mat1_o_8_V_din { O 16 vector } mat1_o_8_V_full_n { I 1 bit } mat1_o_8_V_write { O 1 bit } } \
+    ports { mat1_o_8_V_din { O 32 vector } mat1_o_8_V_full_n { I 1 bit } mat1_o_8_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 139 \
+    id 236 \
     name mat1_o_9_V \
     type fifo \
     dir O \
@@ -393,14 +393,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_9_V \
     op interface \
-    ports { mat1_o_9_V_din { O 16 vector } mat1_o_9_V_full_n { I 1 bit } mat1_o_9_V_write { O 1 bit } } \
+    ports { mat1_o_9_V_din { O 32 vector } mat1_o_9_V_full_n { I 1 bit } mat1_o_9_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 140 \
+    id 237 \
     name mat1_o_10_V \
     type fifo \
     dir O \
@@ -408,14 +408,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_10_V \
     op interface \
-    ports { mat1_o_10_V_din { O 16 vector } mat1_o_10_V_full_n { I 1 bit } mat1_o_10_V_write { O 1 bit } } \
+    ports { mat1_o_10_V_din { O 32 vector } mat1_o_10_V_full_n { I 1 bit } mat1_o_10_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 141 \
+    id 238 \
     name mat1_o_11_V \
     type fifo \
     dir O \
@@ -423,14 +423,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_11_V \
     op interface \
-    ports { mat1_o_11_V_din { O 16 vector } mat1_o_11_V_full_n { I 1 bit } mat1_o_11_V_write { O 1 bit } } \
+    ports { mat1_o_11_V_din { O 32 vector } mat1_o_11_V_full_n { I 1 bit } mat1_o_11_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 142 \
+    id 239 \
     name mat1_o_12_V \
     type fifo \
     dir O \
@@ -438,14 +438,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_12_V \
     op interface \
-    ports { mat1_o_12_V_din { O 16 vector } mat1_o_12_V_full_n { I 1 bit } mat1_o_12_V_write { O 1 bit } } \
+    ports { mat1_o_12_V_din { O 32 vector } mat1_o_12_V_full_n { I 1 bit } mat1_o_12_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 143 \
+    id 240 \
     name mat1_o_13_V \
     type fifo \
     dir O \
@@ -453,14 +453,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_13_V \
     op interface \
-    ports { mat1_o_13_V_din { O 16 vector } mat1_o_13_V_full_n { I 1 bit } mat1_o_13_V_write { O 1 bit } } \
+    ports { mat1_o_13_V_din { O 32 vector } mat1_o_13_V_full_n { I 1 bit } mat1_o_13_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 144 \
+    id 241 \
     name mat1_o_14_V \
     type fifo \
     dir O \
@@ -468,14 +468,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_14_V \
     op interface \
-    ports { mat1_o_14_V_din { O 16 vector } mat1_o_14_V_full_n { I 1 bit } mat1_o_14_V_write { O 1 bit } } \
+    ports { mat1_o_14_V_din { O 32 vector } mat1_o_14_V_full_n { I 1 bit } mat1_o_14_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 145 \
+    id 242 \
     name mat1_o_15_V \
     type fifo \
     dir O \
@@ -483,14 +483,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat1_o_15_V \
     op interface \
-    ports { mat1_o_15_V_din { O 16 vector } mat1_o_15_V_full_n { I 1 bit } mat1_o_15_V_write { O 1 bit } } \
+    ports { mat1_o_15_V_din { O 32 vector } mat1_o_15_V_full_n { I 1 bit } mat1_o_15_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 146 \
+    id 243 \
     name mat2_o_0_V \
     type fifo \
     dir O \
@@ -498,14 +498,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_0_V \
     op interface \
-    ports { mat2_o_0_V_din { O 16 vector } mat2_o_0_V_full_n { I 1 bit } mat2_o_0_V_write { O 1 bit } } \
+    ports { mat2_o_0_V_din { O 32 vector } mat2_o_0_V_full_n { I 1 bit } mat2_o_0_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 147 \
+    id 244 \
     name mat2_o_1_V \
     type fifo \
     dir O \
@@ -513,14 +513,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_1_V \
     op interface \
-    ports { mat2_o_1_V_din { O 16 vector } mat2_o_1_V_full_n { I 1 bit } mat2_o_1_V_write { O 1 bit } } \
+    ports { mat2_o_1_V_din { O 32 vector } mat2_o_1_V_full_n { I 1 bit } mat2_o_1_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 148 \
+    id 245 \
     name mat2_o_2_V \
     type fifo \
     dir O \
@@ -528,14 +528,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_2_V \
     op interface \
-    ports { mat2_o_2_V_din { O 16 vector } mat2_o_2_V_full_n { I 1 bit } mat2_o_2_V_write { O 1 bit } } \
+    ports { mat2_o_2_V_din { O 32 vector } mat2_o_2_V_full_n { I 1 bit } mat2_o_2_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 149 \
+    id 246 \
     name mat2_o_3_V \
     type fifo \
     dir O \
@@ -543,14 +543,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_3_V \
     op interface \
-    ports { mat2_o_3_V_din { O 16 vector } mat2_o_3_V_full_n { I 1 bit } mat2_o_3_V_write { O 1 bit } } \
+    ports { mat2_o_3_V_din { O 32 vector } mat2_o_3_V_full_n { I 1 bit } mat2_o_3_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 150 \
+    id 247 \
     name mat2_o_4_V \
     type fifo \
     dir O \
@@ -558,14 +558,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_4_V \
     op interface \
-    ports { mat2_o_4_V_din { O 16 vector } mat2_o_4_V_full_n { I 1 bit } mat2_o_4_V_write { O 1 bit } } \
+    ports { mat2_o_4_V_din { O 32 vector } mat2_o_4_V_full_n { I 1 bit } mat2_o_4_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 151 \
+    id 248 \
     name mat2_o_5_V \
     type fifo \
     dir O \
@@ -573,14 +573,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_5_V \
     op interface \
-    ports { mat2_o_5_V_din { O 16 vector } mat2_o_5_V_full_n { I 1 bit } mat2_o_5_V_write { O 1 bit } } \
+    ports { mat2_o_5_V_din { O 32 vector } mat2_o_5_V_full_n { I 1 bit } mat2_o_5_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 152 \
+    id 249 \
     name mat2_o_6_V \
     type fifo \
     dir O \
@@ -588,14 +588,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_6_V \
     op interface \
-    ports { mat2_o_6_V_din { O 16 vector } mat2_o_6_V_full_n { I 1 bit } mat2_o_6_V_write { O 1 bit } } \
+    ports { mat2_o_6_V_din { O 32 vector } mat2_o_6_V_full_n { I 1 bit } mat2_o_6_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 153 \
+    id 250 \
     name mat2_o_7_V \
     type fifo \
     dir O \
@@ -603,14 +603,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_7_V \
     op interface \
-    ports { mat2_o_7_V_din { O 16 vector } mat2_o_7_V_full_n { I 1 bit } mat2_o_7_V_write { O 1 bit } } \
+    ports { mat2_o_7_V_din { O 32 vector } mat2_o_7_V_full_n { I 1 bit } mat2_o_7_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 154 \
+    id 251 \
     name mat2_o_8_V \
     type fifo \
     dir O \
@@ -618,14 +618,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_8_V \
     op interface \
-    ports { mat2_o_8_V_din { O 16 vector } mat2_o_8_V_full_n { I 1 bit } mat2_o_8_V_write { O 1 bit } } \
+    ports { mat2_o_8_V_din { O 32 vector } mat2_o_8_V_full_n { I 1 bit } mat2_o_8_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 155 \
+    id 252 \
     name mat2_o_9_V \
     type fifo \
     dir O \
@@ -633,14 +633,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_9_V \
     op interface \
-    ports { mat2_o_9_V_din { O 16 vector } mat2_o_9_V_full_n { I 1 bit } mat2_o_9_V_write { O 1 bit } } \
+    ports { mat2_o_9_V_din { O 32 vector } mat2_o_9_V_full_n { I 1 bit } mat2_o_9_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 156 \
+    id 253 \
     name mat2_o_10_V \
     type fifo \
     dir O \
@@ -648,14 +648,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_10_V \
     op interface \
-    ports { mat2_o_10_V_din { O 16 vector } mat2_o_10_V_full_n { I 1 bit } mat2_o_10_V_write { O 1 bit } } \
+    ports { mat2_o_10_V_din { O 32 vector } mat2_o_10_V_full_n { I 1 bit } mat2_o_10_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 157 \
+    id 254 \
     name mat2_o_11_V \
     type fifo \
     dir O \
@@ -663,14 +663,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_11_V \
     op interface \
-    ports { mat2_o_11_V_din { O 16 vector } mat2_o_11_V_full_n { I 1 bit } mat2_o_11_V_write { O 1 bit } } \
+    ports { mat2_o_11_V_din { O 32 vector } mat2_o_11_V_full_n { I 1 bit } mat2_o_11_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 158 \
+    id 255 \
     name mat2_o_12_V \
     type fifo \
     dir O \
@@ -678,14 +678,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_12_V \
     op interface \
-    ports { mat2_o_12_V_din { O 16 vector } mat2_o_12_V_full_n { I 1 bit } mat2_o_12_V_write { O 1 bit } } \
+    ports { mat2_o_12_V_din { O 32 vector } mat2_o_12_V_full_n { I 1 bit } mat2_o_12_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 159 \
+    id 256 \
     name mat2_o_13_V \
     type fifo \
     dir O \
@@ -693,14 +693,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_13_V \
     op interface \
-    ports { mat2_o_13_V_din { O 16 vector } mat2_o_13_V_full_n { I 1 bit } mat2_o_13_V_write { O 1 bit } } \
+    ports { mat2_o_13_V_din { O 32 vector } mat2_o_13_V_full_n { I 1 bit } mat2_o_13_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 160 \
+    id 257 \
     name mat2_o_14_V \
     type fifo \
     dir O \
@@ -708,14 +708,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_14_V \
     op interface \
-    ports { mat2_o_14_V_din { O 16 vector } mat2_o_14_V_full_n { I 1 bit } mat2_o_14_V_write { O 1 bit } } \
+    ports { mat2_o_14_V_din { O 32 vector } mat2_o_14_V_full_n { I 1 bit } mat2_o_14_V_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 161 \
+    id 258 \
     name mat2_o_15_V \
     type fifo \
     dir O \
@@ -723,7 +723,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mat2_o_15_V \
     op interface \
-    ports { mat2_o_15_V_din { O 16 vector } mat2_o_15_V_full_n { I 1 bit } mat2_o_15_V_write { O 1 bit } } \
+    ports { mat2_o_15_V_din { O 32 vector } mat2_o_15_V_full_n { I 1 bit } mat2_o_15_V_write { O 1 bit } } \
 } "
 }
 

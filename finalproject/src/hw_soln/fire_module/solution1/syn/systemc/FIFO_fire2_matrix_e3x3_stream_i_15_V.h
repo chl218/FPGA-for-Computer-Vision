@@ -11,7 +11,7 @@
 #include <systemc>
 using namespace std;
 SC_MODULE(FIFO_fire2_matrix_e3x3_stream_i_15_V) {
-    static const unsigned int DATA_WIDTH = 16;
+    static const unsigned int DATA_WIDTH = 32;
     static const unsigned int ADDR_WIDTH = 1;
     static const unsigned int FIFO_fire2_matrix_e3x3_stream_i_15_V_depth = 2;
     sc_core::sc_in_clk clk;

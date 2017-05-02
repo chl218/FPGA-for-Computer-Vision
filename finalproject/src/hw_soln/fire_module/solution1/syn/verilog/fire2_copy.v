@@ -183,148 +183,148 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [15:0] mat_i_0_V_dout;
+input  [31:0] mat_i_0_V_dout;
 input   mat_i_0_V_empty_n;
 output   mat_i_0_V_read;
-input  [15:0] mat_i_1_V_dout;
+input  [31:0] mat_i_1_V_dout;
 input   mat_i_1_V_empty_n;
 output   mat_i_1_V_read;
-input  [15:0] mat_i_2_V_dout;
+input  [31:0] mat_i_2_V_dout;
 input   mat_i_2_V_empty_n;
 output   mat_i_2_V_read;
-input  [15:0] mat_i_3_V_dout;
+input  [31:0] mat_i_3_V_dout;
 input   mat_i_3_V_empty_n;
 output   mat_i_3_V_read;
-input  [15:0] mat_i_4_V_dout;
+input  [31:0] mat_i_4_V_dout;
 input   mat_i_4_V_empty_n;
 output   mat_i_4_V_read;
-input  [15:0] mat_i_5_V_dout;
+input  [31:0] mat_i_5_V_dout;
 input   mat_i_5_V_empty_n;
 output   mat_i_5_V_read;
-input  [15:0] mat_i_6_V_dout;
+input  [31:0] mat_i_6_V_dout;
 input   mat_i_6_V_empty_n;
 output   mat_i_6_V_read;
-input  [15:0] mat_i_7_V_dout;
+input  [31:0] mat_i_7_V_dout;
 input   mat_i_7_V_empty_n;
 output   mat_i_7_V_read;
-input  [15:0] mat_i_8_V_dout;
+input  [31:0] mat_i_8_V_dout;
 input   mat_i_8_V_empty_n;
 output   mat_i_8_V_read;
-input  [15:0] mat_i_9_V_dout;
+input  [31:0] mat_i_9_V_dout;
 input   mat_i_9_V_empty_n;
 output   mat_i_9_V_read;
-input  [15:0] mat_i_10_V_dout;
+input  [31:0] mat_i_10_V_dout;
 input   mat_i_10_V_empty_n;
 output   mat_i_10_V_read;
-input  [15:0] mat_i_11_V_dout;
+input  [31:0] mat_i_11_V_dout;
 input   mat_i_11_V_empty_n;
 output   mat_i_11_V_read;
-input  [15:0] mat_i_12_V_dout;
+input  [31:0] mat_i_12_V_dout;
 input   mat_i_12_V_empty_n;
 output   mat_i_12_V_read;
-input  [15:0] mat_i_13_V_dout;
+input  [31:0] mat_i_13_V_dout;
 input   mat_i_13_V_empty_n;
 output   mat_i_13_V_read;
-input  [15:0] mat_i_14_V_dout;
+input  [31:0] mat_i_14_V_dout;
 input   mat_i_14_V_empty_n;
 output   mat_i_14_V_read;
-input  [15:0] mat_i_15_V_dout;
+input  [31:0] mat_i_15_V_dout;
 input   mat_i_15_V_empty_n;
 output   mat_i_15_V_read;
-output  [15:0] mat1_o_0_V_din;
+output  [31:0] mat1_o_0_V_din;
 input   mat1_o_0_V_full_n;
 output   mat1_o_0_V_write;
-output  [15:0] mat1_o_1_V_din;
+output  [31:0] mat1_o_1_V_din;
 input   mat1_o_1_V_full_n;
 output   mat1_o_1_V_write;
-output  [15:0] mat1_o_2_V_din;
+output  [31:0] mat1_o_2_V_din;
 input   mat1_o_2_V_full_n;
 output   mat1_o_2_V_write;
-output  [15:0] mat1_o_3_V_din;
+output  [31:0] mat1_o_3_V_din;
 input   mat1_o_3_V_full_n;
 output   mat1_o_3_V_write;
-output  [15:0] mat1_o_4_V_din;
+output  [31:0] mat1_o_4_V_din;
 input   mat1_o_4_V_full_n;
 output   mat1_o_4_V_write;
-output  [15:0] mat1_o_5_V_din;
+output  [31:0] mat1_o_5_V_din;
 input   mat1_o_5_V_full_n;
 output   mat1_o_5_V_write;
-output  [15:0] mat1_o_6_V_din;
+output  [31:0] mat1_o_6_V_din;
 input   mat1_o_6_V_full_n;
 output   mat1_o_6_V_write;
-output  [15:0] mat1_o_7_V_din;
+output  [31:0] mat1_o_7_V_din;
 input   mat1_o_7_V_full_n;
 output   mat1_o_7_V_write;
-output  [15:0] mat1_o_8_V_din;
+output  [31:0] mat1_o_8_V_din;
 input   mat1_o_8_V_full_n;
 output   mat1_o_8_V_write;
-output  [15:0] mat1_o_9_V_din;
+output  [31:0] mat1_o_9_V_din;
 input   mat1_o_9_V_full_n;
 output   mat1_o_9_V_write;
-output  [15:0] mat1_o_10_V_din;
+output  [31:0] mat1_o_10_V_din;
 input   mat1_o_10_V_full_n;
 output   mat1_o_10_V_write;
-output  [15:0] mat1_o_11_V_din;
+output  [31:0] mat1_o_11_V_din;
 input   mat1_o_11_V_full_n;
 output   mat1_o_11_V_write;
-output  [15:0] mat1_o_12_V_din;
+output  [31:0] mat1_o_12_V_din;
 input   mat1_o_12_V_full_n;
 output   mat1_o_12_V_write;
-output  [15:0] mat1_o_13_V_din;
+output  [31:0] mat1_o_13_V_din;
 input   mat1_o_13_V_full_n;
 output   mat1_o_13_V_write;
-output  [15:0] mat1_o_14_V_din;
+output  [31:0] mat1_o_14_V_din;
 input   mat1_o_14_V_full_n;
 output   mat1_o_14_V_write;
-output  [15:0] mat1_o_15_V_din;
+output  [31:0] mat1_o_15_V_din;
 input   mat1_o_15_V_full_n;
 output   mat1_o_15_V_write;
-output  [15:0] mat2_o_0_V_din;
+output  [31:0] mat2_o_0_V_din;
 input   mat2_o_0_V_full_n;
 output   mat2_o_0_V_write;
-output  [15:0] mat2_o_1_V_din;
+output  [31:0] mat2_o_1_V_din;
 input   mat2_o_1_V_full_n;
 output   mat2_o_1_V_write;
-output  [15:0] mat2_o_2_V_din;
+output  [31:0] mat2_o_2_V_din;
 input   mat2_o_2_V_full_n;
 output   mat2_o_2_V_write;
-output  [15:0] mat2_o_3_V_din;
+output  [31:0] mat2_o_3_V_din;
 input   mat2_o_3_V_full_n;
 output   mat2_o_3_V_write;
-output  [15:0] mat2_o_4_V_din;
+output  [31:0] mat2_o_4_V_din;
 input   mat2_o_4_V_full_n;
 output   mat2_o_4_V_write;
-output  [15:0] mat2_o_5_V_din;
+output  [31:0] mat2_o_5_V_din;
 input   mat2_o_5_V_full_n;
 output   mat2_o_5_V_write;
-output  [15:0] mat2_o_6_V_din;
+output  [31:0] mat2_o_6_V_din;
 input   mat2_o_6_V_full_n;
 output   mat2_o_6_V_write;
-output  [15:0] mat2_o_7_V_din;
+output  [31:0] mat2_o_7_V_din;
 input   mat2_o_7_V_full_n;
 output   mat2_o_7_V_write;
-output  [15:0] mat2_o_8_V_din;
+output  [31:0] mat2_o_8_V_din;
 input   mat2_o_8_V_full_n;
 output   mat2_o_8_V_write;
-output  [15:0] mat2_o_9_V_din;
+output  [31:0] mat2_o_9_V_din;
 input   mat2_o_9_V_full_n;
 output   mat2_o_9_V_write;
-output  [15:0] mat2_o_10_V_din;
+output  [31:0] mat2_o_10_V_din;
 input   mat2_o_10_V_full_n;
 output   mat2_o_10_V_write;
-output  [15:0] mat2_o_11_V_din;
+output  [31:0] mat2_o_11_V_din;
 input   mat2_o_11_V_full_n;
 output   mat2_o_11_V_write;
-output  [15:0] mat2_o_12_V_din;
+output  [31:0] mat2_o_12_V_din;
 input   mat2_o_12_V_full_n;
 output   mat2_o_12_V_write;
-output  [15:0] mat2_o_13_V_din;
+output  [31:0] mat2_o_13_V_din;
 input   mat2_o_13_V_full_n;
 output   mat2_o_13_V_write;
-output  [15:0] mat2_o_14_V_din;
+output  [31:0] mat2_o_14_V_din;
 input   mat2_o_14_V_full_n;
 output   mat2_o_14_V_write;
-output  [15:0] mat2_o_15_V_din;
+output  [31:0] mat2_o_15_V_din;
 input   mat2_o_15_V_full_n;
 output   mat2_o_15_V_write;
 
@@ -383,15 +383,15 @@ reg    ap_done_reg = 1'b0;
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm = 3'b1;
 reg    ap_sig_cseq_ST_st1_fsm_0;
 reg    ap_sig_bdd_22;
-reg   [11:0] indvar_flatten_reg_868;
-wire   [0:0] exitcond_flatten_fu_879_p2;
-reg   [0:0] exitcond_flatten_reg_891;
+reg   [11:0] indvar_flatten_reg_486;
+wire   [0:0] exitcond_flatten_fu_497_p2;
+reg   [0:0] exitcond_flatten_reg_509;
 reg    ap_sig_cseq_ST_pp0_stg0_fsm_1;
 reg    ap_sig_bdd_230;
 reg    ap_reg_ppiten_pp0_it0 = 1'b0;
 reg    ap_sig_bdd_379;
 reg    ap_reg_ppiten_pp0_it1 = 1'b0;
-wire   [11:0] indvar_flatten_next_fu_885_p2;
+wire   [11:0] indvar_flatten_next_fu_503_p2;
 reg    ap_sig_bdd_392;
 reg    ap_sig_cseq_ST_st4_fsm_2;
 reg    ap_sig_bdd_483;
@@ -424,7 +424,7 @@ always @ (posedge ap_clk) begin : ap_ret_ap_reg_ppiten_pp0_it0
     if (ap_rst == 1'b1) begin
         ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
     end else begin
-        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_879_p2 == ap_const_lv1_0))) begin
+        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_497_p2 == ap_const_lv1_0))) begin
             ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
         end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_392)) begin
             ap_reg_ppiten_pp0_it0 <= ap_const_logic_1;
@@ -436,25 +436,25 @@ always @ (posedge ap_clk) begin : ap_ret_ap_reg_ppiten_pp0_it1
     if (ap_rst == 1'b1) begin
         ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
     end else begin
-        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (exitcond_flatten_fu_879_p2 == ap_const_lv1_0))) begin
+        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (exitcond_flatten_fu_497_p2 == ap_const_lv1_0))) begin
             ap_reg_ppiten_pp0_it1 <= ap_const_logic_1;
-        end else if ((((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_392) | ((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_879_p2 == ap_const_lv1_0)))) begin
+        end else if ((((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_392) | ((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_497_p2 == ap_const_lv1_0)))) begin
             ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (exitcond_flatten_fu_879_p2 == ap_const_lv1_0))) begin
-        indvar_flatten_reg_868 <= indvar_flatten_next_fu_885_p2;
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (exitcond_flatten_fu_497_p2 == ap_const_lv1_0))) begin
+        indvar_flatten_reg_486 <= indvar_flatten_next_fu_503_p2;
     end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_392)) begin
-        indvar_flatten_reg_868 <= ap_const_lv12_0;
+        indvar_flatten_reg_486 <= ap_const_lv12_0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
-        exitcond_flatten_reg_891 <= exitcond_flatten_fu_879_p2;
+        exitcond_flatten_reg_509 <= exitcond_flatten_fu_497_p2;
     end
 end
 
@@ -506,390 +506,390 @@ always @ (ap_sig_bdd_483) begin
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_0_V_write = ap_const_logic_1;
     end else begin
         mat1_o_0_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_10_V_write = ap_const_logic_1;
     end else begin
         mat1_o_10_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_11_V_write = ap_const_logic_1;
     end else begin
         mat1_o_11_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_12_V_write = ap_const_logic_1;
     end else begin
         mat1_o_12_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_13_V_write = ap_const_logic_1;
     end else begin
         mat1_o_13_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_14_V_write = ap_const_logic_1;
     end else begin
         mat1_o_14_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_15_V_write = ap_const_logic_1;
     end else begin
         mat1_o_15_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_1_V_write = ap_const_logic_1;
     end else begin
         mat1_o_1_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_2_V_write = ap_const_logic_1;
     end else begin
         mat1_o_2_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_3_V_write = ap_const_logic_1;
     end else begin
         mat1_o_3_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_4_V_write = ap_const_logic_1;
     end else begin
         mat1_o_4_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_5_V_write = ap_const_logic_1;
     end else begin
         mat1_o_5_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_6_V_write = ap_const_logic_1;
     end else begin
         mat1_o_6_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_7_V_write = ap_const_logic_1;
     end else begin
         mat1_o_7_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_8_V_write = ap_const_logic_1;
     end else begin
         mat1_o_8_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat1_o_9_V_write = ap_const_logic_1;
     end else begin
         mat1_o_9_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_0_V_write = ap_const_logic_1;
     end else begin
         mat2_o_0_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_10_V_write = ap_const_logic_1;
     end else begin
         mat2_o_10_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_11_V_write = ap_const_logic_1;
     end else begin
         mat2_o_11_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_12_V_write = ap_const_logic_1;
     end else begin
         mat2_o_12_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_13_V_write = ap_const_logic_1;
     end else begin
         mat2_o_13_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_14_V_write = ap_const_logic_1;
     end else begin
         mat2_o_14_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_15_V_write = ap_const_logic_1;
     end else begin
         mat2_o_15_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_1_V_write = ap_const_logic_1;
     end else begin
         mat2_o_1_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_2_V_write = ap_const_logic_1;
     end else begin
         mat2_o_2_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_3_V_write = ap_const_logic_1;
     end else begin
         mat2_o_3_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_4_V_write = ap_const_logic_1;
     end else begin
         mat2_o_4_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_5_V_write = ap_const_logic_1;
     end else begin
         mat2_o_5_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_6_V_write = ap_const_logic_1;
     end else begin
         mat2_o_6_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_7_V_write = ap_const_logic_1;
     end else begin
         mat2_o_7_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_8_V_write = ap_const_logic_1;
     end else begin
         mat2_o_8_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat2_o_9_V_write = ap_const_logic_1;
     end else begin
         mat2_o_9_V_write = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_0_V_read = ap_const_logic_1;
     end else begin
         mat_i_0_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_10_V_read = ap_const_logic_1;
     end else begin
         mat_i_10_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_11_V_read = ap_const_logic_1;
     end else begin
         mat_i_11_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_12_V_read = ap_const_logic_1;
     end else begin
         mat_i_12_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_13_V_read = ap_const_logic_1;
     end else begin
         mat_i_13_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_14_V_read = ap_const_logic_1;
     end else begin
         mat_i_14_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_15_V_read = ap_const_logic_1;
     end else begin
         mat_i_15_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_1_V_read = ap_const_logic_1;
     end else begin
         mat_i_1_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_2_V_read = ap_const_logic_1;
     end else begin
         mat_i_2_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_3_V_read = ap_const_logic_1;
     end else begin
         mat_i_3_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_4_V_read = ap_const_logic_1;
     end else begin
         mat_i_4_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_5_V_read = ap_const_logic_1;
     end else begin
         mat_i_5_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_6_V_read = ap_const_logic_1;
     end else begin
         mat_i_6_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_7_V_read = ap_const_logic_1;
     end else begin
         mat_i_7_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_8_V_read = ap_const_logic_1;
     end else begin
         mat_i_8_V_read = ap_const_logic_0;
     end
 end
 
-always @ (exitcond_flatten_reg_891 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_891 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+always @ (exitcond_flatten_reg_509 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (exitcond_flatten_reg_509 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
         mat_i_9_V_read = ap_const_logic_1;
     end else begin
         mat_i_9_V_read = ap_const_logic_0;
     end
 end
-always @ (ap_CS_fsm or exitcond_flatten_fu_879_p2 or ap_reg_ppiten_pp0_it0 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1 or ap_sig_bdd_392) begin
+always @ (ap_CS_fsm or exitcond_flatten_fu_497_p2 or ap_reg_ppiten_pp0_it0 or ap_sig_bdd_379 or ap_reg_ppiten_pp0_it1 or ap_sig_bdd_392) begin
     case (ap_CS_fsm)
         ap_ST_st1_fsm_0 : 
         begin
@@ -901,9 +901,9 @@ always @ (ap_CS_fsm or exitcond_flatten_fu_879_p2 or ap_reg_ppiten_pp0_it0 or ap
         end
         ap_ST_pp0_stg0_fsm_1 : 
         begin
-            if (~((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_879_p2 == ap_const_lv1_0))) begin
+            if (~((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_497_p2 == ap_const_lv1_0))) begin
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
-            end else if (((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_879_p2 == ap_const_lv1_0))) begin
+            end else if (((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(ap_sig_bdd_379 & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(exitcond_flatten_fu_497_p2 == ap_const_lv1_0))) begin
                 ap_NS_fsm = ap_ST_st4_fsm_2;
             end else begin
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
@@ -932,8 +932,8 @@ always @ (ap_CS_fsm) begin
 end
 
 
-always @ (mat_i_0_V_empty_n or mat_i_1_V_empty_n or mat_i_2_V_empty_n or mat_i_3_V_empty_n or mat_i_4_V_empty_n or mat_i_5_V_empty_n or mat_i_6_V_empty_n or mat_i_7_V_empty_n or mat_i_8_V_empty_n or mat_i_9_V_empty_n or mat_i_10_V_empty_n or mat_i_11_V_empty_n or mat_i_12_V_empty_n or mat_i_13_V_empty_n or mat_i_14_V_empty_n or mat_i_15_V_empty_n or mat1_o_0_V_full_n or mat1_o_1_V_full_n or mat1_o_2_V_full_n or mat1_o_3_V_full_n or mat1_o_4_V_full_n or mat1_o_5_V_full_n or mat1_o_6_V_full_n or mat1_o_7_V_full_n or mat1_o_8_V_full_n or mat1_o_9_V_full_n or mat1_o_10_V_full_n or mat1_o_11_V_full_n or mat1_o_12_V_full_n or mat1_o_13_V_full_n or mat1_o_14_V_full_n or mat1_o_15_V_full_n or mat2_o_0_V_full_n or mat2_o_1_V_full_n or mat2_o_2_V_full_n or mat2_o_3_V_full_n or mat2_o_4_V_full_n or mat2_o_5_V_full_n or mat2_o_6_V_full_n or mat2_o_7_V_full_n or mat2_o_8_V_full_n or mat2_o_9_V_full_n or mat2_o_10_V_full_n or mat2_o_11_V_full_n or mat2_o_12_V_full_n or mat2_o_13_V_full_n or mat2_o_14_V_full_n or mat2_o_15_V_full_n or exitcond_flatten_reg_891) begin
-    ap_sig_bdd_379 = (((mat_i_0_V_empty_n == ap_const_logic_0) & (exitcond_flatten_reg_891 == ap_const_lv1_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_0_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_0_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_1_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_1_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_1_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_2_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_2_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_2_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_3_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_3_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_3_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_4_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_4_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_4_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_5_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_5_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_5_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_6_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_6_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_6_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_7_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_7_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_7_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_8_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_8_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_8_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_9_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_9_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_9_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_10_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_10_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_10_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_11_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_11_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_11_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_12_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_12_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_12_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_13_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_13_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_13_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_14_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_14_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_14_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat_i_15_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat1_o_15_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_891 == ap_const_lv1_0) & (mat2_o_15_V_full_n == ap_const_logic_0)));
+always @ (mat_i_0_V_empty_n or mat_i_1_V_empty_n or mat_i_2_V_empty_n or mat_i_3_V_empty_n or mat_i_4_V_empty_n or mat_i_5_V_empty_n or mat_i_6_V_empty_n or mat_i_7_V_empty_n or mat_i_8_V_empty_n or mat_i_9_V_empty_n or mat_i_10_V_empty_n or mat_i_11_V_empty_n or mat_i_12_V_empty_n or mat_i_13_V_empty_n or mat_i_14_V_empty_n or mat_i_15_V_empty_n or mat1_o_0_V_full_n or mat1_o_1_V_full_n or mat1_o_2_V_full_n or mat1_o_3_V_full_n or mat1_o_4_V_full_n or mat1_o_5_V_full_n or mat1_o_6_V_full_n or mat1_o_7_V_full_n or mat1_o_8_V_full_n or mat1_o_9_V_full_n or mat1_o_10_V_full_n or mat1_o_11_V_full_n or mat1_o_12_V_full_n or mat1_o_13_V_full_n or mat1_o_14_V_full_n or mat1_o_15_V_full_n or mat2_o_0_V_full_n or mat2_o_1_V_full_n or mat2_o_2_V_full_n or mat2_o_3_V_full_n or mat2_o_4_V_full_n or mat2_o_5_V_full_n or mat2_o_6_V_full_n or mat2_o_7_V_full_n or mat2_o_8_V_full_n or mat2_o_9_V_full_n or mat2_o_10_V_full_n or mat2_o_11_V_full_n or mat2_o_12_V_full_n or mat2_o_13_V_full_n or mat2_o_14_V_full_n or mat2_o_15_V_full_n or exitcond_flatten_reg_509) begin
+    ap_sig_bdd_379 = (((mat_i_0_V_empty_n == ap_const_logic_0) & (exitcond_flatten_reg_509 == ap_const_lv1_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_0_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_0_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_1_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_1_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_1_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_2_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_2_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_2_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_3_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_3_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_3_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_4_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_4_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_4_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_5_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_5_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_5_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_6_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_6_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_6_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_7_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_7_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_7_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_8_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_8_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_8_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_9_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_9_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_9_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_10_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_10_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_10_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_11_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_11_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_11_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_12_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_12_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_12_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_13_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_13_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_13_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_14_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_14_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_14_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat_i_15_V_empty_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat1_o_15_V_full_n == ap_const_logic_0)) | ((exitcond_flatten_reg_509 == ap_const_lv1_0) & (mat2_o_15_V_full_n == ap_const_logic_0)));
 end
 
 
@@ -946,9 +946,9 @@ always @ (ap_CS_fsm) begin
     ap_sig_bdd_483 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
 end
 
-assign exitcond_flatten_fu_879_p2 = (indvar_flatten_reg_868 == ap_const_lv12_BD1? 1'b1: 1'b0);
+assign exitcond_flatten_fu_497_p2 = (indvar_flatten_reg_486 == ap_const_lv12_BD1? 1'b1: 1'b0);
 
-assign indvar_flatten_next_fu_885_p2 = (indvar_flatten_reg_868 + ap_const_lv12_1);
+assign indvar_flatten_next_fu_503_p2 = (indvar_flatten_reg_486 + ap_const_lv12_1);
 
 assign mat1_o_0_V_din = mat_i_0_V_dout;
 
